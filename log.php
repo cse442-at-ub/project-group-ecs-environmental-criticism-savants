@@ -6,7 +6,9 @@
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
 <body>
+<div class="box"> </div>
 <div class="e64_10">
+
     <div  class="e60_6">Log In</div>
     <div class="e74_120">
         <button type="button" value="create page" onclick="sign_page()" class="e64_13">don't have an account?<br>click here to sign up</button>
@@ -19,12 +21,16 @@
     </script>
     <div class=e74_99>
         <p>Username:</p>
-        <input type="text" class="e64_16"></input>
+        <label>
+            <input type="text" class="e64_16">
+        </label>
     </div>
 
     <div class=e74_100>
         <p>Password:</p>
-        <input type="text" class="e64_16"></input>
+        <label>
+            <input type="text" class="e64_16">
+        </label>
     </div>
 
     <div class=e74_116>
