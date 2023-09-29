@@ -17,12 +17,13 @@ body {
 }
 
 .box {
-    width: 1550px;
+    width: 102%;
     height: 70px;
-    position: absolute;
+    position: relative;
     background-color: #2867C6;
-    margin: inherit;
-
+    margin: auto;
+    left: -8px;
+    top: -10px;
 }
 
 .e68_85 {

@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="landing.css"/>
 </head>
 <body>
+<div class="box">
+</div>
 <div class=e64_42>
-    <div class="box">
-    </div>
     <span  class="e64_44">Welcome to Savant</span>
     <div class=e68_85>
         <div class="e64_45"></div><span  class="e64_48">Savant is an excellent tool to help:</span>
