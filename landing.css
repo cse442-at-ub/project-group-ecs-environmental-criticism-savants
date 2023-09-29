@@ -1,0 +1,119 @@
+
+body {
+    background-color:#E5E5E5;
+    font-family: Jomhuria, sans-serif;
+}
+.e64_44 {
+    color:rgba(0, 0, 0, 1);
+    width:1194px;
+    height:255px;
+    position:absolute;
+    left:131px;
+    top:125px;
+    font-weight: bold;;
+    text-align:center;
+    font-size:120px;
+    letter-spacing:0;
+}
+
+.box {
+    width: 1920px;
+    height: 70px;
+    top:0;
+    left: -30px;
+    position: absolute;
+    background-color: #2867C6;
+    margin: inherit;
+
+}
+
+.e68_85 {
+    width:648px;
+    height:100px;
+    position:absolute;
+    left:34px;
+    top:336px;
+}
+.e64_45 {
+    background-color:#80B4F0;
+    width:648px;
+    height:400px;
+    position:absolute;
+    border-radius: 45px;
+}
+.e64_48 {
+    color:rgba(255, 255, 255, 1);
+    width:543px;
+    height:60px;
+    position:absolute;
+    left:27px;
+    top:36px;
+    text-align:left;
+    font-size:35px;
+    letter-spacing:0;
+    font-weight: bold;
+}
+.e64_50 {
+    color:rgba(255, 255, 255, 1);
+    width:543px;
+    height:100px;
+    position:absolute;
+    left:20px;
+    top:100px;
+    text-align:left;
+    font-size:33px;
+    font-weight: bold;
+}
+
+.e68_86 {
+    width:693px;
+    height:215px;
+    position:absolute;
+    left:720px;
+    top:368px;
+}
+.e64_77 {
+    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:#2867C6;
+    width:693px;
+    height:150px;
+    position:absolute;
+    left:0;
+    top:0;
+    border-radius: 45px;
+    color:white;
+    text-align: center;
+    font-size:40px;
+    letter-spacing:0;
+}
+
+.e64_78 {
+    color:rgba(255, 255, 255, 1);
+    width:535px;
+    height:146px;
+    position:relative;
+    left:78px;
+    top:50px;
+    text-align:center;
+    font-size:40px;
+    letter-spacing:0;
+}
+.e68_87 {
+    width:693px;
+    height:215px;
+    position:absolute;
+    left:720px;
+    top:550px;
+}
+
+.e64_81 {
+    color:rgba(255, 255, 255, 1);
+    width:535px;
+    height:146px;
+    position:absolute;
+    left:78px;
+    top:50px;
+    text-align:center;
+    font-size:40px;
+    letter-spacing:0;
+}
