@@ -2,117 +2,82 @@
 body {
     background-color:#E5E5E5;
     font-family: Jomhuria, sans-serif;
+    font-size: 6vw;
 }
-.e64_44 {
+
+.wel {
     color:rgba(0, 0, 0, 1);
-    width:1194px;
-    height:255px;
-    position:absolute;
-    left:131px;
-    top:125px;
+    position:relative;
+    margin: auto;
+    top: 6vh;
     font-weight: bold;;
     text-align:center;
-    font-size:120px;
-    letter-spacing:0;
+    font-size:120%;
 }
 
-.box {
-    width: 100%;
-    height: 70px;
-    top:0;
-    position: absolute;
+.banner {
+    width: 99vw;
+    height: 10vh;
+    position: relative;
+    margin: auto;
+    top: -1vh;
     background-color: #2867C6;
-    margin: inherit;
-
 }
 
-.e68_85 {
-    width:648px;
-    height:100px;
-    position:absolute;
-    left:34px;
-    top:336px;
-}
-.e64_45 {
+.side-box {
     background-color:#80B4F0;
-    width:648px;
-    height:400px;
+    height: 50%;
+    width: 40%;
     position:absolute;
     border-radius: 45px;
-}
-.e64_48 {
+    left:2%;
+    top:40vh;
     color:rgba(255, 255, 255, 1);
-    width:543px;
+    font-weight: bold;
+}
+.intro {
     height:60px;
     position:absolute;
-    left:27px;
-    top:36px;
+    left: 3%;
+    top:10%;
     text-align:left;
-    font-size:35px;
-    letter-spacing:0;
-    font-weight: bold;
-}
-.e64_50 {
-    color:rgba(255, 255, 255, 1);
-    width:543px;
-    height:100px;
-    position:absolute;
-    left:20px;
-    top:100px;
-    text-align:left;
-    font-size:33px;
-    font-weight: bold;
+    font-size:38%;
 }
 
-.e68_86 {
-    width:693px;
-    height:215px;
+.list {
+    left: 3%;
     position:absolute;
-    left:720px;
-    top:368px;
+    top:100px;
+    width: 90%;
+    text-align:left;
+    font-size:35%;
 }
-.e64_77 {
+
+.create {
     box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
     background-color:#2867C6;
-    width:693px;
-    height:150px;
-    position:absolute;
-    left:0;
-    top:0;
+    height:17vh;
+    position:relative;
     border-radius: 45px;
     color:white;
     text-align: center;
-    font-size:40px;
-    letter-spacing:0;
+    font-size:40%;
+    width: 40vw;
+    left: 50vw;
+    top: 16vh;
 }
 
-.e64_78 {
-    color:rgba(255, 255, 255, 1);
-    width:535px;
-    height:146px;
+.log {
+    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color:#2867C6;
+    height:17vh;
     position:relative;
-    left:78px;
-    top:50px;
-    text-align:center;
-    font-size:40px;
-    letter-spacing:0;
-}
-.e68_87 {
-    width:693px;
-    height:215px;
-    position:absolute;
-    left:720px;
-    top:550px;
+    border-radius: 45px;
+    color:white;
+    text-align: center;
+    font-size:40%;
+    width: 40vw;
+    left: 50vw;
+    top: 23vh;
 }
 
-.e64_81 {
-    color:rgba(255, 255, 255, 1);
-    width:535px;
-    height:146px;
-    position:absolute;
-    left:78px;
-    top:50px;
-    text-align:center;
-    font-size:40px;
-    letter-spacing:0;
-}
