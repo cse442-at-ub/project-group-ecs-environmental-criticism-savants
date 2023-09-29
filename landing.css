@@ -17,10 +17,8 @@ body {
 }
 
 .box {
-    width: 1920px;
+    width: 1550px;
     height: 70px;
-    top:0;
-    left: -30px;
     position: absolute;
     background-color: #2867C6;
     margin: inherit;
