@@ -35,7 +35,7 @@ body {
     position:absolute;
     border-radius: 45px;
     left:2%;
-    top:40vh;
+    top:35vh;
     color:rgba(255, 255, 255, 1);
     font-weight: bold;
 }
@@ -58,8 +58,8 @@ body {
 }
 
 .create {
-    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
     background-color:#2867C6;
+    border: #2867C6;
     height:17vh;
     position:relative;
     border-radius: 45px;
@@ -68,11 +68,11 @@ body {
     font-size:40%;
     width: 40vw;
     left: 50vw;
-    top: 16vh;
+    top: 21vh;
 }
 
 .log {
-    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    border: #2867C6;
     background-color:#2867C6;
     height:17vh;
     position:relative;
@@ -82,6 +82,6 @@ body {
     font-size:40%;
     width: 40vw;
     left: 50vw;
-    top: 23vh;
+    top: 29vh;
 }
 

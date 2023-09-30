@@ -56,6 +56,7 @@ body {
 
 .text {
     background-color:#4D698A;
+    border: #4D698A;
     margin: auto;
     position: relative;
     text-align: left;
@@ -71,6 +72,7 @@ body {
 
 .user {
     position: absolute;
+    border: black;
     left: 4vw;
     top: -1vh;
     color: white;
@@ -80,6 +82,7 @@ body {
 
 .pass {
     position: absolute;
+    border: black;
     left: 4vw;
     top: 20vh;
     color: white;
@@ -90,6 +93,7 @@ body {
 .next {
     box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
     background-color:#2867C6;
+    border: #2867C6;
     width:38vw;
     height: 12vh;
     position:absolute;
