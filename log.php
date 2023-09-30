@@ -6,35 +6,33 @@
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
 <body>
-<div class="box"> </div>
-<div class="e64_10">
+<div class="banner"> </div>
+<div class="main">
+    <div  class="title">Log In</div>
 
-    <div  class="e60_6">Log In</div>
-    <div class="e74_120">
-        <button type="button" value="create page" onclick="sign_page()" class="e64_13">don't have an account?<br>click here to sign up</button>
+    <div>
+        <button type="button" value="create page" onclick="sign_page()" class="wrong">don't have an account?<br>click here to sign up</button>
     </div>
     <script type="text/JavaScript">
-
-        function sign_page() {
-            window.location.href = "sign.php";
-        }
+        function sign_page() {window.location.href = "sign.php";}
     </script>
-    <div class=e74_99>
+
+    <div class="user">
         <p>Username:</p>
         <label>
-            <input type="text" class="e64_16">
+            <input type="text" id="username" class="text">
         </label>
     </div>
 
-    <div class=e74_100>
+    <div class="pass">
         <p>Password:</p>
         <label>
-            <input type="text" class="e64_16">
+            <input type="text" id="password" class="text">
         </label>
     </div>
 
-    <div class=e74_116>
-        <button type="button" class="e64_15">log in</button>
+    <div>
+        <button type="button" class="next">log in</button>
     </div>
 </div>
 
