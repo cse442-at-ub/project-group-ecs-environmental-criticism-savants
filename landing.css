@@ -3,6 +3,7 @@ body {
     background-color:#E5E5E5;
     font-family: Jomhuria, sans-serif;
     font-size: 6vw;
+
 }
 
 .wel {
@@ -16,12 +17,15 @@ body {
 }
 
 .banner {
-    width: 99vw;
-    height: 10vh;
-    position: relative;
+    width: 101%;
+    height: 11vh;
+    position: fixed;
     margin: auto;
-    top: -1vh;
+    top: -2vh;
+    left: -1vw;
     background-color: #2867C6;
+    overflow-x: hidden;
+
 }
 
 .side-box {

@@ -7,12 +7,15 @@ body {
 }
 
 .banner {
-    width: 99vw;
-    height: 10vh;
-    position: relative;
+    width: 101%;
+    height: 11vh;
+    position: fixed;
     margin: auto;
-    top: -1vh;
+    top: -2vh;
+    left: -1vw;
     background-color: #2867C6;
+    overflow-x: hidden;
+
 }
 
 .main {
