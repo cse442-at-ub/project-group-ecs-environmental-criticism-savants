@@ -34,7 +34,7 @@ body {
     width: 40%;
     position:absolute;
     border-radius: 45px;
-    left:2%;
+    left:5%;
     top:35vh;
     color:rgba(255, 255, 255, 1);
     font-weight: bold;
@@ -67,7 +67,7 @@ body {
     text-align: center;
     font-size:40%;
     width: 40vw;
-    left: 50vw;
+    left: 55vw;
     top: 21vh;
 }
 
@@ -81,7 +81,7 @@ body {
     text-align: center;
     font-size:40%;
     width: 40vw;
-    left: 50vw;
+    left: 55vw;
     top: 29vh;
 }
 
