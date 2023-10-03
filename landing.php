@@ -3,49 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Savant</title>
-    <link rel="stylesheet" type="text/css" href="landing.css" id = "style"/>
-</head>
-
+    <link rel="stylesheet" type="text/css" href="landing_dark.css" id = "style"/>
 <body>
     <div class="banner"></div>
 
     <div>
-        <button class ="switch" type="button" onclick= "swap_dark()" id ="dark">Dark Mode</button>
-        <button hidden="hidden" class ="switch" type="button" onclick= "swap_light()" id ='light'>Light Mode</button>
+        <button class ="switch" type="button" onclick= "swap('dark')" id ="dark">Dark Mode</button>
+        <button hidden="hidden" class ="switch" type="button" onclick= "swap('light')" id ='light'>Light Mode</button>
     </div>
     <script type="text/JavaScript">
-        function swap_dark() {
+        function swap(mode) {
             let style = document.getElementById('style');
             let light = document.getElementById('light');
             let dark = document.getElementById('dark');
-            style.setAttribute('href', 'landing_dark.css');
-            let a = document.createAttribute("hidden") ;
-            a.value = "hidden"
-            dark.setAttributeNode(a)
-            light.removeAttribute("hidden")
-            localStorage.setItem('mode', 'dark');
-
-        }
-        function swap_light() {
-            let style = document.getElementById('style');
-            let light = document.getElementById('light');
-            let dark = document.getElementById('dark');
-            style.setAttribute('href', 'landing.css');
-            let a = document.createAttribute("hidden") ;
-            a.value = "hidden"
-            light.setAttributeNode(a)
-            dark.removeAttribute("hidden")
-            localStorage.setItem('mode', 'light');
-        }
-
-        function dark_check(){
-            let d = localStorage.getItem('mode');
-            console.log(d)
-            if (d === 'dark') {
-                swap_dark()
+            let a = document.createAttribute("hidden");
+            a.value = "hidden";
+            if (mode === 'dark') {
+                dark.setAttributeNode(a)
+                light.removeAttribute("hidden")
+                style.setAttribute('href', 'landing_dark.css');
+            } else {
+                light.setAttributeNode(a)
+                dark.removeAttribute("hidden")
+                style.setAttribute('href', 'landing.css');
             }
+            localStorage.setItem('mode', mode);
         }
-        dark_check()
+        swap(localStorage.getItem('mode'))
+
     </script>
 
     <div class="wel">Welcome to Savant</div>
