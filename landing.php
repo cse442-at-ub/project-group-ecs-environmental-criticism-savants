@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Savant</title>
-    <link rel="stylesheet" type="text/css" href="landing_dark.css" id = "style"/>
+    <link rel="stylesheet" type="text/css" href="landing_dark.css" id = "style" onload="swap(localStorage.getItem('mode'))"/>
 <body>
     <div class="banner"></div>
 
@@ -29,7 +29,7 @@
             }
             localStorage.setItem('mode', mode);
         }
-        swap(localStorage.getItem('mode'))
+
 
     </script>
 

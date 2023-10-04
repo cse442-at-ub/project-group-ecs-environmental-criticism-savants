@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Log In</title>
-    <link rel="stylesheet" type="text/css" href="sign_log_dark.css" id="style"/>
+    <title >Log In</title>
+    <link rel="stylesheet" type="text/css" href="sign_log_dark.css" id="style" onload="swap(localStorage.getItem('mode'))"/>
 
 </head>
 <body>
@@ -12,7 +12,7 @@
     <button class ="switch" type="button" onclick= "swap('dark')" id ="dark">Dark Mode</button>
     <button hidden="hidden" class ="switch" type="button" onclick= "swap('light')" id ='light'>Light Mode</button>
 </div>
-<script type="text/JavaScript">
+<script defer type="text/JavaScript">
     function swap(mode) {
         let style = document.getElementById('style');
         let light = document.getElementById('light');
@@ -31,7 +31,6 @@
         localStorage.setItem('mode', mode);
     }
 
-    swap(localStorage.getItem('mode'))
 </script>
 <div class="main">
     <div  class="title">Log In</div>

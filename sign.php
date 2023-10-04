@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
-    <link rel="stylesheet" type="text/css" href="sign_log_dark.css" id="style"/>
+    <link rel="stylesheet" type="text/css" href="sign_log_dark.css" id="style" onload="swap(localStorage.getItem('mode'))"/>
 </head>
 <body>
 <div class="banner"></div>
@@ -29,8 +29,6 @@
         }
         localStorage.setItem('mode', mode);
     }
-
-    swap(localStorage.getItem('mode'))
 </script>
 <div class="main">
     <div  class="title">Sign Up</div>
