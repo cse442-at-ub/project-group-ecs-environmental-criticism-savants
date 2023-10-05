@@ -2,6 +2,7 @@ body {
     background: #E5E5E5;
     font-size: 6vw;
     font-family: Jomhuria, sans-serif ;
+    font-weight: bold;
 }
 
 .banner {
@@ -15,19 +16,14 @@ body {
     overflow-x: hidden;
     color: white;
     text-align: center;
-    font-weight: bold;
-    font-size: 70%;
+    font-size: 65%;
     margin-inl: 2vh;
     overflow-y: hidden;
 }
 
 .wel{
-    top: -6.5vh;
+    top: -5.5vh;
     position: relative;
-}
-
-.button {
-
 }
 
 .main {
@@ -48,6 +44,55 @@ body {
     background-color: #2867C6;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
+    color: white;
+    font-size: 50%;
+    text-align: center;
+    top: -7vh;
+}
+
+.view {
+    position: relative;
+    top: 0.5vh;
+}
+
+.day {
+    position: relative;
+    background-color: #E5E5E5;
+    border: .5vh solid #2867C6;
+    color: black;
+    font-size: 30%;
+    text-align: center;
+    top: -23vh;
+    width: 22%;
+    left: 38%;
+    border-radius: 1vw;
+    height: 4vh;
+}
+
+.button1 {
+    position: relative;
+    top: -35.5vh;
+    height: 4vh;
+    width: 3vw;
+    border-radius: 0.5vw;
+    border: .5vh solid #2867C6;
+    background-color: #E5E5E5;
+    left: 21vw;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.button2 {
+    position: relative;
+    top: -35.5vh;
+    height: 4vh;
+    width: 3vw;
+    border-radius: 0.5vw;
+    border: .5vh solid #2867C6;
+    background-color: #E5E5E5;
+    left: 40.5vw;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .year{
@@ -60,8 +105,47 @@ body {
     border-radius: 2vw;
 }
 
-.day {
+.year_date {
+    position: relative;
+    text-align: center;
+    color: black;
+    background-color: #E5E5E5;
+    font-size: 30%;
+    top: 2vh;
+    width:30%;
+    left:35%;
+    border-radius: .5vw;
 
 }
+.button3 {
+    position: relative;
+    top: -10vh;
+    height: 4vh;
+    width: 15%;
+    border-color: transparent;
+    border-radius: 0.5vw;
+    background-color: #E5E5E5;
+    left: 15%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.button4 {
+    position: relative;
+    top: -10vh;
+    height: 4vh;
+    width: 15%;
+    border-color: transparent;
+    border-radius: 0.5vw;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    left: 48%;
+}
+.month {
+
+}
+
+
 
 
