@@ -9,6 +9,7 @@
     <div class="banner">
         <p class="wel">Welcome back, </p>
     </div>
+    <button type="button" class="back">Log Out</button>
 
     <div class="main">
         <div class="main_banner">
@@ -28,8 +29,18 @@
         </div>
 
         <div>
-
-
+            <button type="button" class="row1">Jan</button>
+            <button type="button" class="row1">Feb</button>
+            <button type="button" class="row2">Mar</button>
+            <button type="button" class="row2">Apr</button>
+            <button type="button" class="row3">May</button>
+            <button type="button" class="row3">Jun</button>
+            <button type="button" class="row4">Jul</button>
+            <button type="button" class="row4">Aug</button>
+            <button type="button" class="row5">Sep</button>
+            <button type="button" class="row5">Oct</button>
+            <button type="button" class="row6">Noc</button>
+            <button type="button" class="row6">Dec</button>
         </div>
 
     </div>
