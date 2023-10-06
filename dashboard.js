@@ -38,7 +38,20 @@ function dayUpdate(cur) {
         document.getElementById(month1).style.background = "#E5E5E5";
     }
     set(date);
-
 }
 
 
+
+function disp(state) {
+    let pop = document.getElementById("exit");
+    if (state) {
+        pop.removeAttribute("hidden");
+    }else{
+        pop.setAttribute("hidden","");
+    }
+}
+
+//Implamentation to be added later with signup/login
+function log_out() {
+
+}

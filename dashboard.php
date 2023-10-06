@@ -8,9 +8,10 @@
 </head>
 <body onload="set(new Date())">
     <div class="banner">
-        <p class="wel">Welcome back, </p>
+        <p class="wel" id="user">Welcome back, </p>
     </div>
-    <button type="button" class="back">Log Out</button>
+
+    <button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
 
     <div class="main">
         <div class="main_banner">
@@ -21,8 +22,6 @@
         <button type="button" class="button2" onclick="dayUpdate(1)">></button>
         <div id="cards"></div>
     </div>
-
-
 
     <div class="year">
         <div>
@@ -45,7 +44,13 @@
             <button type="button" class="row6" id="Nov" onclick="monthUpdate('Nov')">Nov</button>
             <button type="button" class="row6" id="Dec" onclick="monthUpdate('Dec')">Dec</button>
         </div>
-
     </div>
+
+    <div id="exit" class="pop" hidden="hidden">
+        <p>Are you sure you want to log out?</p>
+        <button type="button" onclick="disp(false)" class="opt">Cancel</button>
+        <button type="button" onclick="log_out()" class="opt">Log Out</button>
+    </div>
+
 </body>
 </html>

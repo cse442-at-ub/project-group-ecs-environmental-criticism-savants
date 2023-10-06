@@ -248,3 +248,28 @@ body {
     top: -22vh;
     font-size: 30%;
 }
+
+.pop {
+    position: relative;
+    width: 18vw;
+    height: 20vh;
+    top: -17vh;
+    left: 81vw;
+    background: #868686;
+    border-radius: 1vw;
+    color: #E5E5E5;
+    font-size: 30%;
+    text-align: center;
+}
+
+.opt {
+    position: relative;
+    width: 8vw;
+    height: 7vh;
+    border-radius: .5vw;
+    font-weight: bold;
+    top: -1vh;
+    background-color: #E5E5E5;
+    font-size: 80%;
+    border-color: transparent;
+}
