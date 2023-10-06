@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Log In</title>
+    <script src="registering.js"></script>
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
 <body>
@@ -32,9 +33,10 @@
     </div>
 
     <div>
-        <button type="button" class="next">log in</button>
+        <button type="button" class="next" onclick="log()">log in</button>
     </div>
 </div>
+
 
 </body>
 </html>
