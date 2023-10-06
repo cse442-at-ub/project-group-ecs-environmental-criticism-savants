@@ -6,7 +6,7 @@
     <script src="dashboard.js"></script>
     <link rel="stylesheet" type="text/css" href="dash.css"/>
 </head>
-<body onload="set(new Date())">
+<body onload="page_load()">
     <div class="banner">
         <p class="wel" id="user">Welcome back, </p>
     </div>

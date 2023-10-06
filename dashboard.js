@@ -1,3 +1,21 @@
+//Loads essential items when page loads
+function page_load(){
+    set(new Date);
+    load_tasks();
+    load_name();
+}
+
+//Loads in all task cards associated with the user
+function load_tasks(){
+
+}
+
+//Set's the useres name in the page banner
+function load_name() {
+    let well = document.getElementById("user");
+    well.innerHTML = well.innerHTML + "user";
+}
+
 // Sets the day and year elements, highlights the correct month when dashboard.php loads
 function set(time) {
     let date = time.toDateString().split(' ');
@@ -14,6 +32,7 @@ function yearUpdate(cur){
     let up = parseInt(el.innerHTML) + cur;
     var day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + up;
+    document.getElementById(day.split(" ")[0]).style.background = "#E5E5E5";
     set(new Date(day));
 }
 
