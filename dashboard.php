@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savant</title>
     <script src="dashboard.js"></script>
     <link rel="stylesheet" type="text/css" href="dash.css" />
@@ -24,13 +25,13 @@
     </div>
 
     <div class="year">
-        <div>
+        <div class="format">
             <div class="year_date" id="year"></div>
             <button type="button" class="button3" onclick="yearUpdate(-1)"><</button>
             <button type="button" class="button4" onclick="yearUpdate(1)">></button>
         </div>
 
-        <div>
+        <div class="format">
             <button type="button" class="row1" id="Jan" onclick="monthUpdate('Jan')">Jan</button>
             <button type="button" class="row1" id="Feb" onclick="monthUpdate('Feb')">Feb</button>
             <button type="button" class="row2" id="Mar" onclick="monthUpdate('Mar')">Mar</button>
@@ -44,6 +45,7 @@
             <button type="button" class="row6" id="Nov" onclick="monthUpdate('Nov')">Nov</button>
             <button type="button" class="row6" id="Dec" onclick="monthUpdate('Dec')">Dec</button>
         </div>
+
     </div>
 
     <div id="exit" class="pop" hidden="hidden">

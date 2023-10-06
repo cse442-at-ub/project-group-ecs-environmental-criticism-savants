@@ -1,9 +1,12 @@
 body {
-    background: #E5E5E5;
     font-size: 6vw;
+    width: 100%;
+    margin: auto;
     font-family: Jomhuria, sans-serif ;
+    background: #E5E5E5;
     font-weight: bold;
 }
+
 
 .banner {
     width: 101%;
@@ -26,15 +29,15 @@ body {
 }
 
 .back {
-    position: relative;
-    width: 8vw;
+    position: absolute;
+    width: 8%;
     height: 6vh;
     background-color: #E5E5E5;
     color: black;
-    font-size: 25%;
+    font-size: 23%;
     border-radius: 1vw;
-    top: -6.3vh;
-    left: 91vw;
+    top: 1.5%;
+    left: 91%;
     font-weight: bolder;
     text-align: center;
     border-color: transparent;
@@ -42,12 +45,13 @@ body {
 
 .main {
     position: absolute;
-    width: 70vw;
-    height: 75vh;
+    width: 70%;
+    height: 75%;
     background-color: #80B4F0;
-    left: 2.5vw;
+    left: 2.5%;
     top: 22vh;
     border-radius: 2vw;
+    font-size: 100%;
 
 }
 
@@ -70,54 +74,62 @@ body {
 }
 
 .day {
-    position: relative;
+    position: absolute;
     background-color: #E5E5E5;
     border: .5vh solid #2867C6;
     color: black;
     font-size: 30%;
     text-align: center;
-    top: -23vh;
+    top: -12.5%;
     width: 22%;
     left: 38%;
     border-radius: 1vw;
-    height: 4vh;
+    height: 6%;
 }
 
 .button1 {
-    position: relative;
-    top: -35.5vh;
-    height: 4vh;
-    width: 3vw;
+    position: absolute;
+    top: -11.5%;
+    height: 5%;
+    width: 4%;
     border-radius: 0.5vw;
     border: .5vh solid #2867C6;
     background-color: #E5E5E5;
-    left: 21vw;
+    left: 29%;
     font-weight: bolder;
     text-align: center;
+    font-size: 15%;
 }
 
 .button2 {
-    position: relative;
-    top: -35.5vh;
-    height: 4vh;
-    width: 3vw;
+    position: absolute;
+    top: -11.5%;
+    height: 5%;
+    width: 4%;
     border-radius: 0.5vw;
     border: .5vh solid #2867C6;
     background-color: #E5E5E5;
-    left: 40.5vw;
+    left: 66%;
     font-weight: bolder;
     text-align: center;
+    font-size: 15%;
 }
 
 .year{
     position: absolute;
-    width: 22vw;
+    width: 22%;
     height: 85vh;
     background: #2867C6;
-    left: 75.5vw;
+    left: 75.5%;
     top: 12vh;
     border-radius: 2vw;
     overflow-y: hidden;
+}
+
+
+.format {
+    width: 100%;
+    height: 100%;
 }
 
 .year_date {
@@ -126,126 +138,128 @@ body {
     color: black;
     background: #E5E5E5;
     font-size: 30%;
-    top: 2vh;
+    top: 3%;
     width:30%;
-    height: 4vh;
+    height: 5%;
     left:35%;
     border-radius: .5vw;
 
 }
 .button3 {
-    position: relative;
-    top: -10vh;
-    height: 4vh;
+    position: absolute;
+    height: 5%;
     width: 15%;
     border-color: transparent;
     border-radius: 0.5vw;
     background-color: #E5E5E5;
     left: 15%;
+    top: 3%;
     font-weight: bolder;
     text-align: center;
+    font-size: 20%;
 }
 
 .button4 {
-    position: relative;
-    top: -10vh;
-    height: 4vh;
+    position: absolute;
+    height:5%;
     width: 15%;
     border-color: transparent;
     border-radius: 0.5vw;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
-    left: 48%;
+    left: 70%;
+    top:3%;
+    font-size: 20%;
 }
 
 .row1 {
     position: relative;
     width: 40%;
-    height: 10vh;
+    height: 12%;
     border: .5vh solid #80B4F0;
     color: #2867C6;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
-    left: 1.5vw;
-    top: -12vh;
+    left: 7%;
+    top: -95%;
     font-size: 30%;
 }
 
 .row2 {
     position: relative;
     width: 40%;
-    height: 10vh;
+    height: 12%;
     border: .5vh solid #80B4F0;
     color: #2867C6;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
-    left: 1.5vw;
-    top: -14vh;
+    left: 7%;
+    top: -97%;
     font-size: 30%;
 }
 
 .row3 {
     position: relative;
     width: 40%;
-    height: 10vh;
+    height: 12%;
     border: .5vh solid #80B4F0;
     color: #2867C6;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
-    left: 1.5vw;
-    top: -16vh;
+    left: 7%;
+    top: -99%;
     font-size: 30%;
 }
 
 .row4 {
     position: relative;
     width: 40%;
-    height: 10vh;
+    height: 12%;
     border: .5vh solid #80B4F0;
     color: #2867C6;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
-    left: 1.5vw;
-    top: -18vh;
+    left: 7%;
+    top: -101%;
     font-size: 30%;
 }
 
 .row5 {
     position: relative;
     width: 40%;
-    height: 10vh;
+    height: 12%;
     border: .5vh solid #80B4F0;
     color: #2867C6;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
-    left: 1.5vw;
-    top: -20vh;
+    left: 7%;
+    top: -103%;
     font-size: 30%;
 }
 
 .row6 {
     position: relative;
     width: 40%;
-    height: 10vh;
+    height: 12%;
     border: .5vh solid #80B4F0;
     color: #2867C6;
     background-color: #E5E5E5;
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
-    left: 1.5vw;
-    top: -22vh;
+    left: 7%;
+    top: -105%;
     font-size: 30%;
 }
 

@@ -7,10 +7,10 @@ function page_load(){
 
 //Loads in all task cards associated with the user
 function load_tasks(){
-    //Functionality comming in sprint 3
+    //Functionality coming in sprint 3
 }
 
-//Set's the useres name in the page banner
+//Set's the users name in the page banner
 function load_name() {
     let well = document.getElementById("user");
     well.innerHTML = well.innerHTML + "user";
@@ -30,11 +30,11 @@ function set(time) {
 function yearUpdate(cur){
     const el = document.getElementById("year");
     let up = parseInt(el.innerHTML) + cur;
-    var day = document.getElementById("day").innerHTML.slice(5);
+    let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + up;
     let mon = day.split(" ")[0]
     document.getElementById(mon).style.background = "#E5E5E5";
-    let time = monthoverflow(new Date(day), mon);
+    let time = monthOverflow(new Date(day), mon);
     set(time);
 }
 
@@ -44,30 +44,30 @@ function monthUpdate (cur) {
     let year = document.getElementById("year").innerHTML;
     document.getElementById(day[0]).style.background = "#E5E5E5";
     let date = cur + " " + day[1] + " " + year;
-    let time = monthoverflow(new Date(date),cur);
+    let time = monthOverflow(new Date(date),cur);
     set(time);
 }
 
 //ensures that changing months/year never has an overflow (31->30, leapyear->not)
-function monthoverflow(time, mon) {
-    var ret = time;
-    var cur = ret.toDateString().split(" ")[1];
-    while (mon != cur) {
+function monthOverflow(time, mon) {
+    let ret = time;
+    let cur = ret.toDateString().split(" ")[1];
+    while (mon !== cur) {
         ret.setDate(ret.getDate()+ -1)
         cur = ret.toDateString().split(" ")[1];
     }
     return ret;
 }
 
-// Inrements or decreases date
+// Increments or decreases date
 function dayUpdate(cur) {
-    var day = document.getElementById("day").innerHTML.slice(5);
+    let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + document.getElementById("year").innerHTML;
     let date = new Date(day);
     let month1 = date.toDateString().split(' ')[1];
     date.setDate(date.getDate()+ cur)
     let month2 = date.toDateString().split(' ')[1];
-    if (month1 != month2) {
+    if (month1 !== month2) {
         document.getElementById(month1).style.background = "#E5E5E5";
     }
     set(date);
@@ -84,7 +84,7 @@ function disp(state) {
     }
 }
 
-//Implamentation to be added later with signup/login
+//Implementation to be added later with signup/login
 function log_out() {
 
 }
