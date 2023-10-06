@@ -1,13 +1,13 @@
 //Loads essential items when page loads
 function page_load(){
-    set(new Date);
     load_tasks();
     load_name();
+    set(new Date);
 }
 
 //Loads in all task cards associated with the user
 function load_tasks(){
-
+    //Functionality comming in sprint 3
 }
 
 //Set's the useres name in the page banner
@@ -32,8 +32,10 @@ function yearUpdate(cur){
     let up = parseInt(el.innerHTML) + cur;
     var day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + up;
-    document.getElementById(day.split(" ")[0]).style.background = "#E5E5E5";
-    set(new Date(day));
+    let mon = day.split(" ")[0]
+    document.getElementById(mon).style.background = "#E5E5E5";
+    let time = monthoverflow(new Date(day), mon);
+    set(time);
 }
 
 // Changes the current month based off of which month was selected
@@ -42,7 +44,19 @@ function monthUpdate (cur) {
     let year = document.getElementById("year").innerHTML;
     document.getElementById(day[0]).style.background = "#E5E5E5";
     let date = cur + " " + day[1] + " " + year;
-    set(new Date(date));
+    let time = monthoverflow(new Date(date),cur);
+    set(time);
+}
+
+//ensures that changing months/year never has an overflow (31->30, leapyear->not)
+function monthoverflow(time, mon) {
+    var ret = time;
+    var cur = ret.toDateString().split(" ")[1];
+    while (mon != cur) {
+        ret.setDate(ret.getDate()+ -1)
+        cur = ret.toDateString().split(" ")[1];
+    }
+    return ret;
 }
 
 // Inrements or decreases date

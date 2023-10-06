@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Savant</title>
     <script src="dashboard.js"></script>
-    <link rel="stylesheet" type="text/css" href="dash.css"/>
+    <link rel="stylesheet" type="text/css" href="dash.css" />
 </head>
 <body onload="page_load()">
     <div class="banner">
@@ -13,7 +13,7 @@
 
     <button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
 
-    <div class="main">
+    <div class="main" id="main">
         <div class="main_banner">
             <p class="view">Card View</p>
         </div>
