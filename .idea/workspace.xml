@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="061eafc2-024a-4b39-a987-53dd123a6a46" name="Changes" comment="Small tweaks">
+      <change afterPath="$PROJECT_DIR$/dashboard.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="task-dashboard" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2W5W5FgAd9KbmUgQrRM5DOajUN6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "credentialsType com.jetbrains.php.remote.interpreter.ui.PhpCreateRemoteSdkForm": "SSH Configuration",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/xampp/php/php.exe",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="061eafc2-024a-4b39-a987-53dd123a6a46" name="Changes" comment="" />
+      <created>1696022735904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696022735904</updated>
+      <workItem from="1696022738170" duration="11813000" />
+      <workItem from="1696034590220" duration="54000" />
+      <workItem from="1696105900315" duration="1989000" />
+      <workItem from="1696108721268" duration="567000" />
+      <workItem from="1696111620544" duration="1293000" />
+      <workItem from="1696312566378" duration="116000" />
+      <workItem from="1696312689734" duration="4677000" />
+      <workItem from="1696372936347" duration="3784000" />
+      <workItem from="1696450309155" duration="151000" />
+      <workItem from="1696450469316" duration="307000" />
+      <workItem from="1696450785575" duration="11782000" />
+      <workItem from="1696540889857" duration="8455000" />
+      <workItem from="1696552009500" duration="518000" />
+      <workItem from="1696552557104" duration="7696000" />
+      <workItem from="1696802502020" duration="514000" />
+      <workItem from="1696805767003" duration="250000" />
+      <workItem from="1696993315405" duration="542000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fixed the scaling issue">
+      <option name="closed" value="true" />
+      <created>1696028292684</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696028292684</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed the scaling issue">
+      <option name="closed" value="true" />
+      <created>1696033977430</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696033977430</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed the overflow issue">
+      <option name="closed" value="true" />
+      <created>1696106280309</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696106280309</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed drop shadow">
+      <option name="closed" value="true" />
+      <created>1696107212844</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696107212844</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed welcome">
+      <option name="closed" value="true" />
+      <created>1696108759935</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696108759935</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fixed item spacing">
+      <option name="closed" value="true" />
+      <created>1696109227965</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696109227965</updated>
+    </task>
+    <task id="LOCAL-00007" summary="cleaning up some messy code">
+      <option name="closed" value="true" />
+      <created>1696316389876</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696316389876</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed white flash">
+      <option name="closed" value="true" />
+      <created>1696450399000</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696450399001</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Basic body elements">
+      <option name="closed" value="true" />
+      <created>1696456114254</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696456114254</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Basic body elements: year">
+      <option name="closed" value="true" />
+      <created>1696467696305</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696467696305</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added date changing functionality">
+      <option name="closed" value="true" />
+      <created>1696549466427</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696549466427</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added basic log out functionality">
+      <option name="closed" value="true" />
+      <created>1696551866398</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1696551866398</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Fixed the &quot;leap year&quot; problem">
+      <option name="closed" value="true" />
+      <created>1696553847289</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696553847289</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Small tweaks">
+      <option name="closed" value="true" />
+      <created>1696560188486</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1696560188486</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed the scaling issue" />
+    <MESSAGE value="Fixed the overflow issue" />
+    <MESSAGE value="Fixed drop shadow" />
+    <MESSAGE value="Fixed welcome" />
+    <MESSAGE value="Fixed item spacing" />
+    <MESSAGE value="cleaning up some messy code" />
+    <MESSAGE value="Fixed white flash" />
+    <MESSAGE value="Basic body elements" />
+    <MESSAGE value="Basic body elements: year" />
+    <MESSAGE value="Added date changing functionality" />
+    <MESSAGE value="Added basic log out functionality" />
+    <MESSAGE value="Fixed the &quot;leap year&quot; problem" />
+    <MESSAGE value="Small tweaks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small tweaks" />
+  </component>
+</project>
