@@ -13,7 +13,7 @@ function log(){
         document.getElementById("dash").removeAttribute("hidden");
         document.getElementById("dash-button").removeAttribute("hidden");
     }else{
-        document.getElementById("bad").removeAttribute("hidden");
+        document.getElementById("bad-name").removeAttribute("hidden");
         document.getElementById("bad-button").removeAttribute("hidden");
     }
 }

@@ -42,7 +42,7 @@
         <script type="text/javascript">
             function nav(){window.location.href = "dashboard.php";}
         </script>
-        <div class="pop-text" id="bad" hidden="hidden"><br>Username or Password was incorrect</div>
+        <div class="pop-text" id="bad-name" hidden="hidden"><br>Username or Password was incorrect</div>
         <button type="button" id="bad-button" class="pop" hidden="hidden" onclick="hide()">Retry</button>
 
     </div>
