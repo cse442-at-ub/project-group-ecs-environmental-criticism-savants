@@ -1,0 +1,90 @@
+
+body {
+    background-color:#E5E5E5;
+    font-family: Jomhuria, sans-serif;
+    font-size: 6vw;
+
+}
+
+.wel {
+    color:rgba(0, 0, 0, 1);
+    position:absolute;
+    left: 17%;
+    width: 66%;
+    margin: auto;
+    top: 12vh;
+    font-weight: bold;;
+    text-align:center;
+    font-size:120%;
+}
+
+.banner {
+    width: 101%;
+    height: 11vh;
+    position: fixed;
+    margin: auto;
+    top: -2vh;
+    left: -1vw;
+    background-color: #2867C6;
+    overflow-x: hidden;
+
+}
+
+.side-box {
+    background-color:#80B4F0;
+    height: 50%;
+    width: 40%;
+    position:absolute;
+    border-radius: 6vh;
+    left:5%;
+    top:35vh;
+    color:rgba(255, 255, 255, 1);
+    font-weight: bold;
+}
+.intro {
+    height:6vh;
+    position:absolute;
+    left: 3%;
+    top:10%;
+    text-align:left;
+    font-size:38%;
+}
+
+.list {
+    left: 2vw;
+    position:absolute;
+    top:10vh;
+    width: 80%;
+    height: 30vh;
+    text-align:left;
+    font-size:35%;
+}
+
+.create {
+    background-color:#2867C6;
+    border: #2867C6;
+    height:17vh;
+    position:absolute;
+    border-radius: 6vh;
+    color:white;
+    text-align: center;
+    font-size:40%;
+    width: 40vw;
+    left: 55vw;
+    top: 38vh;
+}
+
+.log {
+    border: #2867C6;
+    background-color:#2867C6;
+    height:17vh;
+    position:absolute;
+    border-radius: 6vh;
+    color:white;
+    text-align: center;
+    font-size:40%;
+    width: 40vw;
+    left: 55vw;
+    top: 64vh;
+}
+
