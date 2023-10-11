@@ -138,8 +138,9 @@ body {
 
 .pop-text {
     position: relative;
-    font-size: 70%;
+    font-size: 58%;
     color: #E5E5E5;
     text-align: center;
-    top: 5vh;
+    top: 1vh;
+    margin-top: 2vh;
 }

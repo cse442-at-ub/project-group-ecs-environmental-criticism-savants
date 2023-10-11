@@ -37,12 +37,12 @@
     </div>
 
     <div id="pop-up" class="pop-up" hidden="hidden">
-        <div class="pop-text" id="dash" hidden="hidden">Click below to navigate to your dashboard</div>
+        <div class="pop-text" id="dash" hidden="hidden">You have been logged in <br><br> click below to navigate to your dashboard</div>
         <button type="button" id="dash-button" class="pop" hidden="hidden" onclick="nav()">Dashboard</button>
         <script type="text/javascript">
             function nav(){window.location.href = "dashboard.php";}
         </script>
-        <div class="pop-text" id="bad" hidden="hidden">Username or Password was incorrect</div>
+        <div class="pop-text" id="bad" hidden="hidden"><br>Username or Password was incorrect</div>
         <button type="button" id="bad-button" class="pop" hidden="hidden" onclick="hide()">Retry</button>
 
     </div>
