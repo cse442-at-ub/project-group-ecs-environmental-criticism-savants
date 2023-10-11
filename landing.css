@@ -8,7 +8,9 @@ body {
 
 .wel {
     color:rgba(0, 0, 0, 1);
-    position:relative;
+    position:absolute;
+    left: 17%;
+    width: 66%;
     margin: auto;
     top: 12vh;
     font-weight: bold;;
@@ -33,14 +35,14 @@ body {
     height: 50%;
     width: 40%;
     position:absolute;
-    border-radius: 45px;
+    border-radius: 6vh;
     left:5%;
     top:35vh;
     color:rgba(255, 255, 255, 1);
     font-weight: bold;
 }
 .intro {
-    height:60px;
+    height:6vh;
     position:absolute;
     left: 3%;
     top:10%;
@@ -49,10 +51,11 @@ body {
 }
 
 .list {
-    left: 3%;
+    left: 2vw;
     position:absolute;
-    top:100px;
-    width: 90%;
+    top:10vh;
+    width: 80%;
+    height: 30vh;
     text-align:left;
     font-size:35%;
 }
@@ -61,27 +64,27 @@ body {
     background-color:#2867C6;
     border: #2867C6;
     height:17vh;
-    position:relative;
-    border-radius: 45px;
+    position:absolute;
+    border-radius: 6vh;
     color:white;
     text-align: center;
     font-size:40%;
     width: 40vw;
     left: 55vw;
-    top: 21vh;
+    top: 38vh;
 }
 
 .log {
     border: #2867C6;
     background-color:#2867C6;
     height:17vh;
-    position:relative;
-    border-radius: 45px;
+    position:absolute;
+    border-radius: 6vh;
     color:white;
     text-align: center;
     font-size:40%;
     width: 40vw;
     left: 55vw;
-    top: 29vh;
+    top: 64vh;
 }
 

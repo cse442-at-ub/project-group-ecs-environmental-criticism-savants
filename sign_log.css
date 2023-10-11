@@ -19,7 +19,7 @@ body {
 }
 
 .main {
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow:0 .5vw .5vw rgba(0, 0, 0, 0.25);
     background-color:#80B4F0;
     width: 46vw;
     height: 60vh;
@@ -27,7 +27,7 @@ body {
     position: fixed;
     left: 27vw;
     top: 25vh;
-    border-radius:45px;
+    border-radius:6vh;
 }
 
 .title {
@@ -60,8 +60,8 @@ body {
     margin: auto;
     position: relative;
     text-align: left;
-    text-indent: 5px;
-    border-radius: 30px;
+    text-indent: 1vw;
+    border-radius: 3.5vh;
     color: white;
     font-size: 140%;
     width:38vw;
@@ -75,6 +75,8 @@ body {
     border: black;
     left: 4vw;
     top: -1vh;
+    width:10vw;
+    height: 4vh;
     color: white;
     font-size: 35%;
     text-align:left;
@@ -83,6 +85,8 @@ body {
 .pass {
     position: absolute;
     border: black;
+    width:10vw;
+    height: 4vh;
     left: 4vw;
     top: 20vh;
     color: white;
@@ -91,13 +95,13 @@ body {
 }
 
 .next {
-    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow:0 .5vw .5vw rgba(0, 0, 0, 0.25);
     background-color:#2867C6;
     border: #2867C6;
     width:38vw;
     height: 12vh;
     position:absolute;
-    border-radius: 45px;
+    border-radius: 6vh;
     left: 4vw;
     top: 45vh;
     text-align:center;
