@@ -32,8 +32,20 @@
     </div>
 
     <div>
-        <button type="button" class="next">create account</button>
+        <button type="button" class="next" onclick="sign()">create account</button>
     </div>
+
+    <div id="pop-up" class="pop-up" hidden="hidden">
+        <div class="pop-text" id="dash" hidden="hidden">Click below to navigate to your dashboard</div>
+        <button type="button" id="dash-button" class="pop" hidden="hidden" onclick="nav()">Dashboard</button>
+        <script type="text/javascript">
+            function nav(){window.location.href = "dashboard.php";}
+        </script>
+        <div class="pop-text" id="bad" hidden="hidden">Username or Password was incorrect</div>
+        <button type="button" id="bad-button" class="pop" hidden="hidden" onclick="hide()">Retry</button>
+
+    </div>
+
 </div>
 
 </body>
