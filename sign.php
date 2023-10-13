@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <script src="registering.js"></script>
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
 <body>
@@ -32,8 +33,21 @@
     </div>
 
     <div>
-        <button type="button" class="next">create account</button>
+        <button type="button" class="next" onclick="sign()">create account</button>
     </div>
+
+    <div id="pop-up" class="pop-up" hidden="hidden">
+        <div class="pop-text" id="dash" hidden="hidden">Click below to navigate to your dashboard</div>
+        <button type="button" id="dash-button" class="pop" hidden="hidden" onclick="nav()">Dashboard</button>
+        <script type="text/javascript">
+            function nav(){window.location.href = "dashboard.php";}
+        </script>
+        <div class="pop-text" id="bad-name" hidden="hidden">Username is already in use</div>
+        <div class="pop-text" id="bad-pass" hidden="hidden">Password was incorrect<br> must have no spaces and be at least 8 characters long</div>
+        <button type="button" id="bad-button" class="pop" hidden="hidden" onclick="hide()">Retry</button>
+
+    </div>
+
 </div>
 
 </body>

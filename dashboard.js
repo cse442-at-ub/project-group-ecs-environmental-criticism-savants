@@ -13,7 +13,7 @@ function load_tasks(){
 //Set's the users name in the page banner
 function load_name() {
     let well = document.getElementById("user");
-    well.innerHTML = well.innerHTML + "user";
+    well.innerHTML = well.innerHTML + localStorage.getItem("user");
 }
 
 // Sets the day and year elements, highlights the correct month when dashboard.php loads
@@ -26,7 +26,7 @@ function set(time) {
     document.getElementById(date[1]).style.background = "#80B4F0"
 }
 
-// Increments or decreases the year elements on click
+// Increments or decreases the year elements on click, calls set to update
 function yearUpdate(cur){
     const el = document.getElementById("year");
     let up = parseInt(el.innerHTML) + cur;
@@ -38,7 +38,7 @@ function yearUpdate(cur){
     set(time);
 }
 
-// Changes the current month based off of which month was selected
+// Changes the current month based off of which month was selected, calls set to update
 function monthUpdate (cur) {
     let day = document.getElementById("day").innerHTML.slice(5).split(" ");
     let year = document.getElementById("year").innerHTML;
@@ -59,7 +59,7 @@ function monthOverflow(time, mon) {
     return ret;
 }
 
-// Increments or decreases date
+// Increments or decreases date, calls set to update
 function dayUpdate(cur) {
     let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + document.getElementById("year").innerHTML;
@@ -74,7 +74,7 @@ function dayUpdate(cur) {
 }
 
 
-
+//Open/closes the log out pop-up
 function disp(state) {
     let pop = document.getElementById("exit");
     if (state) {
@@ -84,7 +84,14 @@ function disp(state) {
     }
 }
 
-//Implementation to be added later with signup/login
+// Logs out of the page and returns user to the log out page
 function log_out() {
+    //* functionality should be added here that destroys the login token, if it exists
+    window.location.href = "log.php";
+}
 
+//* there needs to be a function here the conintuosly checks for a valid login token,
+//* If there is no token then dashbaord should exit to the log in page
+function validCheck(){
+    window.location.href = "log.php";
 }
