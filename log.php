@@ -12,26 +12,23 @@
     <div  class="title">Log In</div>
 
     <div>
-        <button type="button" value="create page" onclick="sign_page()" class="wrong">don't have an account?<br>click here to sign up</button>
+        <button type="button" onclick="nav('sign.php')" class="wrong">don't have an account?<br>click here to sign up</button>
     </div>
-    <script type="text/JavaScript">
-        function sign_page() {window.location.href = "dashboard.php";}
-    </script>
-    <form name="form" action="dashboard.php" method="POST">
+
+
+    <form name="form" action="mid.php" method="POST">
         <label>
-            <input type="text" id="username" name="username" class="text" value="" placeholder="username">
+            <input type="text" id="username" name="username" class="text-1" value="" placeholder="username" required>
 
-            <input type="password" id="password" name="password" class="text" value="" placeholder="password">
+            <input type="password" id="password" name="password" class="text-1" value="" placeholder="password" required>
 
-            <input type="password" id="repassword" name="repassword" class="text" value="" placeholder="re-enter password">
+            <input type="text" value="log" id="here" name="here" hidden="hidden">
 
             <input type="submit" class="next" value="log in">
         </label>
     </form>
 
 </div>
-
-
 </body>
 </html>
 

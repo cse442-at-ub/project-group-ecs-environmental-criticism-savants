@@ -69,30 +69,21 @@ body {
     left: 4vw;
 }
 
-.user {
-    position: absolute;
-    border: black;
-    left: 4vw;
-    top: -1vh;
-    width:10vw;
-    height: 4vh;
+.text-1 {
+    background-color:#4D698A;
+    border: #4D698A;
+    position: relative;
+    text-align: left;
+    text-indent: 1vw;
+    border-radius: 3.5vh;
     color: white;
-    font-size: 35%;
-    text-align:left;
-}
-
-.pass {
-    position: absolute;
-    border: black;
-    width:10vw;
-    height: 4vh;
+    font-size: 50%;
+    width:38vw;
+    height: 12vh;
+    top: -12vh;
+    margin-top: 5vh;
     left: 4vw;
-    top: 20vh;
-    color: white;
-    font-size: 35%;
-    text-align:left;
 }
-
 .next {
     box-shadow:0 .5vw .5vw rgba(0, 0, 0, 0.25);
     background-color:#2867C6;
