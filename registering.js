@@ -4,7 +4,7 @@ function log(){
     let user = document.getElementById("username");
     let pass = document.getElementById("password");
     let username = user.value; let password = pass.value;
-    user.value = ""; pass.value = "";
+  //  user.value = ""; pass.value = "";
     let valid = userCheck(username, password);
     document.getElementById("pop-up").removeAttribute("hidden");
     if (valid){

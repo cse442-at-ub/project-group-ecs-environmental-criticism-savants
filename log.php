@@ -15,39 +15,24 @@
         <button type="button" value="create page" onclick="sign_page()" class="wrong">don't have an account?<br>click here to sign up</button>
     </div>
     <script type="text/JavaScript">
-        function sign_page() {window.location.href = "sign.php";}
+        function sign_page() {window.location.href = "dashboard.php";}
     </script>
-
-    <div class="user">
-        <p>Username:</p>
+    <form name="form" action="dashboard.php" method="POST">
         <label>
-            <input type="text" id="username" class="text">
+            <input type="text" id="username" name="username" class="text" value="" placeholder="username">
+
+            <input type="password" id="password" name="password" class="text" value="" placeholder="password">
+
+            <input type="password" id="repassword" name="repassword" class="text" value="" placeholder="re-enter password">
+
+            <input type="submit" class="next" value="log in">
         </label>
-    </div>
+    </form>
 
-    <div class="pass">
-        <p>Password:</p>
-        <label>
-            <input type="text" id="password" class="text">
-        </label>
-    </div>
-
-    <div>
-        <button type="button" class="next" onclick="log()">log in</button>
-    </div>
-
-    <div id="pop-up" class="pop-up" hidden="hidden">
-        <div class="pop-text" id="dash" hidden="hidden">Click below to navigate to your dashboard</div>
-        <button type="button" id="dash-button" class="pop" hidden="hidden" onclick="nav()">Dashboard</button>
-        <script type="text/javascript">
-            function nav(){window.location.href = "dashboard.php";}
-        </script>
-        <div class="pop-text" id="bad" hidden="hidden">Username or Password was incorrect</div>
-        <button type="button" id="bad-button" class="pop" hidden="hidden" onclick="hide()">Retry</button>
-
-    </div>
 </div>
 
 
 </body>
 </html>
+
+

@@ -57,17 +57,16 @@ body {
 .text {
     background-color:#4D698A;
     border: #4D698A;
-    margin: auto;
     position: relative;
     text-align: left;
     text-indent: 1vw;
     border-radius: 3.5vh;
     color: white;
-    font-size: 140%;
+    font-size: 50%;
     width:38vw;
     height: 9vh;
-    top: -2vh;
-
+    top: -12vh;
+    left: 4vw;
 }
 
 .user {
