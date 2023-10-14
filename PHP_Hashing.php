@@ -11,7 +11,7 @@ function GetUserInputSignLog()
 {
     if(isset($_POST['username'])) $username = $_POST['username'];
     if (isset($_POST['password'])) $password = $_POST['password'];
-    echo $password; //printing retrieved password to stdout for verification
+    echo $password; //printing retrieved password to stdout for verification purposes
     echo $username;
 }
 //Safety call of the function to try to ensure that username/password isn't blank when we want to use it.
@@ -36,16 +36,17 @@ function VerifyExistingPassword ($User, $Pass): bool {
     //verify the username exists in DataBase
     //if it doesn't, error, user doesn't exist
     //else, pass the stored hashed password as $hashed_password) and $Pass as $password for password_verify
+    $UserExists = password_verify($Pass); // $(RETRIEVED PASSWORD HASH STORED IN DATABASE) //); PASSWORD_VERIFY IS MISSING A PARAMETER, REMEMBER TO ADJUST PROPER WHEN IMPLEMENTING FULLY
     //if false, error, wrong password
     //else correct user and password, log in the user.
     //close database connection
-}
+}  
 
 //Function which will take a username and password during sign in and store them
 //into the database to save users
 function StoreUserDataSignLog ($User, $Pass) {
     //use password_hash function to salt and hash the password
-
+    $encryptedPassword = password_hash($Pass, PASSWORD_DEFAULT);
     //connect to database
     //store the username in the respective column
     //store the password in the respective column
