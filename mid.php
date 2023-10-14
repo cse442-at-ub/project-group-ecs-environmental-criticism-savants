@@ -5,6 +5,7 @@
     $user = $_POST["username"];
     $passwd = $_POST["password"];
     $type = $_POST["here"];
+
     if ($type == "log") {
         //validation of username and password would go here, for when a user logs in
         $valid = strlen($passwd) >= 8;
@@ -24,17 +25,17 @@
         //Validation of sign up information should happen here
         $result = "";
         //if the username is already taken
-        if($result== "taken"){
+        if($result == "taken"){
             $node1 = $dom->getElementById("taken");
             $node2 = $dom->getElementById("back-s");
         }
         // if the passwords do not match
-        else if($result== "match"){
+        else if($result == "match"){
             $node1 = $dom->getElementById("match");
             $node2 = $dom->getElementById("back-s");
         }
         // if the password is too short
-        else if($result== "short"){
+        else if($result == "short"){
             $node1 = $dom->getElementById("short");
             $node2 = $dom->getElementById("back-s");
         }
@@ -44,7 +45,7 @@
             $node2 = $dom->getElementById("back-s");
         }
         // if the password is too long
-        else if($result== "long"){
+        else if($result == "long"){
             $node1 = $dom->getElementById("long");
             $node2 = $dom->getElementById("back-s");
         }
