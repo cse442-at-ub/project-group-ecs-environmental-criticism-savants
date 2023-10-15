@@ -12,42 +12,25 @@
     <div  class="title">Log In</div>
 
     <div>
-        <button type="button" value="create page" onclick="sign_page()" class="wrong">don't have an account?<br>click here to sign up</button>
+        <button type="button" onclick="nav('sign.php')" class="wrong">don't have an account?<br>click here to sign up</button>
     </div>
-    <script type="text/JavaScript">
-        function sign_page() {window.location.href = "sign.php";}
-    </script>
 
-    <div class="user">
-        <p>Username:</p>
+
+    <form name="form" action="mid.php" method="POST">
         <label>
-            <input type="text" id="username" class="text">
+            <input type="text" id="username" name="username" class="text-1" value="" placeholder="username" required>
+
+            <input type="password" id="password" name="password" class="text-1" value="" placeholder="password" required>
+
+            <input type="text" value="log" id="here" name="here" hidden="hidden">
+
+            <input type="submit" class="next" value="log in">
         </label>
-    </div>
+    </form>
 
-    <div class="pass">
-        <p>Password:</p>
-        <label>
-            <input type="text" id="password" class="text">
-        </label>
-    </div>
 
-    <div>
-        <button type="button" class="next" onclick="log()">log in</button>
-    </div>
-
-    <div id="pop-up" class="pop-up" hidden="hidden">
-        <div class="pop-text" id="dash" hidden="hidden">You have been logged in <br><br> click below to navigate to your dashboard</div>
-        <button type="button" id="dash-button" class="pop" hidden="hidden" onclick="nav()">Dashboard</button>
-        <script type="text/javascript">
-            function nav(){window.location.href = "dashboard.php";}
-        </script>
-        <div class="pop-text" id="bad-name" hidden="hidden"><br>Username or Password was incorrect</div>
-        <button type="button" id="bad-button" class="pop" hidden="hidden" onclick="hide()">Retry</button>
-
-    </div>
 </div>
-
-
 </body>
 </html>
+
+

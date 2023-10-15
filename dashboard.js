@@ -1,19 +1,12 @@
 //Loads essential items when page loads
 function page_load(){
     load_tasks();
-    load_name();
     set(new Date);
 }
 
 //Loads in all task cards associated with the user
 function load_tasks(){
     //Functionality coming in sprint 3
-}
-
-//Set's the users name in the page banner
-function load_name() {
-    let well = document.getElementById("user");
-    well.innerHTML = well.innerHTML + localStorage.getItem("user");
 }
 
 // Sets the day and year elements, highlights the correct month when dashboard.php loads
