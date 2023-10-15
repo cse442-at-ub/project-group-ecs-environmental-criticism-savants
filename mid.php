@@ -25,35 +25,14 @@
         //Validation of sign up information should happen here
         $result = "";
         //if the username is already taken
-        if($result == "taken"){
-            $node1 = $dom->getElementById("taken");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if the passwords do not match
-        else if($result == "match"){
-            $node1 = $dom->getElementById("match");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if the password is too short
-        else if($result == "short"){
-            $node1 = $dom->getElementById("short");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if there are spaces in the password/usernames
-        else if($result == "spaces"){
-            $node1 = $dom->getElementById("spaces");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if the password is too long
-        else if($result == "long"){
-            $node1 = $dom->getElementById("long");
-            $node2 = $dom->getElementById("back-s");
+        if($result == "done"){
+            $node2 = $dom->getElementById("next");
         }
         //If all the information is correct and the account was created
         else{
-            $node1 = $dom->getElementById("done");
-            $node2 = $dom->getElementById("next");
+            $node2 = $dom->getElementById("back-s");
         }
+        $node1 = $dom->getElementById($result);
         $node1->removeAttribute("hidden");
         $node2->removeAttribute("hidden");
     }
