@@ -1,22 +1,17 @@
 <?php
-//Removed the include statements since I do not think they are needed
-//If the form action is to send the user here (or anywhere else I think) - since POST is a global variable
-
 //declaration of user input variables for log in/sign up
 $username;
 $password;
 
-//function which will just get the user input (username and password) for log in and sign in
-function GetUserInputSignLog()
-{
-    if(isset($_POST['username'])) $username = $_POST['username'];
-    if (isset($_POST['password'])) $password = $_POST['password'];
-    echo $password; //printing retrieved password to stdout for verification purposes
-    echo $username;
+//When creating an account, this will check for incorrect inputs
+function CheckUsernameAndPassword ($User, $Pass, $rePass) {
+    if (VerifyExistingUsername($User)){return "taken";}
+    else if ($Pass != $rePass) {return "match";}
+    else if (strlen($Pass) < 8) {return "short";}
+    else if (strlen($rePass) > 30) {return "long";}
+    else if (str_contains($User, " ") or str_contains($Pass, " ")) {return "spaces";}
+    else {return "done";}
 }
-//Safety call of the function to try to ensure that username/password isn't blank when we want to use it.
-//(Depending on how other files are implemented, might be able to remove this.
-GetUserInputSignLog();
 
 //This function will check the username on sign in to make sure it exists within the database
 function VerifyExistingUsername($User): bool {
