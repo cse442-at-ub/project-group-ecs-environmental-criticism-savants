@@ -24,11 +24,11 @@
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here
         $result = "";
-        //if the username is already taken
+        //if everything works properly
         if($result == "done"){
             $node2 = $dom->getElementById("next");
         }
-        //If all the information is correct and the account was created
+        //If something goes wrong
         else{
             $node2 = $dom->getElementById("back-s");
         }
