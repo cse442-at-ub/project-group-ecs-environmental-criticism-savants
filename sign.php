@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sign Up</title>
+    <script src="registering.js"></script>
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
 <body>
