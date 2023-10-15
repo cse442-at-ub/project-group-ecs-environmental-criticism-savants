@@ -9,7 +9,7 @@ function CheckUsernameAndPassword ($User, $Pass, $rePass) {
     else if ($Pass != $rePass) {return "match";}
     else if (strlen($Pass) < 8) {return "short";}
     else if (strlen($rePass) > 30) {return "long";}
-    else if (str_contains($User, " ") or str_contains($Pass, " ")) {return "spaces";}
+    else if (strpos($User, " ") != False or strpos($Pass, " ") != False) {return "spaces";}
     else {return "done";}
 }
 
@@ -21,6 +21,7 @@ function VerifyExistingUsername($User): bool {
     //if there is a match, return TRUE
     //else FALSE
     //Close database connection
+    return False;
 }
 
 //Function which will verify when logging in if the password entered matches a user
@@ -35,7 +36,7 @@ function VerifyExistingPassword ($User, $Pass): bool {
     //if false, error, wrong password
     //else correct user and password, log in the user.
     //close database connection
-}  
+}
 
 //Function which will take a username and password during sign in and store them
 //into the database to save users
