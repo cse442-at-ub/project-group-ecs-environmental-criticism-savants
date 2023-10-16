@@ -1,21 +1,7 @@
 <?php
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
-    // Connect to database
-//$host = "oceanus.cse.buffalo.edu"; //e.g., localhost
-//$h_username = "rar38";
-//$h_password = "8By7y3y4c";
-//$database = "users";
 
-//try{
-//    $pdo = new PDO("mysql:host=$host;dbname=$database", $h_username, $h_password);
-//    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//    echo "Successfully connected";
-//}
-//catch (PDOException $e) {
-//    die("Connection to ocean database failed:" . $e->getMessage());
-//}
-    include "PHP_Hashing.php";
     $user = $_POST["username"];
     $passwd = $_POST["password"];
     $type = $_POST["here"];
@@ -37,37 +23,16 @@
     else{
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here
-        $result = CheckUsernameAndPassword($user,$passwd,$repasswd);
-        //if the username is already taken
-        if($result == "taken"){
-            $node1 = $dom->getElementById("taken");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if the passwords do not match
-        else if($result == "match"){
-            $node1 = $dom->getElementById("match");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if the password is too short
-        else if($result == "short"){
-            $node1 = $dom->getElementById("short");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if there are spaces in the password/usernames
-        else if($result == "spaces"){
-            $node1 = $dom->getElementById("spaces");
-            $node2 = $dom->getElementById("back-s");
-        }
-        // if the password is too long
-        else if($result == "long"){
-            $node1 = $dom->getElementById("long");
-            $node2 = $dom->getElementById("back-s");
-        }
-        //If all the information is correct and the account was created
-        else{
-            $node1 = $dom->getElementById("done");
+        $result = "";
+        //if everything works properly
+        if($result == "done"){
             $node2 = $dom->getElementById("next");
         }
+        //If something goes wrong
+        else{
+            $node2 = $dom->getElementById("back-s");
+        }
+        $node1 = $dom->getElementById($result);
         $node1->removeAttribute("hidden");
         $node2->removeAttribute("hidden");
     }
