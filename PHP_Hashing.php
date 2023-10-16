@@ -12,10 +12,10 @@ function CheckUsernameAndPassword ($User, $Pass, $rePass, $conn) {
 //This function will check the username on sign in to make sure it exists within the database
 function VerifyExistingUsername($User, $conn): bool {
     //check where usernames are stored in the database
-    $sql = "SELECT username FROM users WHERE username = '" + $User + "'" ;
+    $sql = "SELECT username FROM users WHERE username = '$User'" ;
     $request = $conn->query($sql);
     //confirm that a username in the DB matches the entered one
-    if (!($request == null)) {
+    if ($request->fetch() != False) {
         //if there is a match, return TRUE
         return True;
     }
@@ -28,12 +28,13 @@ function VerifyExistingUsername($User, $conn): bool {
 //Function which will verify when logging in if the password entered matches a user
 function VerifyExistingPassword ($User, $Pass, $conn): bool {
     //verify the username exists in DataBase
-    if (!VerifyExistingUsername($User, $conn)){
+    if (VerifyExistingUsername($User, $conn)){
         //get hashed password for user
-        $sql  = "SELECT hashedpass FROM users WHERE username = '" + $User +"'";
-        $hashed = $conn->query($sql, PDO::FETCH_DEFAULT);;
+        $sql  = "SELECT hashedpass FROM users WHERE username = '$User'";
+        $hashed = $conn->query($sql);
+        //echo $hashed->fetch(PDO::FETCH_NUM)[0];
         // check if the inputted password matches the hashed
-        if (password_verify($Pass, $hashed[0])) {
+        if (password_verify($Pass, $hashed->fetch(PDO::FETCH_NUM)[0])) {
             return True;
         }
         // else password input is wrong
@@ -52,11 +53,11 @@ function VerifyExistingPassword ($User, $Pass, $conn): bool {
 function StoreUserDataSignUp ($User, $Pass, $conn) {
     //use password_hash function to salt and hash the password
     $encryptedPassword = password_hash($Pass, PASSWORD_DEFAULT);
-    
+
     //store the username in the respective column
     //store the password in the respective column
-    $request = "INSERT INTO users (username, hashedpass) VALUES ('" + $User + "', '" + $encryptedPassword +"')";
-    $conn->exec($request);
+    $request = "INSERT INTO users (username, hashedpass) VALUES ('$User', '$encryptedPassword')";
+    $conn->query($request);
 }
 //some testing statements for PM meeting
 //SELECT username FROM users WHERE username = 'admin'
