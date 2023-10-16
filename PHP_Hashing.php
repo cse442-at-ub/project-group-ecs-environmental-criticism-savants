@@ -1,7 +1,7 @@
 <?php
 //When creating an account, this will check for incorrect inputs
-function CheckUsernameAndPassword ($User, $Pass, $rePass) {
-    if (VerifyExistingUsername($User)){return "taken";}
+function CheckUsernameAndPassword ($User, $Pass, $rePass, $conn) {
+    if (VerifyExistingUsername($User, $conn)){return "taken";}
     else if ($Pass != $rePass) {return "match";}
     else if (strlen($Pass) < 8) {return "short";}
     else if (strlen($rePass) > 30) {return "long";}
@@ -15,7 +15,7 @@ function VerifyExistingUsername($User, $conn): bool {
 
     //check where usernames are stored in the database
     $sql = "SELECT username FROM users WHERE username = '" + $User + "'" ;
-    $request = $conn->exec($sql);
+    $request = $conn->query($sql, PDO::FETCH_DEFAULT);
     //confirm that a username in the DB matches the entered one
     if (!($request == null)) {
         //close database connection
@@ -37,10 +37,10 @@ function VerifyExistingPassword ($User, $Pass, $conn): bool {
     //Connect to database
 
     //verify the username exists in DataBase
-    if (!VerifyExistingUsername($User)){
+    if (!VerifyExistingUsername($User, $conn)){
         //get hashed password for user
-        $request = "SELECT hashedpass FROM users WHERE username = '" + $User +"'";
-        $hashed = $conn->exec($request);
+        $sql  = "SELECT hashedpass FROM users WHERE username = '" + $User +"'";
+        $hashed = $conn->query($sql, PDO::FETCH_DEFAULT);;
         // check if the inputted password matches the hashed
         if (password_verify($Pass, $hashed)) {
             //close database connection
@@ -64,18 +64,22 @@ function VerifyExistingPassword ($User, $Pass, $conn): bool {
 
 //Function which will take a username and password during sign in and store them
 //into the database to save users
-function StoreUserDataSignLog ($User, $Pass, $conn) {
+function StoreUserDataSignUp ($User, $Pass, $conn) {
     //use password_hash function to salt and hash the password
     $encryptedPassword = password_hash($Pass, PASSWORD_DEFAULT);
     //connect to database
 
     //store the username in the respective column
     //store the password in the respective column
-    $request = "INSERT INTO 'users' ('username', 'hashedpass') VALUES ('" + $User + "', '" + $encryptedPassword +"')";
+    $request = "INSERT INTO users (username, hashedpass) VALUES ('" + $User + "', '" + $encryptedPassword +"')";
     $conn->exec($request);
 
     //close database connection
 
 }
+//some testing statements for PM meeting
+//SELECT username FROM users WHERE username = 'admin'
+//SELECT hashedpass FROM users WHERE username = 'admin'
+//INSERT INTO users (username, hashedpass) VALUES ('testuser', 'testHash')
 
 ?>
