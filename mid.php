@@ -1,4 +1,6 @@
 <?php
+    include "PHP_HASHING.php";
+
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
 
@@ -26,19 +28,21 @@
     $host = "127.0.0.1"; // e.g., localhost
     $h_username = "root";
     $h_password = "";
-    $database = "users";
+    $database = "test";
 
     $pdo = get_database_connection($host,$h_username,$h_password,$database);
 
 // -----------------------------------------------------------------------------------------------------------------
 
-$user = $_POST["username"];
+    $user = $_POST["username"];
     $passwd = $_POST["password"];
     $type = $_POST["here"];
 
     if ($type == "log") {
         //validation of username and password would go here, for when a user logs in
-        $valid = strlen($passwd) >= 8;
+        $conn = get_database_connection($host, $h_username, $h_password, $database);
+        $valid = VerifyExistingPassword($user, $passwd, $conn);
+        $conn = null;
         if($valid) {
             $node1 = $dom->getElementById("succ");
             $node2 = $dom->getElementById("next");
@@ -53,10 +57,15 @@ $user = $_POST["username"];
     else{
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here
-        $result = "";
+        $conn = get_database_connection($host, $h_username, $h_password, $database);
+        $result = CheckUsernameAndPassword($user, $passwd, $repasswd, $conn);
+        $conn = null;
         //if everything works properly
         if($result == "done"){
             $node2 = $dom->getElementById("next");
+            $conn = get_database_connection($host, $h_username, $h_password, $database);
+            StoreUserDataSignUp($user, $passwd, $conn);
+            $conn = null;
         }
         //If something goes wrong
         else{
