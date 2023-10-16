@@ -39,7 +39,7 @@ $user = $_POST["username"];
     if ($type == "log") {
         //validation of username and password would go here, for when a user logs in
         $valid = strlen($passwd) >= 8;
-        if($valid) {
+        if($valid) {Ba
             $node1 = $dom->getElementById("succ");
             $node2 = $dom->getElementById("next");
         }else{
