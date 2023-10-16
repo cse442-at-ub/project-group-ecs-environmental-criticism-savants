@@ -10,12 +10,12 @@ function CheckUsernameAndPassword ($User, $Pass, $rePass) {
 }
 
 //This function will check the username on sign in to make sure it exists within the database
-function VerifyExistingUsername($User): bool {
+function VerifyExistingUsername($User, $conn): bool {
     //connect to the database
 
     //check where usernames are stored in the database
     $sql = "SELECT username FROM users WHERE username = '" + $User + "'" ;
-    $request = mysql_query($sql);
+    $request = $conn->exec($sql);
     //confirm that a username in the DB matches the entered one
     if (!($request == null)) {
         //close database connection
@@ -33,14 +33,14 @@ function VerifyExistingUsername($User): bool {
 }
 
 //Function which will verify when logging in if the password entered matches a user
-function VerifyExistingPassword ($User, $Pass): bool {
+function VerifyExistingPassword ($User, $Pass, $conn): bool {
     //Connect to database
 
     //verify the username exists in DataBase
     if (!VerifyExistingUsername($User)){
         //get hashed password for user
         $request = "SELECT hashedpass FROM users WHERE username = '" + $User +"'";
-        $hashed = mysql_query($request);
+        $hashed = $conn->exec($request);
         // check if the inputted password matches the hashed
         if (password_verify($Pass, $hashed)) {
             //close database connection
@@ -64,15 +64,15 @@ function VerifyExistingPassword ($User, $Pass): bool {
 
 //Function which will take a username and password during sign in and store them
 //into the database to save users
-function StoreUserDataSignLog ($User, $Pass) {
+function StoreUserDataSignLog ($User, $Pass, $conn) {
     //use password_hash function to salt and hash the password
     $encryptedPassword = password_hash($Pass, PASSWORD_DEFAULT);
     //connect to database
 
     //store the username in the respective column
     //store the password in the respective column
-    $request = "INSERT INTO users (username, hashedpass) VALUES ('" + $User "', '" + $encryptedPassword +"')";
-    mysql_query($request);
+    $request = "INSERT INTO 'users' ('username', 'hashedpass') VALUES ('" + $User + "', '" + $encryptedPassword +"')";
+    $conn->exec($request);
 
     //close database connection
 
