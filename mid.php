@@ -1,7 +1,21 @@
 <?php
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
+    // Connect to database
+//$host = "oceanus.cse.buffalo.edu"; //e.g., localhost
+//$h_username = "rar38";
+//$h_password = "8By7y3y4c";
+//$database = "users";
 
+//try{
+//    $pdo = new PDO("mysql:host=$host;dbname=$database", $h_username, $h_password);
+//    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//    echo "Successfully connected";
+//}
+//catch (PDOException $e) {
+//    die("Connection to ocean database failed:" . $e->getMessage());
+//}
+    include "PHP_Hashing.php";
     $user = $_POST["username"];
     $passwd = $_POST["password"];
     $type = $_POST["here"];
@@ -23,7 +37,7 @@
     else{
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here
-        $result = "";
+        $result = CheckUsernameAndPassword($user,$passwd,$repasswd);
         //if the username is already taken
         if($result == "taken"){
             $node1 = $dom->getElementById("taken");
