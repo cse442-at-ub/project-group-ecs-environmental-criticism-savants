@@ -43,6 +43,21 @@ body {
     border-color: transparent;
 }
 
+.set {
+    position: absolute;
+    width: 8%;
+    height: 6vh;
+    background-color: #E5E5E5;
+    color: black;
+    font-size: 23%;
+    border-radius: 1vw;
+    top: 1.5%;
+    left: 82%;
+    font-weight: bolder;
+    text-align: center;
+    border-color: transparent;
+}
+
 .main {
     position: absolute;
     width: 70%;
