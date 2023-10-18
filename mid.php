@@ -1,5 +1,6 @@
 <?php
     include "PHP_HASHING.php";
+    include "Credential-Template.php";
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
@@ -25,10 +26,6 @@
     // comment this out when you're done - Ray
 
     // Connect to database | Unless you're on a UB computer, you can only use the server given by XAMPP.
-    $host = "127.0.0.1"; // e.g., localhost
-    $h_username = "root";
-    $h_password = "";
-    $database = "test";
 
     $pdo = get_database_connection($host,$h_username,$h_password,$database);
 
