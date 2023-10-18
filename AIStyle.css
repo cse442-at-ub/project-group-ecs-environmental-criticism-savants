@@ -46,7 +46,7 @@ body {
 }
 
 .settings-accinfo .AccInfoTitle {
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     color: #000000;
     font-size: 2.15vw;
@@ -63,7 +63,7 @@ body {
     position: absolute;
     height: 50vh;
     top: 3vh;
-    font-family: "Darker Grotesque";
+    font-family: "Darker Grotesque", serif;
     font-weight: 100;
     color: #3d3c3c;
     font-size: 1.65vw;
@@ -76,132 +76,75 @@ body {
     left: 2vw;
 }
 
-.settings-accinfo .phone-num-display {
+.settings-accinfo .username {
+    position: absolute;
+    top: 2.5vh;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-weight: 700;
+    font-size: 2.15vw;
+    color: #000000;
+}
+
+.settings-accinfo .username-display {
     position: absolute;
     width: 18.5vw;
     height: 6vh;
-    left: 54vw;
+    left: 13vw;
     top: 2vh;
     background-color: #ffffff;
     border-radius: 1.5vh;
     border: .1vw solid;
     border-color: #272ed7;
 }
-
+.settings-accinfo .password {
+    position: absolute;
+    top: 13vh;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-weight: 700;
+    font-size: 2.15vw;
+    color: #000000;
+}
 .settings-accinfo .password-display {
     position: absolute;
     width: 18.5vw;
     height: 6vh;
     left: 13vw;
-    top: 27.5vh;
+    top: 12.5vh;
     background-color: #ffffff;
     border-radius: 1.5vh;
     border: .1vw solid;
     border-color: #272ed7;
+    text-align: center;
 }
-
-.settings-accinfo .email-display {
+.settings-accinfo .filteredPass {
     position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 19vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-}
-
-.settings-accinfo .last-name-display {
-    position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 10.5vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-}
-
-.settings-accinfo .first-name-display {
-    position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 2vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-}
-
-.settings-accinfo .password {
-    position: absolute;
-    top: 28vh;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 700;
-    font-size: 2.15vw;;
-    color: #000000;
-}
-
-.settings-accinfo .e-mail {
-    position: absolute;
-    top: 20vh;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 700;
-    font-size: 1.7vw;
-    color: #000000;
-}
-
-.settings-accinfo .phone-number {
-    position: absolute;
-    top: 2.5vh;
-    left: 38vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 2vw;
-    letter-spacing: 0;
-    line-height: normal;
-}
-
-.settings-accinfo .last-name {
-    position: absolute;
-    top: 11vh;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    left: .5vw;
+    top: .5vh;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     font-size: 2.15vw;
-    color: #000000;
+    color: rgb(0, 0, 0);
+    vertical-align: middle;
+    display: table-cell
 }
-
-.settings-accinfo .first-name {
-    position: absolute;
-    top: 2.5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 700;
-    font-size: 2.15vw;
-    color: #000000;
-}
-
 .settings-accinfo .changePassButton {
     position: absolute;
     display: table;
+    top: 13vh;
     left: 33vw;
-    top: 28vh;
     height: 5vh;
     width: 9vw;
     background-color: #ded4d4;
     border-radius: 1.5vh;
     border: .15vw solid;
     border-color: #272ed7;
-    box-shadow: 0vh 0.3vh 0.3vh black;
+    box-shadow: 0 0.3vh 0.3vh black;
     text-align: center;
 }
 
 .settings-accinfo .changePassTxt {
     font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 500;
     color: rgb(0, 0, 0);
     vertical-align: middle;
@@ -223,90 +166,14 @@ body {
     width: 90%;
     color: #2867C6;
 }
-.settings-accinfo .updateEmailButton {
-    position: absolute;
-    display: table;
-    left: 33vw;
-    top: 19.3vh;
-    height: 5vh;
-    width: 10.5vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #272ed7;
-    box-shadow: 0vh 0.3vh 0.3vh black;
-    text-align: center;
-}
 
-.settings-accinfo .updateEmailTxt{
-    font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    vertical-align: middle;
-    display: table-cell
-}
-.settings-accinfo .updateEmailTxt:hover{
-    color: #044394;
-}
-.settings-accinfo .updateEmailTxt:before {
-    content: '';
-    position: absolute;
-    top: 3.5vh;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-}
-.settings-accinfo .updateEmailTxt:hover:before {
-    width: 95.3%;
-    color: #2867C6;
-}
-
-.settings-accinfo .updatePhoneNumButton {
-    position: absolute;
-    display: table;
-    left: 74vw;
-    top: 2.4vh;
-    height: 5vh;
-    width: 11vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #272ed7;
-    box-shadow: 0vh 0.3vh 0.3vh black;
-    text-align: center;
-}
-
-.settings-accinfo .updatePhoneNumTxt{
-    font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    vertical-align: middle;
-    display: table-cell
-}
-.settings-accinfo .updatePhoneNumTxt:hover{
-    color: #044394;
-}
-.settings-accinfo .updatePhoneNumTxt:before {
-    content: '';
-    position: absolute;
-    top: 3.5vh;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-}
-.settings-accinfo .updatePhoneNumTxt:hover:before {
-    width: 93%;
-    color: #2867C6;
-}
 
 .settings-accinfo .top {
     position: absolute;
     width: 100vw;
     height: 32.5vh;
-    top: 0vh;
-    box-shadow: 0vh 1.5vh 1.5vh #00000040;
+    top: 0;
+    box-shadow: 0 1.5vh 1.5vh #00000040;
 }
 
 .settings-accinfo .t-leftFrame {
@@ -314,6 +181,7 @@ body {
     width: 13vw;
     height: 32.5vh;
     background-color: #2867C6;
+    align-content: center;
 }
 
 .settings-accinfo .settingsText {
@@ -322,7 +190,7 @@ body {
     height: 20vh;
     top: 20.5vh;
     left: 3.5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     color: #000000;
     font-size: 2.5vw;
@@ -356,13 +224,13 @@ body {
     border: .2vw solid;
     border-radius: 1vw;
     border-color: #2867C6;
-    box-shadow: 0vh 0.5vh 1.5vh black;
+    box-shadow: 0 0.5vh 1.5vh black;
     text-align: center;
 }
 
 .settings-accinfo .dashboardTxt {
     font-size: 2.1vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 600;
     color: rgb(0, 0, 0);
     vertical-align: middle;
@@ -393,7 +261,7 @@ body {
     width: 55vw;
     border: .15vw solid;
     border-radius: 3vh;
-    box-shadow: 0vh 0.5vh 1.5vh black;
+    box-shadow: 0 0.5vh 1.5vh black;
 }
 
 .settings-accinfo .newTxt {
@@ -402,7 +270,7 @@ body {
     width: 5.85vw;
     left: 46.5vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     color: rgb(0, 0, 0);
     line-height: normal;
@@ -426,7 +294,7 @@ body {
     width: 12.925vw;
     left: 47vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     color: rgb(0, 0, 0);
     line-height: normal;
@@ -450,7 +318,7 @@ body {
     width: 12.75vw;
     left: 28vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
@@ -474,7 +342,7 @@ body {
     width: 25vw;
     left: 1.5vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
     font-weight: 700;
     color: #000000;
 }
