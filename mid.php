@@ -1,5 +1,6 @@
 <?php
     include "PHP_HASHING.php";
+    include "Credential-Template.php";
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
@@ -25,12 +26,8 @@
     // comment this out when you're done - Ray
 
     // Connect to database | Unless you're on a UB computer, you can only use the server given by XAMPP.
-    $host = "127.0.0.1"; // e.g., localhost
-    $h_username = "root";
-    $h_password = "";
-    $database = "test";
 
-    $pdo = get_database_connection($host,$h_username,$h_password,$database);
+    //$pdo = get_database_connection($host,$h_username,$h_password,$database);
 
 // -----------------------------------------------------------------------------------------------------------------
 
@@ -40,7 +37,7 @@
 
     if ($type == "log") {
         //validation of username and password would go here, for when a user logs in
-        $conn = get_database_connection($host, $h_username, $h_password, $database);
+        $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
         $valid = VerifyExistingPassword($user, $passwd, $conn);
         $conn = null;
         if($valid) {
@@ -57,13 +54,13 @@
     else{
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here
-        $conn = get_database_connection($host, $h_username, $h_password, $database);
+        $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
         $result = CheckUsernameAndPassword($user, $passwd, $repasswd, $conn);
         $conn = null;
         //if everything works properly
         if($result == "done"){
             $node2 = $dom->getElementById("next");
-            $conn = get_database_connection($host, $h_username, $h_password, $database);
+            $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
             StoreUserDataSignUp($user, $passwd, $conn);
             $conn = null;
         }
