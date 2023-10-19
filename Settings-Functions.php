@@ -18,4 +18,13 @@ function CreateChangePasswordFlag ($User, $Password, $NewPassword, $reNewPasswor
         return "WRONG CURRENT PASSWORD ERROR FLAG PLACEHOLDER";
     }
 }
+
+function StoreNewPassword ($User, $Password, $conn) {
+    //hash the entered password
+    $hashedpassword = password_hash($Password, PASSWORD_DEFAULT);
+    //construct the SQL string
+    $sql = "UPDATE users SET hashedpass = '$hashedpassword' WHERE username = '$User'";
+    //execute the call to update the database
+    $conn->query($sql);
+}
 ?>
