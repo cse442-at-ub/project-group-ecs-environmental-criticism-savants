@@ -16,8 +16,11 @@
         $valid = VerifyExistingPassword($user, $passwd, $conn);
         $conn = null;
         if($valid) {
+            session_start();
             $node1 = $dom->getElementById("succ");
             $node2 = $dom->getElementById("next");
+            $_SESSION['user_token'] = bin2hex(random_bytes(16)); // Generate new random token
+            $_SESSION['user_username'] = $user;
         }else{
             $node1 = $dom->getElementById("fail");
             $node2 = $dom->getElementById("back-l");
@@ -34,6 +37,9 @@
         $conn = null;
         //if everything works properly
         if($result == "done"){
+            session_start();
+            $_SESSION['user_token'] = bin2hex(random_bytes(16)); // Generate new random token
+            $_SESSION['user_username'] = $user;
             $node2 = $dom->getElementById("next");
             $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
             StoreUserDataSignUp($user, $passwd, $conn);
