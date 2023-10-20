@@ -9,6 +9,10 @@ function load_tasks(){
     //Functionality coming in sprint 3
 }
 
+function nav(filename){
+    window.location.href = filename;
+}
+
 // Sets the day and year elements, highlights the correct month when dashboard.php loads
 function set(time) {
     let date = time.toDateString().split(' ');
