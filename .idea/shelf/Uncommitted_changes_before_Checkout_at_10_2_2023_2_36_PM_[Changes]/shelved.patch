@@ -1,0 +1,55 @@
+Index: landing.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <title>Savant</title>\r\n    <link rel=\"stylesheet\" type=\"text/css\" href=\"landing.css\"/>\r\n</head>\r\n<body>\r\n<div class=\"box\">\r\n</div>\r\n<div class=e64_42>\r\n    <span  class=\"e64_44\">Welcome to Savant</span>\r\n    <div class=e68_85>\r\n        <div class=\"e64_45\"></div><span  class=\"e64_48\">Savant is an excellent tool to help:</span>\r\n        <ol  class=\"e64_50\">\r\n            <li> Organize events </li>\r\n            <li> Keep track of school work </li>\r\n            <li>Keep track of birthday, anniversaries and other special events </li>\r\n        </ol>\r\n    </div>\r\n    <div class=e68_86>\r\n        <button type=\"button\" value=\"create page\" onclick=\"sign_page()\" class=\"e64_77\"> Click here to create an account </button>\r\n    </div>\r\n    <script type=\"text/JavaScript\">\r\n\r\n        function sign_page() {\r\n            window.location.href = \"sign.php\";\r\n        }\r\n    </script>\r\n    <div class=e68_87>\r\n\r\n        <button type=\"button\" value=\"create page\" onclick=\"log_page()\" class=\"e64_77\">Click here to log in to an account </button>\r\n    </div>\r\n    <script type=\"text/JavaScript\">\r\n\r\n        function log_page() {\r\n            window.location.href = \"log.php\";\r\n        }\r\n    </script>\r\n</div>\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/landing.php b/landing.php
+--- a/landing.php	
++++ b/landing.php	
+@@ -6,9 +6,8 @@
+     <link rel="stylesheet" type="text/css" href="landing.css"/>
+ </head>
+ <body>
+-<div class="box">
+-</div>
+-<div class=e64_42>
++<div>
++    <div class="box"></div>
+     <span  class="e64_44">Welcome to Savant</span>
+     <div class=e68_85>
+         <div class="e64_45"></div><span  class="e64_48">Savant is an excellent tool to help:</span>
+Index: landing.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nbody {\r\n    background-color:#E5E5E5;\r\n    font-family: Jomhuria, sans-serif;\r\n}\r\n.e64_44 {\r\n    color:rgba(0, 0, 0, 1);\r\n    width:1194px;\r\n    height:255px;\r\n    position:absolute;\r\n    left:131px;\r\n    top:125px;\r\n    font-weight: bold;;\r\n    text-align:center;\r\n    font-size:120px;\r\n    letter-spacing:0;\r\n}\r\n\r\n.box {\r\n    width: 102%;\r\n    height: 70px;\r\n    position: relative;\r\n    background-color: #2867C6;\r\n    margin: auto;\r\n    left: -8px;\r\n    top: -10px;\r\n}\r\n\r\n.e68_85 {\r\n    width:648px;\r\n    height:100px;\r\n    position:absolute;\r\n    left:34px;\r\n    top:336px;\r\n}\r\n.e64_45 {\r\n    background-color:#80B4F0;\r\n    width:648px;\r\n    height:400px;\r\n    position:absolute;\r\n    border-radius: 45px;\r\n}\r\n.e64_48 {\r\n    color:rgba(255, 255, 255, 1);\r\n    width:543px;\r\n    height:60px;\r\n    position:absolute;\r\n    left:27px;\r\n    top:36px;\r\n    text-align:left;\r\n    font-size:35px;\r\n    letter-spacing:0;\r\n    font-weight: bold;\r\n}\r\n.e64_50 {\r\n    color:rgba(255, 255, 255, 1);\r\n    width:543px;\r\n    height:100px;\r\n    position:absolute;\r\n    left:20px;\r\n    top:100px;\r\n    text-align:left;\r\n    font-size:33px;\r\n    font-weight: bold;\r\n}\r\n\r\n.e68_86 {\r\n    width:693px;\r\n    height:215px;\r\n    position:absolute;\r\n    left:720px;\r\n    top:368px;\r\n}\r\n.e64_77 {\r\n    box-shadow:0 4px 4px rgba(0, 0, 0, 0.25);\r\n    background-color:#2867C6;\r\n    width:693px;\r\n    height:150px;\r\n    position:absolute;\r\n    left:0;\r\n    top:0;\r\n    border-radius: 45px;\r\n    color:white;\r\n    text-align: center;\r\n    font-size:40px;\r\n    letter-spacing:0;\r\n}\r\n\r\n.e64_78 {\r\n    color:rgba(255, 255, 255, 1);\r\n    width:535px;\r\n    height:146px;\r\n    position:relative;\r\n    left:78px;\r\n    top:50px;\r\n    text-align:center;\r\n    font-size:40px;\r\n    letter-spacing:0;\r\n}\r\n.e68_87 {\r\n    width:693px;\r\n    height:215px;\r\n    position:absolute;\r\n    left:720px;\r\n    top:550px;\r\n}\r\n\r\n.e64_81 {\r\n    color:rgba(255, 255, 255, 1);\r\n    width:535px;\r\n    height:146px;\r\n    position:absolute;\r\n    left:78px;\r\n    top:50px;\r\n    text-align:center;\r\n    font-size:40px;\r\n    letter-spacing:0;\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/landing.css b/landing.css
+--- a/landing.css	
++++ b/landing.css	
+@@ -2,6 +2,7 @@
+ body {
+     background-color:#E5E5E5;
+     font-family: Jomhuria, sans-serif;
++    width: 100%;
+ }
+ .e64_44 {
+     color:rgba(0, 0, 0, 1);
+@@ -17,13 +18,10 @@
+ }
+ 
+ .box {
+-    width: 102%;
++    width: 100%;
+     height: 70px;
+     position: relative;
+     background-color: #2867C6;
+-    margin: auto;
+-    left: -8px;
+-    top: -10px;
+ }
+ 
+ .e68_85 {
