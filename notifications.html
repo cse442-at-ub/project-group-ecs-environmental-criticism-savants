@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel = "stylesheet" href="globals.css"/>
+    <link rel = "stylesheet" href="NotifStyle.css"/>
+</head>
+</html>
+
+<body>
+<div class="settings-notifs">
+    <div class = "bottom">
+        <div class = "outer-frame">
+            <div class = "inner-frame">
+                <div class="top-text">
+                    <!-- top left -->
+                    <div class = "notifTitle">Notifications</div>
+                    <div class="line"></div>
+                    <p class="desc">Configure your notification preferences.</p>
+                    <!-- top right -->
+                    <div class = "freqTitle">Frequency</div>
+                    <div class="line2"></div>
+                    <p class="desc2">Receive reminders for task deadlines:</p>
+                </div>
+                <!--left hand side -->
+                <div class="notif-info">
+                    <!-- Use the cbTxt for every checkbox's font settings -->
+                    <input type = "checkbox" id="emailDeadline" class ="cbEmailDeadline">
+                    <label class = "cbTxt" for="emailDeadline">Send me emails for task deadlines.</label><br>
+                    <input type = "checkbox" id="txtDeadline" class ="cbTxtDeadline">
+                    <label class = "cbTxt" for="txtDeadline">Send me text messages for task deadlines.</label><br>
+                    <input type = "checkbox" id="desktopNotifs" class ="cbDesktopNotifs">
+                    <label class = "cbTxt" for="desktopNotifs">Enable desktop notifications.</label><br>
+                    <input type = "checkbox" id="savantEmails" class ="cbSavantEmails">
+                    <label class = "cbTxt" for="savantEmails">Send me emails about Savant updates.</label><br>
+                </div>
+                <div class = freq-info>
+                    <input type = "checkbox" id = "monthly" class = "cbMonthly">
+                    <label class = "cbTxtMonthly" for = "monthly">Monthly</label><br>
+                    <input type = "checkbox" id = "weekly" class = "cbWeekly">
+                    <label class = "cbTxtWeekly" for = "weekly">Weekly</label><br>
+                    <input type = "checkbox" id = "daily" class = "cbDaily">
+                    <label class = "cbTxtDaily" for ="daily">Daily (On the week of the task's deadline)</label><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top">
+        <div class="t-leftFrame">
+            <div class="settingsText">Settings</div>
+            <img class="usericon" src="img/userPFP.png"/>
+        </div>
+        <div class="t-rightFrame">
+            <a href="">
+                <div class = "dashboardButton">
+                    <div class = "dashboardTxt">Return To Dashboard</div>
+                </div></a>
+        </div>
+        <div class="buttonFrame">
+            <a href="news.html">
+                <div class="newTxt">News</div> </a>
+            <a href="notifications.html">
+                <div class="notifTxt">Notifications</div> </a>
+            <a href ="settings_AccInfo.html">
+                <div class="accinfoTxt">Account Information</div  ></a>
+        </div>
+    </div>
+</div>
+</body>
