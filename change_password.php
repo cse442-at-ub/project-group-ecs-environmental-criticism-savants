@@ -5,7 +5,8 @@
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("change_password.html");
-
+    //change this to a username you want to test
+    // later try linking $user to a token linking the currently signed in user.
     $user = "iD_0m";
     $currPass = $_POST["current_password"];
     $newPass = $_POST["new_password"];
