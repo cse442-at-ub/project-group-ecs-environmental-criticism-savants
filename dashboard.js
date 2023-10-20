@@ -2,11 +2,16 @@
 function page_load(){
     load_tasks();
     set(new Date);
+    validCheck();
 }
 
 //Loads in all task cards associated with the user
 function load_tasks(){
     //Functionality coming in sprint 3
+}
+
+function nav(filename){
+    window.location.href = filename;
 }
 
 // Sets the day and year elements, highlights the correct month when dashboard.php loads
@@ -21,6 +26,7 @@ function set(time) {
 
 // Increments or decreases the year elements on click, calls set to update
 function yearUpdate(cur){
+    validCheck();
     const el = document.getElementById("year");
     let up = parseInt(el.innerHTML) + cur;
     let day = document.getElementById("day").innerHTML.slice(5);
@@ -33,6 +39,7 @@ function yearUpdate(cur){
 
 // Changes the current month based off of which month was selected, calls set to update
 function monthUpdate (cur) {
+    validCheck();
     let day = document.getElementById("day").innerHTML.slice(5).split(" ");
     let year = document.getElementById("year").innerHTML;
     document.getElementById(day[0]).style.background = "#E5E5E5";
@@ -54,6 +61,7 @@ function monthOverflow(time, mon) {
 
 // Increments or decreases date, calls set to update
 function dayUpdate(cur) {
+    validCheck();
     let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + document.getElementById("year").innerHTML;
     let date = new Date(day);
@@ -80,11 +88,14 @@ function disp(state) {
 // Logs out of the page and returns user to the log out page
 function log_out() {
     //* functionality should be added here that destroys the login token, if it exists
-    window.location.href = "log.php";
+   localStorage.setItem("valid", "false");
+   validCheck();
 }
 
 //* there needs to be a function here the conintuosly checks for a valid login token,
 //* If there is no token then dashbaord should exit to the log in page
 function validCheck(){
-    window.location.href = "log.php";
+    if (localStorage.getItem("valid") !== "true"){
+        window.location.href = "log.php";
+    }
 }
