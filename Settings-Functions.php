@@ -6,6 +6,7 @@ include "PHP_Hashing.php";
 // (Above function is in "PHP_Hashing.php"
 // use "VerifyExistingPassword" to make sure their inputted "current password" matches the actual password they used to sign in.
 
+//Check the validity of current password and new password
 function CreateChangePasswordFlag ($User, $Password, $NewPassword, $reNewPassword, $conn){
     $PasswordExists = VerifyExistingPassword($User, $Password, $conn);
     // If the inputted current password matches the password in database for user
@@ -19,6 +20,7 @@ function CreateChangePasswordFlag ($User, $Password, $NewPassword, $reNewPasswor
     }
 }
 
+//override current password with new password entered.
 function StoreNewPassword ($User, $Password, $conn) {
     //hash the entered new password
     $hashedpassword = password_hash($Password, PASSWORD_DEFAULT);
