@@ -3,10 +3,29 @@
 <head>
     <title>Savant</title>
     <link rel="stylesheet" href="AccInfo_Style.css" />
-    <script src="settings_AccInfo.js"></script>
 </head>
 <body>
 <div class="settings-accinfo">
+    <div class="top">
+        <div class="t-leftFrame">
+            <div class="settingsText">Settings</div>
+            <img class="usericon" src="img/userPFP.png" alt=""/>
+        </div>
+        <div class="t-rightFrame">
+            <a href="dashboard.html">
+                <div class = "dashboardButton">
+                    <div class = "dashboardTxt">Return To Dashboard</div>
+                </div></a>
+        </div>
+        <div class="buttonFrame">
+            <a href="news.html">
+                <div class="newTxt">News</div> </a>
+            <a href="notifications.html">
+                <div class="notifTxt">Notifications</div> </a>
+            <a href ="settings_AccInfo.html">
+                <div class="accinfoTxt">Account Information</div></a>
+        </div>
+    </div>
     <div class="bottom">
         <div class="outer-frame">
             <div class="inner-frame">
@@ -22,32 +41,67 @@
                     <div class="password-display">
                         <div class = filteredPass>****************</div>
                     </div>
-                    <a href = "">
-                        <div class = "changePassButton">
+                    <div class = "cont_changePassButton">
+                        <button type = "button" onclick = "displayChangePassword('ID_changePassPopup', true)" class = "changePassButton">
                             <div class = "changePassTxt">Change Password</div>
-                        </div></a>
+                        </button>
+                    </div>
+                    <form name = "changePassForm" action = "change_password.php" method = "POST">
+                        <div class = "changePassPopup" id = "ID_changePassPopup" hidden="hidden">
+                            <T class = "popupTxt">Change Your Password</T>
+                            <input type = "password" id = "current_password"
+                                   name = "current_password"
+                                   class = "inputText"
+                                   value=""
+                                   placeholder="Enter Current Password"
+                                   required
+                            >
+                            <input type = "password" id = "new_password"
+                                name = "new_password"
+                                class = "inputText1"
+                                value=""
+                                placeholder="Enter New Password"
+                                required
+                            >
+                            <input type = "password" id = "reenter_password"
+                                   name = "reenter_password"
+                                   class = "inputText2"
+                                   value=""
+                                   placeholder="Re-enter Password"
+                                   required
+                            >
+                            <div class = "cont_closePopup">
+                                <button type = "button" onclick = "displayChangePassword('ID_changePassPopup', false)" class = "closePopup">
+                                    <div class = "closePopupTxt">Cancel</div>
+                                </button>
+                            </div>
+                            <div class = "cont_confirmPass">
+                                <input type = "submit" class = "confirmPassButton" value = "Confirm">
+                            </div>
+                        </div>
+                    </form>
+                    <script type = "text/javascript">
+                        // Open / Closes the change password prompt.
+                        // thanks for the code dan -chris
+                        function displayChangePassword(html, state) {
+                            let popUp = document.getElementById(html);
+                            if(state){
+                                popUp.removeAttribute("hidden")
+                            } else {
+                                popUp.setAttribute("hidden", "");
+                                if(html == "ID_changePassPopup"){
+                                    let input1 = document.getElementById("current_password");
+                                    let input2 = document.getElementById("new_password");
+                                    let input3 = document.getElementById("reenter_password")
+                                    input1.value = "";
+                                    input2.value = "";
+                                    input3.value = "";
+                                }
+                            }
+                        }
+                    </script>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="top">
-        <div class="t-leftFrame">
-            <div class="settingsText">Settings</div>
-            <img class="usericon" src="img/userPFP.png" alt=""/>
-        </div>
-        <div class="t-rightFrame">
-            <a href="">
-                <div class = "dashboardButton">
-                    <div class = "dashboardTxt">Return To Dashboard</div>
-                </div></a>
-        </div>
-        <div class="buttonFrame">
-            <a href="news.html">
-                <div class="newTxt">News</div> </a>
-            <a href="notifications.html">
-                <div class="notifTxt">Notifications</div> </a>
-            <a href ="accountInformation.html">
-                <div class="accinfoTxt">Account Information</div></a>
         </div>
     </div>
 </div>
