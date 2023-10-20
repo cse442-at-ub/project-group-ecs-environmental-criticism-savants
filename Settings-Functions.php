@@ -15,7 +15,7 @@ function CreateChangePasswordFlag ($User, $Password, $NewPassword, $reNewPasswor
     }
     // if the inputted current password is wrong
     else{
-        return "WRONG CURRENT PASSWORD ERROR FLAG PLACEHOLDER";
+        return "wrongcurrent";
     }
 }
 
