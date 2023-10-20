@@ -20,11 +20,11 @@ function CreateChangePasswordFlag ($User, $Password, $NewPassword, $reNewPasswor
 }
 
 function StoreNewPassword ($User, $Password, $conn) {
-    //hash the entered password
+    //hash the entered new password
     $hashedpassword = password_hash($Password, PASSWORD_DEFAULT);
     //construct the SQL string
-    $sql = "UPDATE users SET hashedpass = '$hashedpassword' WHERE username = '$User'";
+    $sql = "UPDATE users SET hashedpass = ? WHERE username = ?";
     //execute the call to update the database
-    $conn->query($sql);
+    $sql->execute([$hashedpassword,$User]);
 }
 ?>
