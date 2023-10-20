@@ -23,7 +23,7 @@ function StoreNewPassword ($User, $Password, $conn) {
     //hash the entered new password
     $hashedpassword = password_hash($Password, PASSWORD_DEFAULT);
     //construct the SQL string
-    $sql = "UPDATE users SET hashedpass = ? WHERE username = ?";
+    $sql = $conn->prepare("UPDATE users SET hashedpass = ? WHERE username = ?");
     //execute the call to update the database
     $sql->execute([$hashedpassword,$User]);
 }
