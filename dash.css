@@ -1,7 +1,6 @@
 body {
     font-size: 6vw;
     width: 100%;
-    margin: auto;
     font-family: Jomhuria, sans-serif ;
     background: #E5E5E5;
     font-weight: bold;
@@ -9,10 +8,11 @@ body {
 
 
 .topbanner1 {
-    width: 80%;
-    height: 9.5vh;
     position: absolute;
-    top: 0vh;
+    width: 80%;
+    height: 12vh;
+    top: -2vh;
+    left:0vw;
     background-color: #2867C6;
     color: white;
     font-size: 50%;
@@ -21,10 +21,11 @@ body {
 
 }
 .topbanner2 {
-    positon: absolute;
-    width: 100%;
-    height: 9.5vh;
-    top: -1vh;
+    position: absolute;
+    width: 80%;
+    height: 12vh;
+    top: -2vh;
+    left: 20vw;
     background-color: #2867C6;
     color: white;
 }
@@ -32,7 +33,7 @@ body {
 
 .wel{
     position: absolute;
-    top: -5vh;
+    top: -3.5vh;
     left: 1vw;
     width: 200vw;
 }
@@ -80,7 +81,7 @@ body {
 }
 
 .main_banner {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 8vh;
     background-color: #2867C6;
@@ -88,13 +89,13 @@ body {
     border-top-right-radius: 2vw;
     color: white;
     font-size: 50%;
-    text-align: center;
-    top: -7vh;
+    top: -2vh;
 }
 
 .view {
-    position: relative;
-    top: 0.5vh;
+    position: absolute;
+    top: -5.5vh;
+    left: 27.5vw;
 }
 
 .day {
@@ -148,16 +149,15 @@ body {
     top: 12vh;
     border-radius: 2vw;
     overflow-y: hidden;
+    overflow-x: hidden;
 }
-
-
 .format {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vw;
 }
 
 .year_date {
-    position: relative;
+    position: absolute;
     text-align: center;
     color: black;
     background: #E5E5E5;
@@ -197,8 +197,8 @@ body {
     font-size: 20%;
 }
 
-.row1 {
-    position: relative;
+.Jan {
+    position: absolute;
     width: 40%;
     height: 12%;
     border: .5vh solid #80B4F0;
@@ -208,12 +208,27 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -95%;
+    top: 10%;
     font-size: 30%;
 }
 
-.row2 {
-    position: relative;
+.Feb {
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    border: .5vh solid #80B4F0;
+    color: #2867C6;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1vw;
+    left: 52%;
+    top: 10%;
+    font-size: 30%;
+}
+
+.Mar {
+    position: absolute;
     width: 40%;
     height: 12%;
     border: .5vh solid #80B4F0;
@@ -223,12 +238,26 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -97%;
+    top: 25%;
+    font-size: 30%;
+}
+.Apr {
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    border: .5vh solid #80B4F0;
+    color: #2867C6;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1vw;
+    left: 52%;
+    top: 25%;
     font-size: 30%;
 }
 
-.row3 {
-    position: relative;
+.May {
+    position: absolute;
     width: 40%;
     height: 12%;
     border: .5vh solid #80B4F0;
@@ -238,12 +267,25 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -99%;
+    top: 40%;
     font-size: 30%;
 }
-
-.row4 {
-    position: relative;
+.Jun {
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    border: .5vh solid #80B4F0;
+    color: #2867C6;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1vw;
+    left: 52%;
+    top: 40%;
+    font-size: 30%;
+}
+.Jul {
+    position: absolute;
     width: 40%;
     height: 12%;
     border: .5vh solid #80B4F0;
@@ -253,12 +295,25 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -101%;
+    top: 55%;
     font-size: 30%;
 }
-
-.row5 {
-    position: relative;
+.Aug {
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    border: .5vh solid #80B4F0;
+    color: #2867C6;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1vw;
+    left: 52%;
+    top: 55%;
+    font-size: 30%;
+}
+.Sep {
+    position: absolute;
     width: 40%;
     height: 12%;
     border: .5vh solid #80B4F0;
@@ -268,12 +323,25 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -103%;
+    top: 70%;
     font-size: 30%;
 }
-
-.row6 {
-    position: relative;
+.Oct {
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    border: .5vh solid #80B4F0;
+    color: #2867C6;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1vw;
+    left: 52%;
+    top: 70%;
+    font-size: 30%;
+}
+.Nov {
+    position: absolute;
     width: 40%;
     height: 12%;
     border: .5vh solid #80B4F0;
@@ -283,10 +351,23 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -105%;
+    top: 85%;
     font-size: 30%;
 }
-
+.Dec {
+    position: absolute;
+    width: 40%;
+    height: 12%;
+    border: .5vh solid #80B4F0;
+    color: #2867C6;
+    background-color: #E5E5E5;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 1vw;
+    left: 52%;
+    top: 85%;
+    font-size: 30%;
+}
 .pop {
     position: relative;
     width: 18vw;
