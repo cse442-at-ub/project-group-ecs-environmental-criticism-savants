@@ -21,7 +21,7 @@
         <p class="view">Card View</p>
     </div>
     <div class="day" id="day"></div>
-    <button type="button" class="button1" onclick="dayUpdate(-1)"><</button>
+    <button type="button" class="button1" id = "left1" onclick="dayUpdate(-1)"></button>
     <button type="button" class="button2" onclick="dayUpdate(1)">></button>
     <div id="cards"></div>
 </div>
@@ -29,10 +29,9 @@
 <div class="year">
     <div class="format">
         <div class="year_date" id="year"></div>
-        <button type="button" class="button3" onclick="yearUpdate(-1)"><</button>
+        <button type="button" class="button3" id ="left2" onclick="yearUpdate(-1)"></button>
         <button type="button" class="button4" onclick="yearUpdate(1)">></button>
     </div>
-=
     <div class="format">
         <button type="button" class="Jan" id="Jan" onclick="monthUpdate('Jan')">Jan</button>
         <button type="button" class="Feb" id="Feb" onclick="monthUpdate('Feb')">Feb</button>
