@@ -8,12 +8,13 @@
     <link rel="stylesheet" type="text/css" href="dash.css" />
 </head>
 <body onload="page_load()">
-<div class="banner">
+<div class="topbanner1">
     <p class="wel" id="user"></p>
 </div>
+<div class = "topbanner2"></div>
 
 <button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
-<button type="button" onclick="nav('settings_Accinfo.html')" class="set" id="set">Settings</button>
+<button type="button" onclick="nav('settings_Accinfo.php')" class="set" id="set">Settings</button>
 
 <div class="main" id="main">
     <div class="main_banner">
@@ -31,7 +32,7 @@
         <button type="button" class="button3" onclick="yearUpdate(-1)"><</button>
         <button type="button" class="button4" onclick="yearUpdate(1)">></button>
     </div>
-
+=
     <div class="format">
         <button type="button" class="row1" id="Jan" onclick="monthUpdate('Jan')">Jan</button>
         <button type="button" class="row1" id="Feb" onclick="monthUpdate('Feb')">Feb</button>

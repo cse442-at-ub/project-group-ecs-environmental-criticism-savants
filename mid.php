@@ -1,5 +1,5 @@
 <?php
-    include "PHP_HASHING.php";
+    include "PHP_Hashing.php";
     include "Credential-Template.php";
     include "DBConnection-Function.php";
 
@@ -54,4 +54,4 @@
         $node2->removeAttribute("hidden");
     }
     echo $dom->saveHTML();
-
+?>
