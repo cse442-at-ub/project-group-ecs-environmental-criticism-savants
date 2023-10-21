@@ -10,5 +10,9 @@
     }
 
     $node = $dom->getElementbyId("user");
-    $node->textContent = "Welcome back, " . $username;
-    echo $dom->saveHTML();
+    $node->textContent = "Hello " . $username;
+    $node2 = $dom->getElementbyId("left1");
+    $node3 = $dom->getElementbyId("left2");
+    $node2->textContent = "<";
+    $node3->textContent = "<";
+echo $dom->saveHTML();
