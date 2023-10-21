@@ -9,8 +9,6 @@
         $username = $_SESSION['user_username']; // Retrieve the username from the session
     }
 
-
-
     $node = $dom->getElementbyId("user");
-    $node->textContent = "Welcome back " . $username;
+    $node->textContent = "Welcome back, " . $username;
     echo $dom->saveHTML();

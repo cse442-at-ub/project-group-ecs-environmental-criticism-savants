@@ -95,6 +95,17 @@ body {
     border-radius: 1.5vh;
     border: .1vw solid;
     border-color: #272ed7;
+    overflow-x: hidden;
+}
+
+.accInfoUser{
+    position: absolute;
+    top: 1.5vh;
+    left: .45vw;
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-weight: 700;
+    font-size: 1.4vw;
+    color: #000000;
 }
 .settings-accinfo .password {
     position: absolute;
