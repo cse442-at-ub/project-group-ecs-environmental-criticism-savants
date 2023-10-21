@@ -8,10 +8,9 @@
     <link rel="stylesheet" type="text/css" href="dash.css" />
 </head>
 <body onload="page_load()">
-<div class="topbanner1">
+<div class="topbanner">
     <p class="wel" id="user"></p>
 </div>
-<div class = "topbanner2"></div>
 
 <button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
 <button type="button" onclick="nav('settings_Accinfo.php')" class="set" id="set">Settings</button>
@@ -31,9 +30,7 @@
         <div class="year_date" id="year"></div>
         <button type="button" class="button3" onclick="yearUpdate(-1)"><</button>
         <button type="button" class="button4" onclick="yearUpdate(1)">></button>
-    </div>
-=
-    <div class="format">
+
         <button type="button" class="row1" id="Jan" onclick="monthUpdate('Jan')">Jan</button>
         <button type="button" class="row1" id="Feb" onclick="monthUpdate('Feb')">Feb</button>
         <button type="button" class="row2" id="Mar" onclick="monthUpdate('Mar')">Mar</button>

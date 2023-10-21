@@ -8,11 +8,10 @@ body {
 }
 
 
-.topbanner1 {
-    width: 80%;
-    height: 9.5vh;
+.topbanner {
+    width: 100%;
+    height: 10vh;
     position: absolute;
-    top: 0vh;
     background-color: #2867C6;
     color: white;
     font-size: 50%;
@@ -20,21 +19,12 @@ body {
     overflow-y: hidden;
 
 }
-.topbanner2 {
-    positon: absolute;
-    width: 100%;
-    height: 9.5vh;
-    top: -1vh;
-    background-color: #2867C6;
-    color: white;
-}
-
 
 .wel{
-    position: absolute;
-    top: -5vh;
+    position: relative;
+    width: 50vw;
+    top: -4vh;
     left: 1vw;
-    width: 200vw;
 }
 
 .back {
@@ -45,7 +35,7 @@ body {
     color: black;
     font-size: 23%;
     border-radius: 1vw;
-    top: 1.5%;
+    top: 1.8%;
     left: 91%;
     font-weight: bolder;
     text-align: center;
@@ -60,7 +50,7 @@ body {
     color: black;
     font-size: 23%;
     border-radius: 1vw;
-    top: 1.5%;
+    top: 1.8%;
     left: 82%;
     font-weight: bolder;
     text-align: center;
@@ -208,7 +198,7 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -95%;
+    top: 1%;
     font-size: 30%;
 }
 
@@ -222,8 +212,8 @@ body {
     font-weight: bolder;
     text-align: center;
     border-radius: 1vw;
+    top:-1%;
     left: 7%;
-    top: -97%;
     font-size: 30%;
 }
 
@@ -238,7 +228,7 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -99%;
+    top: -3%;
     font-size: 30%;
 }
 
@@ -253,7 +243,7 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -101%;
+    top: -5%;
     font-size: 30%;
 }
 
@@ -268,7 +258,7 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -103%;
+    top: -7%;
     font-size: 30%;
 }
 
@@ -283,7 +273,7 @@ body {
     text-align: center;
     border-radius: 1vw;
     left: 7%;
-    top: -105%;
+    top: -9%;
     font-size: 30%;
 }
 
