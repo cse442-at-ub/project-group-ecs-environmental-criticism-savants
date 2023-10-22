@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savant</title>
+    <script src="dashboard.js"></script>
+    <link rel="stylesheet" type="text/css" href="dash.css" />
+</head>
+<body onload="page_load()">
+<div class = "topbanner2"></div>
+<div class="topbanner1">
+    <p class="wel" id="user"></p>
+</div>
+
+<button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
+<button type="button" onclick="nav('settings_AccInfo.php')" class="set" id="set">Settings</button>
+
+<div class="main" id="main">
+    <div class="main_banner">
+        <p class="view">Card View</p>
+    </div>
+    <div class="day" id="day"></div>
+    <button type="button" class="button1" id = "left1" onclick="dayUpdate(-1)"></button>
+    <button type="button" class="button2" onclick="dayUpdate(1)">></button>
+    <div id="cards"></div>
+</div>
+
+<div class="year">
+    <div class="format">
+        <div class="year_date" id="year"></div>
+        <button type="button" class="button3" id ="left2" onclick="yearUpdate(-1)"></button>
+        <button type="button" class="button4" onclick="yearUpdate(1)">></button>
+    </div>
+    <div class="format">
+        <button type="button" class="Jan" id="Jan" onclick="monthUpdate('Jan')">Jan</button>
+        <button type="button" class="Feb" id="Feb" onclick="monthUpdate('Feb')">Feb</button>
+        <button type="button" class="Mar" id="Mar" onclick="monthUpdate('Mar')">Mar</button>
+        <button type="button" class="Apr" id="Apr" onclick="monthUpdate('Apr')">Apr</button>
+        <button type="button" class="May" id="May" onclick="monthUpdate('May')">May</button>
+        <button type="button" class="Jun" id="Jun" onclick="monthUpdate('Jun')">Jun</button>
+        <button type="button" class="Jul" id="Jul" onclick="monthUpdate('Jul')">Jul</button>
+        <button type="button" class="Aug" id="Aug" onclick="monthUpdate('Aug')">Aug</button>
+        <button type="button" class="Sep" id="Sep" onclick="monthUpdate('Sep')">Sep</button>
+        <button type="button" class="Oct" id="Oct" onclick="monthUpdate('Oct')">Oct</button>
+        <button type="button" class="Nov" id="Nov" onclick="monthUpdate('Nov')">Nov</button>
+        <button type="button" class="Dec" id="Dec" onclick="monthUpdate('Dec')">Dec</button>
+    </div>
+
+</div>
+
+<div id="exit" class="pop" hidden="hidden">
+    <p>Are you sure you want to log out?</p>
+    <button type="button" onclick="disp(false)" class="opt">Cancel</button>
+    <button type="button" onclick="log_out()" class="opt">Log Out</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Savant</title>
+    <script src="registering.js"></script>
+    <link rel="stylesheet" type="text/css" href="mid.css"/>
+</head>
+<body>
+<div class="banner"> </div>
+<div class="main">
+    <div>
+        <div class="text" hidden="hidden" id="succ">You have been successfully <br>logged in</div>
+        <button type="button" class="action" id="next" onclick="nav('dashboard.php')" hidden="hidden">Continue to dashboard</button>
+
+        <div class="text" hidden="hidden" id="fail">Username or Password was incorrect</div>
+        <button type="button" class="action" id="back-l" onclick="nav('log.php')" hidden="hidden">Retry</button>
+    </div>
+
+    <div>
+        <div class="text" hidden="hidden" id="done">You have successfully <br>created an account</div>
+        <div class="text" hidden="hidden" id="taken">This username has already been taken</div>
+        <div class="text" hidden="hidden" id="match">The passwords do not match</div>
+        <div class="text" hidden="hidden" id="short">The password is too short <br> must be at least 8 characters</div>
+        <div class="text" hidden="hidden" id="spaces">There can be no spaces in the username or password</div>
+        <div class="text" hidden="hidden" id="long">The password can not be longer than 30 characters</div>
+        <button type="button" class="action" id="back-s" onclick="nav('sign.php')" hidden="hidden">Retry</button>
+    </div>
+</div>
+</body>
+</html>
