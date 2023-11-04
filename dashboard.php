@@ -15,4 +15,5 @@
     $node3 = $dom->getElementbyId("left2");
     $node2->textContent = "<";
     $node3->textContent = "<";
+
 echo $dom->saveHTML();
