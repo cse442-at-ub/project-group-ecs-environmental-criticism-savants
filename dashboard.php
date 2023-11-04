@@ -1,4 +1,5 @@
 <?php
+    include "time_change.php";
     session_start();
     $dom = new DOMDocument();
     $dom->loadHTMLFile("dashboard.html");
@@ -16,4 +17,21 @@
     $node2->textContent = "<";
     $node3->textContent = "<";
 
-echo $dom->saveHTML();
+
+
+    if(isset($_POST["date_update"])){
+        $date = time_update($_POST["date_update"],"","");
+    }else{
+        $date = new DateTime;
+    }
+    set($date->format('D d M Y'), $dom);
+
+    echo $dom->saveHTML();
+
+function set($time, $dom){
+    $date = explode(" ", $time);
+    $day = $dom->getElementbyId("day");
+    $year = $dom->getElementbyId("year");
+    $year->textContent= $date[3];
+    $day->textContent = $date[0] . ", " . $date[1] . " " . $date[2];
+}
