@@ -1,7 +1,6 @@
 <?php
 
 function time_update($type,$change,$date){
-    $ret ="";
     if($type == "day"){
         $ret = dayUpdate($change, $date);
     }elseif ($type == "month"){
