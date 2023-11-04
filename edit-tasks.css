@@ -1,0 +1,258 @@
+body {
+    font-size: 6vw;
+    width: 100%;
+    font-family: Jomhuria, sans-serif ;
+    background: #E5E5E5;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.topbanner1 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    top: -2vh;
+    left:0vw;
+    background-color: #2867C6;
+    color: white;
+    font-size: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.wel{
+    position: absolute;
+    top: -2vh;
+    left: 45vw;
+    width: 200vw;
+}
+
+.back {
+    overflow-x: hidden;
+    position: absolute;
+    width: 8%;
+    height: 6vh;
+    background-color: #E5E5E5;
+    color: black;
+    font-size: 23%;
+    border-radius: 1vw;
+    top: 2%;
+    left: 91%;
+    font-weight: bolder;
+    text-align: center;
+    border-color: transparent;
+}
+
+.background{
+    position: absolute;
+    background: #80b3f0;
+    width: 96vw;
+    height: 32vh;
+    top: 14vh;
+    left: 2vw;
+    border-radius: 1vw;
+}
+
+.box1 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 26vw;
+    height: 8vh;
+    background-color: #4D698A;
+    border: #4D698A;
+    color:white;
+    border-radius: 1vw;
+    font-size: 50%;
+    text-indent: 1vw;
+    top: 16vh;
+    left: 4vw;
+}
+
+.box2 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 26vw;
+    height: 8vh;
+    background-color: #4D698A;
+    border: #4D698A;
+    color:white;
+    border-radius: 1vw;
+    font-size: 50%;
+    text-indent: 1vw;
+    top: 26vh;
+    left: 4vw;
+}
+
+.box3 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 26vw;
+    height: 8vh;
+    background-color: #4D698A;
+    border: #4D698A;
+    color:white;
+    border-radius: 1vw;
+    font-size: 50%;
+    text-indent: 1vw;
+    top: 36vh;
+    left: 4vw;
+}
+.occur {
+    position: absolute;
+    font-size: 50%;
+    top: 10vh;
+    left: 35vw;
+}
+
+.once{
+    position: absolute;
+    font-size: 40%;
+    top: 30vh;
+    left: 35vw;
+}
+
+.daily{
+    position: absolute;
+    font-size: 40%;
+    top: 30vh;
+    left: 49vw;
+}
+
+.weekly{
+    position: absolute;
+    font-size: 40%;
+    top: 38vh;
+    left: 35vw;
+}
+
+.yearly{
+    position: absolute;
+    font-size: 40%;
+    top: 38vh;
+    left: 49vw;
+}
+
+.pri{
+    position: absolute;
+    font-size: 50%;
+    top: 10vh;
+    left: 69vw;
+}
+
+.one{
+    position: absolute;
+    text-indent: 1.5vw;
+    font-size: 30%;
+    top: 26vh;
+    left: 68vw;
+    background-color: green;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 7vw;
+}
+
+.two{
+    position: absolute;
+    text-indent: 1.5vw;
+    font-size: 30%;
+    top: 26vh;
+    left: 77vw;
+    background-color: blue;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 7vw;
+}
+
+.three{
+    position: absolute;
+    text-indent: 1.5vw;
+    font-size: 30%;
+    top: 26vh;
+    left: 86vw;
+    background-color: yellow;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 7vw;
+}
+
+.four{
+    position: absolute;
+    text-indent: 1.5vw;
+    font-size: 30%;
+    top: 36vh;
+    left: 68vw;
+    background-color: purple;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 7vw;
+}
+
+.five{
+    position: absolute;
+    text-indent: 1.5vw;
+    font-size: 30%;
+    top: 36vh;
+    left: 77vw;
+    background-color: orange;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 7vw;
+}
+
+.six{
+    position: absolute;
+    text-indent: 1.5vw;
+    font-size: 30%;
+    top: 36vh;
+    left: 86vw;
+    background-color: red;
+    border-radius: 1vw;
+    height: 6vh;
+    width: 7vw;
+}
+
+.create{
+    position: absolute;
+    top: 42vh;
+    left:94.5vw;
+    height: 6vh;
+    width: 5vw;
+    border-radius: 12vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #2867C6;
+    border-color: #2867C6;
+}
+
+.main {
+    position: absolute;
+    width: 96vw;
+    height: 47vh;
+    background-color: #80B4F0;
+    left: 2vw;
+    top: 52vh;
+    border-radius: 2vw;
+    font-size: 100%;
+
+}
+
+.main_banner {
+    position: absolute;
+    width: 100%;
+    height: 8vh;
+    background-color: #2867C6;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    color: white;
+    font-size: 50%;
+    top: -2vh;
+}
+
+.view {
+    position: absolute;
+    top: -5.5vh;
+    left: 39vw;
+}
