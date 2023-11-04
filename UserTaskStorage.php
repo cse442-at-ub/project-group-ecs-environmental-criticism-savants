@@ -4,12 +4,19 @@ function CreateTaskDatabase($User, $conn) {
     $Query->execute([$User]);
 }
 
-function retrieveDeadline($User, $task, $conn){
-
+// return
+function retrieveTasks($User, $task, $conn){
+    $query = $conn->prepare("SELECT * FROM ?");
+    $query->execute([$User]);
+    $endarray = [];
+    foreach ($query->fetchAll() as $task){
+        $endarray[] = $task;
+    }
+    return $endarray;
 }
 
 function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn) {
     $query = $conn->prepare("INSERT INTO ? (name, deadline, description, recurrence, priority) VALUES (?, ?, ?, ?, ?)");
-    $query->execute([$Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority])
+    $query->execute([$User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority]);
 }
 ?>
