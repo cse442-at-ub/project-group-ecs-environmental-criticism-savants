@@ -10,7 +10,13 @@
     <p class="wel" id="task">Tasks</p>
 </div>
 
-<button type="button" onclick="" class="back" id="back">Back</button>
+<button type="button" onclick="nav('dashboard.php')" class="back" id="back">Back</button>
+
+<script type="text/javascript">
+    function nav(filename){
+        window.location.href = filename;
+    }
+</script>
 
 <div class="form">
     <div class="background"></div>
