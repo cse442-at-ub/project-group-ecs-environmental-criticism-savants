@@ -9,7 +9,7 @@ function CreateTaskDatabase($User, $conn) {
 // function to retrieve every active task which a given user has created.
 // return an array (indexed from 0 to (# of user tasks - 1) which contains
 // arrays (indexed by the column names for tasks as defined in task database)
-function retrieveTasks($User, $task, $conn){
+function retrieveTasks($User, $conn){
     //$query = $conn->prepare("SELECT * FROM ?");
     //$query->execute([$User]);
     $query = $conn->prepare("SELECT * FROM $User");
