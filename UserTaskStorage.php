@@ -1,12 +1,13 @@
 <?php
 //a function which will create the task database for a user which has just signed up
 function CreateTaskDatabase($User, $conn) {
-    $Query = $conn->prepare("CREATE TABLE ? (name TEXT, deadline TEXT, description TEXT, recurrence TEXT, priority TEXT)");
-    $Query->execute([$User]);
+    //$Query = $conn->prepare("CREATE TABLE ? (name TEXT, deadline TEXT, description TEXT, recurrence TEXT, priority TEXT)");
+    //$Query->execute([$User]);
+    $conn->query("CREATE TABLE $User (name TEXT, deadline TEXT, description TEXT, recurrence TEXT, priority TEXT)");
 }
 
 // function to retrieve every active task which a given user has created.
-// return an array (indexed from 0 to (# of user tasks - 1) which contains 
+// return an array (indexed from 0 to (# of user tasks - 1) which contains
 // arrays (indexed by the column names for tasks as defined in task database)
 function retrieveTasks($User, $task, $conn){
     $query = $conn->prepare("SELECT * FROM ?");

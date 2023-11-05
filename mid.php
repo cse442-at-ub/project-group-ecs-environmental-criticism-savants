@@ -2,6 +2,7 @@
     include "PHP_Hashing.php";
     include "Credential-Template.php";
     include "DBConnection-Function.php";
+    include "UserTaskStorage.php";
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
@@ -43,6 +44,7 @@
             $node2 = $dom->getElementById("next");
             $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
             StoreUserDataSignUp($user, $passwd, $conn);
+            CreateTaskDatabase($user, $conn);
             $conn = null;
         }
         //If something goes wrong
