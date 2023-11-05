@@ -21,11 +21,11 @@
 
 <div class="form">
     <div class="background"></div>
-    <form name="form">
+    <form name="form" action="SubmitTask.php" method="POST">
        <div>
-            <input type="text" class="box1"  placeholder="Task Name" id="name" value="" required>
-            <input type="date" class="box2"  id="deadline" value="" required>
-            <input type="text" class="box3"  placeholder="Task Description" id="description" value="">
+            <input type="text" class="box1"  placeholder="Task Name" id="name" name="name" value="" required>
+            <input type="date" class="box2"  id="deadline" name="deadline" value="" required>
+            <input type="text" class="box3"  placeholder="Task Description" id="description" name="description" value="">
        </div>
 
         <div>
