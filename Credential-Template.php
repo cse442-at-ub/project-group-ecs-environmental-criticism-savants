@@ -1,6 +1,6 @@
 <?php
-define("HOST", "PLACEHOLDER");
-define("H_USERNAME", "PLACEHOLDER");
-define("H_PASSWORD", "PLACEHOLDER");
-define("DATABASE", "PLACEHOLDER");
+define("HOST", "TEMPLATE");
+define("H_USERNAME", "TEMPLATE");
+define("H_PASSWORD", "TEMPLATE");
+define("DATABASE", "TEMPLATE");
 ?>

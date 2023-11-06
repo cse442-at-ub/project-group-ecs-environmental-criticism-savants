@@ -29,7 +29,7 @@
         $node1->removeAttribute("hidden");
         $node2->removeAttribute("hidden");
     }
-    //The else here handles requests from the sign up page;
+    //The else here handles requests from the sign-up page;
     else{
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here

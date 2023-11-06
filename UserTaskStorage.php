@@ -1,5 +1,5 @@
 <?php
-//Below function has been sent to the shadow realm, it is only still arround to easily display the format of the tasks database
+//Below function has been sent to the shadow realm, it is only still around to easily display the format of the tasks database
 //function CreateTaskDatabase($User, $conn) {
 //    //$Query = $conn->prepare("CREATE TABLE ? (name TEXT, deadline TEXT, description TEXT, recurrence TEXT, priority TEXT)");
 //    //$Query->execute([$User]);
@@ -24,4 +24,5 @@ function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence,
     $query = $conn->prepare("INSERT INTO tasks (user, name, deadline, description, recurrence, priority) VALUES (?, ?, ?, ?, ?, ?)");
     $query->execute([$User, $Taskname, $TaskDeadline, $TaskDescription, $Recurrence, $Priority]);
 }
+
 ?>
