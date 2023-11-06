@@ -15,10 +15,12 @@ $taskdescription = $_POST["description"];
 $taskdeadline = $_POST["deadline"];
 $recurrence = $_POST["rec"];
 $priority = $_POST["pri"];
+print_r(retrieveTasks($username, $conn));
 addtask($username, $taskname, $taskdescription, $taskdeadline, $recurrence, $priority, $conn);
+print_r(retrieveTasks($username, $conn));
 $conn = null;
 
-$dom = new DOMDocument();
-$dom->loadHTMLFile("edit-tasks.html");
-echo $dom->saveHTML();
+//$dom = new DOMDocument();
+//$dom->loadHTMLFile("edit-tasks.html");
+//echo $dom->saveHTML();
 ?>
