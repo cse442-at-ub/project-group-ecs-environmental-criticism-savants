@@ -2,7 +2,7 @@
 include "UserTaskStorage.php";
 include "DBConnection-Function.php";
 include "Credential-Template.php";
-
+include "deadline_checking.php";
 session_start();
 $username = "nothing";
 if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
@@ -17,7 +17,6 @@ $recurrence = $_POST["rec"];
 $priority = $_POST["pri"];
 addtask($username, $taskname, $taskdescription, $taskdeadline, $recurrence, $priority, $conn);
 $conn = null;
-
 $dom = new DOMDocument();
 $dom->loadHTMLFile("edit-tasks.html");
 echo $dom->saveHTML();

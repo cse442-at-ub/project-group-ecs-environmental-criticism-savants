@@ -5,15 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0e854a-22c0-42b1-9924-fdc435deb73d" name="Changes" comment="Added some small token functionality">
+      <change afterPath="$PROJECT_DIR$/deadline_checking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Credential-Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/Credential-Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBConnection-Function.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection-Function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmitTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/SubmitTask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserTaskStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserTaskStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mid.php" beforeDir="false" afterPath="$PROJECT_DIR$/mid.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <execution />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -46,7 +52,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="pop-ups" />
+        <entry key="$PROJECT_DIR$" value="dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,10 +74,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="" />
     </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -86,12 +95,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "ray-branch",
+    "git-widget-placeholder": "deadline-checking",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pathVariables",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -121,6 +131,11 @@
       <workItem from="1697474186543" duration="1019000" />
       <workItem from="1697476684459" duration="22000" />
       <workItem from="1697477253914" duration="4957000" />
+      <workItem from="1697843099250" duration="899000" />
+      <workItem from="1697844020628" duration="584000" />
+      <workItem from="1698084749192" duration="122000" />
+      <workItem from="1698533649008" duration="881000" />
+      <workItem from="1699294197053" duration="10374000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to fit current style">
       <option name="closed" value="true" />
@@ -254,5 +269,19 @@
     <MESSAGE value="Small log in bug fixed" />
     <MESSAGE value="Added some small token functionality" />
     <option name="LAST_COMMIT_MESSAGE" value="Added some small token functionality" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="project-group-ecs-environmental-criticism-savants" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://C:/xampp/htdocs/project-group-ecs-environmental-criticism-savants}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="project-group-ecs-environmental-criticism-savants" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://C:/xampp/htdocs/project-group-ecs-environmental-criticism-savants}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file://C:/xampp/htdocs/project-group-ecs-environmental-criticism-savants/img}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
   </component>
 </project>
