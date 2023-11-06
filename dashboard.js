@@ -1,7 +1,7 @@
 //Loads essential items when page loads
 function page_load(){
     load_tasks();
-   // set(new Date);
+    set(new Date);
    // validCheck();
 }
 
@@ -21,6 +21,7 @@ function set(time) {
     let year = document.getElementById("year");
     year.innerHTML = date[3];
     day.innerHTML = date[0] + ", " + date[1] + " " + date[2];
+    disp(time);
     document.getElementById(date[1]).style.background = "#80B4F0"
 }
 
@@ -96,6 +97,35 @@ function log_out() {
 //* If there is no token then dashbaord should exit to the log in page
 function validCheck(){
     if (localStorage.getItem("valid") !== "true"){
-        window.location.href = "log.php";
+       // window.location.href = "log.php";
+    }
+}
+
+//Displays everything due on the selected date
+function disp(time){
+    let tasks = document.getElementById("date-grab").innerHTML;
+    let today = date_filter(tasks, time);
+
+}
+
+// Removes all the tasks not due on that day from all the tasks for that user
+function dateFilter(tasks, date){
+    let ret = []
+    for (i in tasks) {
+        if (i[1] === date){
+            ret.append(i)
+        }
+    }
+}
+//template for tasks.
+// <div class="main" id="main">
+// <div className="task">
+//     <div className="task-pri" ></div>
+//     <p className="task-text">Task 1: description due:----------------------------------- every thursday</p>
+// </div>
+
+function addElement(tasks){
+    for (i in tasks){
+
     }
 }
