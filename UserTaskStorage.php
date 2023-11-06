@@ -10,8 +10,6 @@
 // return an array (indexed from 0 to (# of user tasks - 1) which contains
 // arrays (indexed by the column names for tasks as defined in task database)
 function retrieveTasks($User, $conn){
-    //$query = $conn->prepare("SELECT * FROM tasks");
-    //$query->execute([$User]);
     $query = $conn->prepare("SELECT name, deadline, description, recurrence, priority FROM tasks WHERE user = ?");
     $query->execute([$User]);
     $endarray = [];
@@ -24,6 +22,6 @@ function retrieveTasks($User, $conn){
 //When a user is trying to add a task, this function is used to insert their task into their task database
 function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn) {
     $query = $conn->prepare("INSERT INTO tasks (user, name, deadline, description, recurrence, priority) VALUES (?, ?, ?, ?, ?, ?)");
-    $query->execute([$User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority]);
+    $query->execute([$User, $Taskname, $TaskDeadline, $TaskDescription, $Recurrence, $Priority]);
 }
 ?>
