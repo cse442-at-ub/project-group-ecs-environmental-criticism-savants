@@ -4,13 +4,16 @@
     <title>Savant</title>
     <link rel="stylesheet" href="AccInfo_Style.css" />
     <script src = "acc_info.js"></script>
+    <script src="loadimage.js"></script>
 </head>
-<body>
+<body onload="img()">
 <div class="settings-accinfo">
     <div class="top">
         <div class="t-leftFrame">
             <div class="settingsText">Settings</div>
-            <img class="usericon" src="img/userPFP.png" alt=""/>
+            <img class="usericon" src="" id= "userpfp" alt=""/>
+            <div hidden="hidden" id="chuck"> </div>
+            
         </div>
         <div class="t-rightFrame">
             <a href="dashboard.php">
@@ -48,6 +51,7 @@
                         <button type = "button" onclick = "displayChangePassword('ID_changePassPopup', true)" class = "changePassButton">
                             <div class = "changePassTxt">Change Password</div>
                         </button>
+                        
                     </div>
                     <form name = "changePassForm" action = "change_password.php" method = "POST">
                         <div class = "changePassPopup" id = "ID_changePassPopup" hidden="hidden">
@@ -84,8 +88,19 @@
                         </div>
                     </form>
                 </div>
+                
+                
+            </div>
+            <!-- <div><p>BRUH</p></div> -->
+            <div>
+                <form action="upload.php" method="post" enctype="multipart/form-data">
+                    <label>Select Image File:</label>
+                    <input type="file" name="image">
+                    <input type="submit" name="submit" value="Upload">
+                </form>
             </div>
         </div>
+        
     </div>
 </div>
 </body>
