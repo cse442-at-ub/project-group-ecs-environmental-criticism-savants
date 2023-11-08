@@ -2,7 +2,7 @@
 function page_load(){
     load_tasks();
     set(new Date);
-   // validCheck();
+    // validCheck();
 }
 
 //Loads in all task cards associated with the user
@@ -37,7 +37,7 @@ function set(time) {
 
 // Increments or decreases the year elements on click, calls set to update
 function yearUpdate(cur){
-  //  validCheck();
+    // validCheck();
     const el = document.getElementById("year");
     let up = parseInt(el.innerHTML) + cur;
     let day = document.getElementById("day").innerHTML.slice(5);
@@ -50,7 +50,7 @@ function yearUpdate(cur){
 
 // Changes the current month based off of which month was selected, calls set to update
 function monthUpdate (cur) {
-   // validCheck();
+    // validCheck();
     let day = document.getElementById("day").innerHTML.slice(5).split(" ");
     let year = document.getElementById("year").innerHTML;
     document.getElementById(day[0]).style.background = "#E5E5E5";
@@ -72,7 +72,7 @@ function monthOverflow(time, mon) {
 
 // Increments or decreases date, calls set to update
 function dayUpdate(cur) {
-   // validCheck();
+    // validCheck();
     let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + document.getElementById("year").innerHTML;
     let date = new Date(day);
@@ -115,6 +115,7 @@ function validCheck(){
 function display(time){
     let tasks = req();
     let today = dateFilter(tasks, time);
+    today = color_sort(today);
     addElement(today);
 }
 
@@ -147,7 +148,29 @@ function dateFilter(tasks, date){
     }
     return ret;
 }
-
+// Takes the array of tasks that are due today, and sorts them by their color priority.
+// Red = Priority Level 6
+// Orange = Priority Level 5
+// Purple = Priority Level 4
+// Yellow = Priority Level 3
+// Blue = Priority Level 2
+// Green = Priority Level 1
+function color_sort(tasks) {
+    let priorityToInt = {
+        "one": 1,
+        "two": 2,
+        "three": 3,
+        "four": 4,
+        "five": 5,
+        "six": 6
+    }
+    tasks.sort((a, b) => {
+        let priorityA = priorityToInt[a.priority];
+        let priorityB = priorityToInt[b.priority];
+        return priorityB - priorityA
+    });
+    return tasks
+}
 function addElement(tasks){
     let colors = {"one":"#008000FF","two":"#0000FFFF","three":"#FFFF00FF","four":"#800080FF","five":"#FFA500FF","six":"#FF0000FF"};
     let mains = document.getElementById("main");
