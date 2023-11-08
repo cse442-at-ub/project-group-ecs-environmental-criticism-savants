@@ -29,6 +29,8 @@ function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence,
 function RemoveTask($User, $Taskname, $conn){
     //Find the task in the database
     //send it to the shadow realm
+    $query = $conn->prepare("DELETE FROM tasks WHERE user = ? and name = ?");
+    $query->execute([$User, $Taskname]);
 }
 
 //function edit an existing task
