@@ -25,4 +25,14 @@ function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence,
     $query->execute([$User, $Taskname, $TaskDeadline, $TaskDescription, $Recurrence, $Priority]);
 }
 
+// remove task
+function RemoveTask($User, $Taskname, $conn){
+
+}
+
+//function edit an existing task
+function EditTask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn){
+    
+}
+
 ?>
