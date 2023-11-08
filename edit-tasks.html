@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Tasks</title>
+    <link rel="stylesheet" type="text/css" href="edit-tasks.css"/>
+</head>
+<body>
+
+<div class="topbanner1">
+    <p class="wel" id="task">Tasks</p>
+</div>
+
+<button type="button" onclick="nav('dashboard.php')" class="back" id="back">Back</button>
+
+<script type="text/javascript">
+    function nav(filename){
+        window.location.href = filename;
+    }
+</script>
+
+<div class="form">
+    <div class="background"></div>
+    <form name="form" action="SubmitTask.php" method="POST">
+       <div>
+            <input type="text" class="box1"  placeholder="Task Name" id="name" name="name" value="" required>
+            <input type="date" class="box2"  id="deadline" name="deadline" value="" required>
+            <input type="text" class="box3"  placeholder="Task Description" id="description" name="description" value="">
+       </div>
+
+        <div>
+            <p class="occur">How often does this <br> task occur?</p>
+            <div class="once">
+                <input  type="radio" id="once" value="once" name="rec" checked>
+                <label  for="once">Once</label>
+            </div>
+            <div class="daily">
+                <input type="radio" id="daily" value="daily" name="rec">
+                <label for="daily">Daily</label>
+            </div>
+            <div class="weekly">
+                <input type="radio" id="weekly" value="weekly" name="rec">
+                <label for="weekly">Weekly</label>
+            </div>
+            <div class="yearly">
+                <input type="radio" id="yearly" value="yearly" name="rec">
+                <label for="yearly">Yearly</label>
+            </div>
+        </div>
+
+        <div>
+            <p class="pri">Select a priority</p>
+            <div class="one">
+                <input type="radio" id="1" value="one" name="pri" checked>
+                <label for="1">1</label>
+            </div>
+            <div class="two">
+                <input type="radio" id="2" value="two" name="pri">
+                <label for="2">2</label>
+            </div>
+            <div class="three">
+                <input type="radio" id="3" value="three" name="pri">
+                <label for="3">3</label>
+            </div>
+            <div class="four">
+                <input type="radio" id="4" value="four" name="pri">
+                <label for="4">4</label>
+            </div>
+            <div class="five">
+                <input type="radio" id="5" value="five" name="pri">
+                <label for="5">5</label>
+            </div>
+            <div class="six">
+                <input type="radio" id="6" value="six" name="pri">
+                <label for="6">6</label>
+            </div>
+        </div>
+
+        <input type="submit" class="create" value="+" id="create">
+    </form>
+</div>
+<div class="main" id="main">
+    <div class="main_banner">
+        <p class="view">Task List</p>
+    </div>
+</div>
+
+</body>
+</html>

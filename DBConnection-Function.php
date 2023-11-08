@@ -11,7 +11,7 @@
             //echo "Successful db connection"; // Sanity test to check that it connects
             return $pdo;
         } catch (PDOException $e) {
-            die("Connection to ocean database failed: " . $e->getMessage());
+            die("Connection to database failed: " . $e->getMessage());
         }
     }
 ?>
