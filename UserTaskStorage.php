@@ -27,12 +27,17 @@ function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence,
 
 // remove task
 function RemoveTask($User, $Taskname, $conn){
-
+    //Find the task in the database
+    //send it to the shadow realm
 }
 
 //function edit an existing task
+//just re-use existing functions, don't see a reason to update values because runtime isn't a concern
 function EditTask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn){
-    
+    //remove the task
+    RemoveTask($User, $Taskname, $conn);
+    //add the task with new values
+    addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn);
 }
 
 ?>
