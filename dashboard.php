@@ -17,10 +17,8 @@
     $node2->textContent = "<";
     $node3->textContent = "<";
 
-    $arr1 = "task_1,tomorrow,stuff-js,once,1 task_2,tomorrow,stuff-js,once,2";
-
-    $node6 = $dom->getElementById("date-grab");
-    $node6->textContent = $arr1;
+    $node6 = $dom->getElementById("data-grab");
+    $node6->textContent = $username;
 
     echo $dom->saveHTML();
 

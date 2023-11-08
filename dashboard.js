@@ -21,9 +21,18 @@ function set(time) {
     let year = document.getElementById("year");
     year.innerHTML = date[3];
     day.innerHTML = date[0] + ", " + date[1] + " " + date[2];
-    document.getElementById(date[1]).style.background = "#80B4F0"
-    time = time.toString()
-    display(time);
+    document.getElementById(date[1]).style.background = "#80B4F0";
+    let t = time.toLocaleDateString();
+    t = t.split("/");
+    if (parseInt(t[1]) < 10){
+        t[1] = "0" + t[1];
+    }
+    if(parseInt(t[0])<10){
+        t[0] = "0" + t[0];
+    }
+    t = t[2] + "-" + t[0] + "-" + t[1];
+    console.log(t)
+    display(t);
 }
 
 // Increments or decreases the year elements on click, calls set to update
@@ -76,7 +85,6 @@ function dayUpdate(cur) {
     set(date);
 }
 
-
 //Open/closes the log out pop-up
 function disp(state) {
     let pop = document.getElementById("exit");
@@ -104,34 +112,53 @@ function validCheck(){
 
 
 //Displays everything due on the selected date
-function display(){
-    let task = document.getElementById("date-grab").innerHTML;
-    task = task.split(" ");
-    let tasks = [];
-    for (i of task) {tasks.push(i.split(","));}
-    let time = "tomorrow"
-    // let tasks = [["task 1", "tomorrow", "stuff-js", "once", 1],["task 2", "tomorrow", "stuff-js", "once", 1]];
+function display(time){
+    let tasks = req();
     let today = dateFilter(tasks, time);
     addElement(today);
+}
+
+function req(){
+    let ret = [];
+    let username = document.getElementById("data-grab").innerHTML;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            // Typical action to be performed when the document is ready:
+            let r = xhttp.responseText;
+            ret = JSON.parse(r);
+        }
+    };
+    xhttp.open("POST",'time_change.php', false);
+    xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+    xhttp.send("tasks="+username);
+    return ret;
 }
 
 // Removes all the tasks not due on that day from all the tasks for that user
 function dateFilter(tasks, date){
     let ret = []
-    for (i of tasks) {
-        if (i[1] === date){
-            ret.push(i);
+    for (let i in tasks) {
+        let a = tasks[i];
+        if (a["deadline"] === date){
+            ret.push(a);
         }
     }
     return ret;
 }
 
 function addElement(tasks){
-    let colors = {"1":"#008000FF","2":"#0000FFFF","3":"#FFFF00FF","4":"#800080FF","5":"#FFA500FF","6":"#FF0000FF"};
+    let colors = {"one":"#008000FF","two":"#0000FFFF","three":"#FFFF00FF","four":"#800080FF","five":"#FFA500FF","six":"#FF0000FF"};
     let mains = document.getElementById("main");
+    let m = mains.children;
+    while (m.length >0) {
+        mains.removeChild(m[0]);
+        m = mains.children;
+    }
     for (i of tasks){
         let p = document.createElement("p");
-        let text = document.createTextNode(i[0] + ": " + i[2]);
+        let text = document.createTextNode(i["name"] + ": " + i["description"]);
         p.appendChild(text);
         p.className = "task-text";
 
@@ -140,7 +167,7 @@ function addElement(tasks){
 
         let d2 = document.createElement("div");
         d2.className = "task-pri";
-        d2.style.background = colors[i[4]];
+        d2.style.background = colors[i["priority"]];
 
         d1.appendChild(d2);
         d1.appendChild(p);

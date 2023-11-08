@@ -1,34 +1,11 @@
 <?php
 
-function time_update($type,$change,$date){
-    if($type == "day"){
-        $ret = dayUpdate($change, $date);
-    }elseif ($type == "month"){
-        $ret = monthOverflow($change, $date);
-    }else{
-        $ret = yearUpdate($change,$date);
+    $ar1 = array('name'=>'task 1','deadline'=>'2023-11-08','description'=>'stuff 1','recurrence'=>'once','priority'=>'one');
+    $ar2 = array('name'=>'task 2','deadline'=>'2023-11-08','description'=>'stuff 1','recurrence'=>'once','priority'=>'two');
+
+    if (isset($_POST['tasks'])) {
+        // This is where you would call the retrieve data function
+        $data = array('one'=>$ar1,'two'=>$ar2);
+        $json = json_encode($data);
+        echo $json;
     }
-    return $ret;
-}
-
-function yearUpdate($cur,$date){
-    return "";
-}
-
-function monthUpdate($cur,$date){
-  //  monthOverflow();
-}
-
-function monthOverflow($time,$mon){
-    $ret = $time;
-    $cur = explode(" ",$ret)[1];
-    while ($mon != $cur){
-        $ret = "";
-        $cur = explode(" ",$ret)[1];
-    }
-    return $ret;
-}
-
-function dayUpdate($cur,$date){
-    return "";
-}
