@@ -21,8 +21,9 @@ function set(time) {
     let year = document.getElementById("year");
     year.innerHTML = date[3];
     day.innerHTML = date[0] + ", " + date[1] + " " + date[2];
-    disp(time);
     document.getElementById(date[1]).style.background = "#80B4F0"
+    time = time.toString()
+    display(time);
 }
 
 // Increments or decreases the year elements on click, calls set to update
@@ -97,35 +98,52 @@ function log_out() {
 //* If there is no token then dashbaord should exit to the log in page
 function validCheck(){
     if (localStorage.getItem("valid") !== "true"){
-       // window.location.href = "log.php";
+        window.location.href = "log.php";
     }
 }
 
-//Displays everything due on the selected date
-function disp(time){
-    let tasks = document.getElementById("date-grab").innerHTML;
-    let today = date_filter(tasks, time);
 
+//Displays everything due on the selected date
+function display(){
+    let task = document.getElementById("date-grab").innerHTML;
+    task = task.split(" ");
+    let tasks = [];
+    for (i of task) {tasks.push(i.split(","));}
+    let time = "tomorrow"
+    // let tasks = [["task 1", "tomorrow", "stuff-js", "once", 1],["task 2", "tomorrow", "stuff-js", "once", 1]];
+    let today = dateFilter(tasks, time);
+    addElement(today);
 }
 
 // Removes all the tasks not due on that day from all the tasks for that user
 function dateFilter(tasks, date){
     let ret = []
-    for (i in tasks) {
+    for (i of tasks) {
         if (i[1] === date){
-            ret.append(i)
+            ret.push(i);
         }
     }
+    return ret;
 }
-//template for tasks.
-// <div class="main" id="main">
-// <div className="task">
-//     <div className="task-pri" ></div>
-//     <p className="task-text">Task 1: description due:----------------------------------- every thursday</p>
-// </div>
 
 function addElement(tasks){
-    for (i in tasks){
+    let colors = {"1":"#008000FF","2":"#0000FFFF","3":"#FFFF00FF","4":"#800080FF","5":"#FFA500FF","6":"#FF0000FF"};
+    let mains = document.getElementById("main");
+    for (i of tasks){
+        let p = document.createElement("p");
+        let text = document.createTextNode(i[0] + ": " + i[2]);
+        p.appendChild(text);
+        p.className = "task-text";
 
-    }
+        let d1 = document.createElement("div");
+        d1.className = "task";
+
+        let d2 = document.createElement("div");
+        d2.className = "task-pri";
+        d2.style.background = colors[i[4]];
+
+        d1.appendChild(d2);
+        d1.appendChild(p);
+        mains.appendChild(d1);
+     }
 }

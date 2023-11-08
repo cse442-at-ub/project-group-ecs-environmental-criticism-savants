@@ -37,7 +37,7 @@ body {
 
 .wel{
     position: absolute;
-    top: -3.5vh;
+    top: -2vh;
     left: 20vw;
     width: 200vw;
 }
@@ -437,7 +437,6 @@ body {
     position: relative;
     height: 6vh;
     width: 3vw;
-    background: red;
     left: 60.5vw;
     top: 3vh;
     border-radius: 3vw;
