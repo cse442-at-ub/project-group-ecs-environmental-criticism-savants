@@ -25,7 +25,7 @@ function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence,
     $query->execute([$User, $Taskname, $TaskDeadline, $TaskDescription, $Recurrence, $Priority]);
 }
 
-// remove task
+// remove a user task, give the user who's tasks we are looking at and the name of the task they are trying to remove
 function RemoveTask($User, $Taskname, $conn){
     //Find the task in the database
     //send it to the shadow realm
@@ -33,12 +33,14 @@ function RemoveTask($User, $Taskname, $conn){
     $query->execute([$User, $Taskname]);
 }
 
-//function edit an existing task
-//just re-use existing functions, don't see a reason to update values because runtime isn't a concern
+// function edit an existing task
+// just re-use existing functions, don't see a reason to update values because runtime isn't a concern
+// Call this function like you would the "addtask" function, but the new task information as the parameters instead of the old
+// information
 function EditTask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn){
     //remove the task
     RemoveTask($User, $Taskname, $conn);
-    //add the task with new values
+    //add the new task with new values
     addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn);
 }
 
