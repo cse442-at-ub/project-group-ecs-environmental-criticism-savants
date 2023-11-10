@@ -1,11 +1,23 @@
 <?php
-
-    $ar1 = array('name'=>'task 1','deadline'=>'2023-11-08','description'=>'stuff 1','recurrence'=>'once','priority'=>'one');
-    $ar2 = array('name'=>'task 2','deadline'=>'2023-11-08','description'=>'stuff 1','recurrence'=>'once','priority'=>'two');
-
+    include 'UserTaskStorage.php';
+    include 'Credential-Template.php';
+    include 'DBConnection-Function.php';
+    /*
+    // The following are sample tasks for display testing purposes.
+    $ar1 = array('name'=>'Task 1','deadline'=>'2024-01-01','description'=>'Mildly Important Task','recurrence'=>'once','priority'=>'three');
+    $ar2 = array('name'=>'Task 2','deadline'=>'2024-01-01','description'=>'Very Important Task','recurrence'=>'once','priority'=>'six');
+    $ar3 = array('name'=>'Task 3','deadline'=>'2024-01-01','description'=>'Low Priority Task','recurrence'=>'once','priority'=>'one');
+    $ar4 = array('name'=>'Task 4','deadline'=>'2024-01-01','description'=>'High Priority Task','recurrence'=>'once','priority'=>'four');
+    */
+    session_start();
+    $username = "nothing";
+    if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
+        $username = $_SESSION['user_username']; // Retrieve the username from the session
+    }
     if (isset($_POST['tasks'])) {
         // This is where you would call the retrieve data function
-        $data = array('one'=>$ar1,'two'=>$ar2);
+        $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
+        $data = retrieveTasks($username, $conn);
         $json = json_encode($data);
         echo $json;
     }
