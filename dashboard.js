@@ -134,6 +134,7 @@ function req(){
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
     xhttp.send("tasks="+username);
+    console.log(ret);
     return ret;
 }
 
