@@ -2,7 +2,7 @@
 function page_load(){
     load_tasks();
     set(new Date);
-    // validCheck();
+    validCheck();
 }
 
 //Loads in all task cards associated with the user
@@ -37,7 +37,7 @@ function set(time) {
 
 // Increments or decreases the year elements on click, calls set to update
 function yearUpdate(cur){
-    // validCheck();
+    validCheck();
     const el = document.getElementById("year");
     let up = parseInt(el.innerHTML) + cur;
     let day = document.getElementById("day").innerHTML.slice(5);
@@ -50,7 +50,7 @@ function yearUpdate(cur){
 
 // Changes the current month based off of which month was selected, calls set to update
 function monthUpdate (cur) {
-    // validCheck();
+    validCheck();
     let day = document.getElementById("day").innerHTML.slice(5).split(" ");
     let year = document.getElementById("year").innerHTML;
     document.getElementById(day[0]).style.background = "#E5E5E5";
@@ -72,7 +72,7 @@ function monthOverflow(time, mon) {
 
 // Increments or decreases date, calls set to update
 function dayUpdate(cur) {
-    // validCheck();
+    validCheck();
     let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + document.getElementById("year").innerHTML;
     let date = new Date(day);
