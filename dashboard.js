@@ -24,7 +24,7 @@ function set(time) {
     document.getElementById(date[1]).style.background = "#80B4F0";
     let t = time.toLocaleDateString();
     t = t.split("/");
-    if (parseInt(t[1]) < 10){
+    if (parseInt(t[1]) < 10) {
         t[1] = "0" + t[1];
     }
     if(parseInt(t[0])<10){
@@ -134,7 +134,6 @@ function req(){
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
     xhttp.send("tasks="+username);
-    console.log(ret);
     return ret;
 }
 
