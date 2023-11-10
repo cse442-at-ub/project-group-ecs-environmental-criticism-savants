@@ -1,5 +1,7 @@
 <?php
     include 'UserTaskStorage.php';
+    include 'Credential-Template.php';
+    include 'DBConnection-Function.php';
     /*
     // The following are sample tasks for display testing purposes.
     $ar1 = array('name'=>'Task 1','deadline'=>'2024-01-01','description'=>'Mildly Important Task','recurrence'=>'once','priority'=>'three');
@@ -7,6 +9,7 @@
     $ar3 = array('name'=>'Task 3','deadline'=>'2024-01-01','description'=>'Low Priority Task','recurrence'=>'once','priority'=>'one');
     $ar4 = array('name'=>'Task 4','deadline'=>'2024-01-01','description'=>'High Priority Task','recurrence'=>'once','priority'=>'four');
     */
+    session_start();
     $username = "nothing";
     if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
         $username = $_SESSION['user_username']; // Retrieve the username from the session
