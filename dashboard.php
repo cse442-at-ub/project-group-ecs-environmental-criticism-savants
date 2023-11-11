@@ -1,5 +1,9 @@
 <?php
     include "time_change.php";
+    if (!isset($_SESSION['user_token'])){
+        session_start();
+    }
+
     $dom = new DOMDocument();
     $dom->loadHTMLFile("dashboard.html");
     // Should load username to the username variable below.
