@@ -3,6 +3,7 @@
     include "Credential-Template.php";
     include "DBConnection-Function.php";
     include "UserTaskStorage.php";
+    include "pfpupdater.php";
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
@@ -44,6 +45,7 @@
             $node2 = $dom->getElementById("next");
             $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
             StoreUserDataSignUp($user, $passwd, $conn);
+            set_default_pic($user, $conn);// set default picture to userPFP.jpg
             $conn = null;
         }
         //If something goes wrong

@@ -24,7 +24,16 @@
   <div class="top">
     <div class="t-leftFrame">
       <div class="settingsText">Settings</div>
-      <img class="usericon" src="img/userPFP.png"/>
+      <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
+        <label>
+            <input type="file" name="image" style="display:none;" onchange="document.getElementById('submitbtn').click();">
+            <input type="submit" id="submitbtn" name="submit" value="Upload" style="display:none;" >
+            
+            <img class="usericon" src="" id= "newspfp"  style="border-radius:8%;" alt=""/>
+            
+        </label>
+        
+    </form>
     </div>
     <div class="t-rightFrame">
       <a href="dashboard.php">
@@ -33,9 +42,9 @@
         </div></a>
     </div>
     <div class="buttonFrame">
-      <a href="news.html">
+      <a href="news.php">
         <div class="newTxt">News</div> </a>
-      <a href="notifications.html">
+      <a href="notifications.php">
         <div class="notifTxt">Notifications</div> </a>
       <a href ="settings_AccInfo.php">
         <div class="accinfoTxt">Account Information</div></a>

@@ -25,24 +25,34 @@ if(isset($_POST["submit"])){
         if(in_array($fileType, $allowTypes)){ 
             $image = $_FILES['image']['tmp_name']; 
             $imgContent = addslashes(file_get_contents($image)); 
-         
-            // Insert image content into database 
-            $insert = $conn->query("UPDATE users SET data='$imgContent' WHERE username='$username'"); 
-             
+        if ($_FILES["image"]["size"] < 10000000) {
+            $insert = $conn->query("UPDATE pictures SET data='$imgContent' WHERE user='$username'"); 
+            $conn=null;
             if($insert){ 
                 $status = 'success'; 
                 $statusMsg = "File uploaded successfully."; 
             }else{ 
-                $statusMsg = "File upload failed, please try again."; 
-            }  
+                $statusMsg = "File upload failed due to weak network please try again"; 
+            }    
+        }
+        else{
+             $statusMsg = "Please upload a smaller file";
+        }
+             
+             
         }else{ 
-            $statusMsg = 'Sorry, only JPG, JPe allowed to upload.'; 
+            $statusMsg = 'Please upload only jpg, png, jpeg or gif files'; 
         } 
     }else{ 
-        $statusMsg = 'Please select an image file to upload.'; 
+        $statusMsg = 'Please select an image file to upload'; 
     } 
 } 
-$conn=null;
+ //Disconnect database
 // Display status message 
-echo $statusMsg; 
+// echo $statusMsg;
 ?>
+<!-- Added Script to redirect back to page after showing status of image upload -->
+<script>
+    const phpecho="<?php echo $statusMsg; ?>";
+             alert(phpecho); 
+             window.history.go(-1);</script>;
