@@ -1,6 +1,5 @@
 
 <?php 
-header("settings_AccInfo.php");
 // Include the database configuration file  
 include "Credential-Template.php";
 include "DBConnection-Function.php"; 
@@ -28,12 +27,12 @@ if(isset($_POST["submit"])){
             $imgContent = addslashes(file_get_contents($image)); 
         if ($_FILES["image"]["size"] < 10000000) {
             $insert = $conn->query("UPDATE pictures SET data='$imgContent' WHERE user='$username'"); 
-             
+            $conn=null;
             if($insert){ 
                 $status = 'success'; 
                 $statusMsg = "File uploaded successfully."; 
             }else{ 
-                $statusMsg = "File upload failed, please try again."; 
+                $statusMsg = "File upload failed due to weak network please try again"; 
             }    
         }
         else{
@@ -42,16 +41,17 @@ if(isset($_POST["submit"])){
              
              
         }else{ 
-            $statusMsg = 'Sorry, only JPG, JPe allowed to upload.'; 
+            $statusMsg = 'Please upload only jpg, png, jpeg or gif files'; 
         } 
     }else{ 
-        $statusMsg = 'Please select an image file to upload.'; 
+        $statusMsg = 'Please select an image file to upload'; 
     } 
 } 
-$conn=null;
+ //Disconnect database
 // Display status message 
-echo $statusMsg;
+// echo $statusMsg;
 ?>
+<!-- Added Script to redirect back to page after showing status of image upload -->
 <script>
     const phpecho="<?php echo $statusMsg; ?>";
              alert(phpecho); 
