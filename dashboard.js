@@ -1,13 +1,7 @@
 //Loads essential items when page loads
 function page_load(){
-    load_tasks();
     set(new Date);
-   // validCheck();
-}
-
-//Loads in all task cards associated with the user
-function load_tasks(){
-    //Functionality coming in sprint 3
+    validCheck();
 }
 
 function nav(filename){
@@ -120,8 +114,6 @@ function display(time){
 
 function req(){
     let ret = [];
-    let username = document.getElementById("data-grab").innerHTML;
-
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -132,7 +124,8 @@ function req(){
     };
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
-    xhttp.send("tasks="+username);
+    xhttp.send("tasks");
+    console.log(ret)
     return ret;
 }
 

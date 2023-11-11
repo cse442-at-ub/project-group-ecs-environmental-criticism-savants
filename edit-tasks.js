@@ -1,7 +1,7 @@
 //Displays everything due on the selected date
 function display(){
     let ret = []
-    let tasks = req();
+    let tasks = req("");
     for (let i in tasks) {
         let a = tasks[i];
             ret.push(a);
@@ -10,7 +10,7 @@ function display(){
     addElement(ret);
 }
 
-function req(){
+function req(input){
     let ret = [];
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -22,7 +22,9 @@ function req(){
     };
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
+    let send = "tasks=" + input
     xhttp.send("tasks");
+    console.log(ret)
     return ret;
 }
 
@@ -72,12 +74,12 @@ function addElement(tasks){
 function remove(id){
     let mains = document.getElementById("main");
     let node = document.getElementById(id['name']);
+    req(id['name'])
     mains.removeChild(node);
 }
 
 function edit(id){
     let name = id['name'];
-    console.log("deadline " + name)
     let dead = document.getElementById("deadline " + name).innerHTML;
     let desc = document.getElementById("desc " + name).innerHTML;
     let occur = document.getElementById("occur " + name).innerHTML;
@@ -89,7 +91,7 @@ function edit(id){
 
     document.getElementById(occur).checked =true
     document.getElementById(pri).checked =true
-   // remove(id);
+    remove(id);
 }
 
 function addInfo(task){

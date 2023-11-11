@@ -236,6 +236,7 @@ body {
     top: 52vh;
     border-radius: 2vw;
     font-size: 100%;
+    overflow-y: scroll;
 
 }
 
