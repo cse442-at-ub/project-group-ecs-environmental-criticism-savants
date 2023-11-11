@@ -30,7 +30,7 @@ dashboard.js
 dash.css
 dashboard.php
 deadline_checking.php
-time_change.php
+time_change.php : Handles the retrieval of tasks to display and removal of tasks.
 }
 
 Files that handle settings page
