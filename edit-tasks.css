@@ -58,7 +58,7 @@ body {
 .box1 {
     overflow-x: hidden;
     position: absolute;
-    width: 26vw;
+    width: 62vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -73,7 +73,7 @@ body {
 .box2 {
     overflow-x: hidden;
     position: absolute;
-    width: 26vw;
+    width: 62vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -88,7 +88,7 @@ body {
 .box3 {
     overflow-x: hidden;
     position: absolute;
-    width: 26vw;
+    width: 62vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -236,23 +236,61 @@ body {
     top: 52vh;
     border-radius: 2vw;
     font-size: 100%;
+    overflow-y: scroll;
 
 }
 
 .main_banner {
     position: absolute;
-    width: 100%;
+    width: 96vw;
     height: 8vh;
     background-color: #2867C6;
     border-top-left-radius: 2vw;
     border-top-right-radius: 2vw;
     color: white;
     font-size: 50%;
-    top: -2vh;
+    top: 52vh;
+    left: 2vw;
 }
 
 .view {
     position: absolute;
     top: -5.5vh;
     left: 39vw;
+}
+
+.task {
+    position: relative;
+    top: 5vh;
+    left: 1vw;
+    width: 92%;
+    margin-top: 4vh;
+    font-size: 32%;
+    background: #3d3c3c;
+    border-radius: 6vw;
+    height: 8vh;
+}
+
+.task-text {
+    position: absolute;
+    left: 1.5vw;
+    top: -2vh;
+    width: 60vw;
+    color:white;
+    overflow-x: hidden;
+    height: 7vh;
+}
+
+.task-but {
+    position: relative;
+    width: 12vw;
+    left: 61.5vw;
+    height: 7vh;
+    top: .5vh;
+    margin-left: 1vw;
+    border-radius: 3vw;
+    background: #E5E5E5;
+    border-color: #E5E5E5;
+    font-weight: bolder;
+    font-size: 2vw;
 }

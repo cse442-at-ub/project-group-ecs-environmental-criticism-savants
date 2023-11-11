@@ -19,17 +19,34 @@ function retrieveTasks($User, $conn){
     return $endarray;
 }
 
+//Function will check if a task already exists within the database, used to ignore repeat calls
+function DoesTaskNameExist($Username, $Taskname, $conn){
+    $sql = $conn->prepare("SELECT * FROM tasks WHERE user = ? AND name = ?");
+    $sql->execute([$Username, $Taskname]);
+    //confirm that a username in the DB matches the entered one
+    if ($sql->fetch() != False) {
+        //if there is a match, return TRUE
+        return True;
+    }
+    //else FALSE because no user of that name exists
+    else {
+        return False;
+    }
+}
+
 //When a user is trying to add a task, this function is used to insert their task into their task database
 function addtask($User, $Taskname, $TaskDescription, $TaskDeadline, $Recurrence, $Priority, $conn) {
-    $query = $conn->prepare("INSERT INTO tasks (user, name, deadline, description, recurrence, priority, late) VALUES (?, ?, ?, ?, ?, ?, 'no')");
-    $query->execute([$User, $Taskname, $TaskDeadline, $TaskDescription, $Recurrence, $Priority]);
+    if (!DoesTaskNameExist($User, $Taskname, $conn)) {
+        $query = $conn->prepare("INSERT INTO tasks (user, name, deadline, description, recurrence, priority, late) VALUES (?, ?, ?, ?, ?, ?, 'no')");
+        $query->execute([$User, $Taskname, $TaskDeadline, $TaskDescription, $Recurrence, $Priority]);
+    }
 }
 
 // remove a user task, give the user who's tasks we are looking at and the name of the task they are trying to remove
 function RemoveTask($User, $Taskname, $conn){
     //Find the task in the database
     //send it to the shadow realm
-    $query = $conn->prepare("DELETE FROM tasks WHERE user = ? and name = ?");
+    $query = $conn->prepare("DELETE FROM tasks WHERE user = ? AND name = ?");
     $query->execute([$User, $Taskname]);
 }
 

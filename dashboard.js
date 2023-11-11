@@ -1,13 +1,8 @@
 //Loads essential items when page loads
 function page_load(){
-    load_tasks();
     set(new Date);
     validCheck();
-}
 
-//Loads in all task cards associated with the user
-function load_tasks(){
-    //Functionality coming in sprint 3
 }
 
 function nav(filename){
@@ -113,16 +108,21 @@ function validCheck(){
 
 //Displays everything due on the selected date
 function display(time){
-    let tasks = req();
+    let tasks = req("");
     let today = dateFilter(tasks, time);
     today = color_sort(today);
     addElement(today);
 }
 
-function req(){
-    let ret = [];
-    let username = document.getElementById("data-grab").innerHTML;
+function remove(id){
+    let mains = document.getElementById("main");
+    let node = document.getElementById(id['name']);
+    req(id['name'])
+    mains.removeChild(node);
+}
 
+function req(input){
+    let ret = [];
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -133,8 +133,9 @@ function req(){
     };
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
-    xhttp.send("tasks="+username);
-    // console.log(ret);
+    let send = "tasks=" + input
+    xhttp.send(send);
+    console.log(ret)
     return ret;
 }
 
@@ -186,13 +187,21 @@ function addElement(tasks){
         p.appendChild(text);
         p.className = "task-text";
 
+        let name = i['name']
         let d1 = document.createElement("div");
         d1.className = "task";
+        d1.id = name;
+
+        let b = document.createElement("button")
+        b.innerHTML = "Complete"
+        b.className = "task-but"
+        b.onclick = function () {remove({name});};
 
         let d2 = document.createElement("div");
         d2.className = "task-pri";
         d2.style.background = colors[i["priority"]];
 
+        d1.appendChild(b)
         d1.appendChild(d2);
         d1.appendChild(p);
         mains.appendChild(d1);
