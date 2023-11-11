@@ -4,13 +4,28 @@
     <title>Savant</title>
     <link rel="stylesheet" href="AccInfo_Style.css" />
     <script src = "acc_info.js"></script>
+    <script src="loadimage.js"></script>
 </head>
-<body>
+<body onload="img()">
 <div class="settings-accinfo">
     <div class="top">
         <div class="t-leftFrame">
             <div class="settingsText">Settings</div>
-            <img class="usericon" src="img/userPFP.png" alt=""/>
+            
+            <div>
+                <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
+                    <label>
+                        <input type="file" name="image" style="display:none;" onchange="document.getElementById('submitbtn').click();">
+                        <input type="submit" id="submitbtn" name="submit" value="Upload" style="display:none;" >
+                        
+                        <img class="usericon" src="" id= "userpfp"  style="border-radius:8%;" alt=""/>
+                        
+                    </label>
+                    
+                </form>
+            </div>
+            <div hidden="hidden" id="chuck"> </div>
+            
         </div>
         <div class="t-rightFrame">
             <a href="dashboard.php">
@@ -19,9 +34,9 @@
                 </div></a>
         </div>
         <div class="buttonFrame">
-            <a href="news.html">
+            <a href="news.php">
                 <div class="newTxt">News</div> </a>
-            <a href="notifications.html">
+            <a href="notifications.php">
                 <div class="notifTxt">Notifications</div> </a>
             <a href ="settings_AccInfo.php">
                 <div class="accinfoTxt">Account Information</div></a>
@@ -33,7 +48,8 @@
                 <div class="top-text">
                     <div class="AccInfoTitle">Account Information</div>
                     <div class="line"></div>
-                    <p class="desc">Change your basic account settings.</p>
+                    <p class="desc">Change your basic account settings. Click on the profile picture to change your picture</p>
+                    <p></p>
                 </div>
                 <div class="user-information">
                     <div class="username">Username:</div>
@@ -48,6 +64,7 @@
                         <button type = "button" onclick = "displayChangePassword('ID_changePassPopup', true)" class = "changePassButton">
                             <div class = "changePassTxt">Change Password</div>
                         </button>
+                        
                     </div>
                     <form name = "changePassForm" action = "change_password.php" method = "POST">
                         <div class = "changePassPopup" id = "ID_changePassPopup" hidden="hidden">
@@ -84,9 +101,16 @@
                         </div>
                     </form>
                 </div>
+                
+                
             </div>
+            <!-- <div><p>BRUH</p></div> -->
+           
         </div>
+        
     </div>
+    
 </div>
+
 </body>
 </html>

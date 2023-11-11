@@ -58,8 +58,4 @@ function StoreUserDataSignUp ($User, $Pass, $conn) {
     $request = $conn->prepare("INSERT INTO users (username, hashedpass) VALUES (?, ?)");
     $request->execute([$User, $encryptedPassword]);
 }
-//some testing statements for PM meeting
-//SELECT username FROM users WHERE username = 'admin'
-//SELECT hashedpass FROM users WHERE username = 'admin'
-//INSERT INTO users (username, hashedpass) VALUES ('testuser', 'testHash')
 ?>
