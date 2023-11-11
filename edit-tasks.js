@@ -23,7 +23,7 @@ function req(input){
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
     let send = "tasks=" + input
-    xhttp.send("tasks");
+    xhttp.send(send);
     console.log(ret)
     return ret;
 }

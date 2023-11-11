@@ -58,7 +58,7 @@ body {
 .box1 {
     overflow-x: hidden;
     position: absolute;
-    width: 26vw;
+    width: 62vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -73,7 +73,7 @@ body {
 .box2 {
     overflow-x: hidden;
     position: absolute;
-    width: 26vw;
+    width: 62vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -88,7 +88,7 @@ body {
 .box3 {
     overflow-x: hidden;
     position: absolute;
-    width: 26vw;
+    width: 62vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
