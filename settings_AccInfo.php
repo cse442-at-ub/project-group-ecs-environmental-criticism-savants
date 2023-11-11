@@ -10,8 +10,8 @@ include "DBConnection-Function.php";
         $username = $_SESSION['user_username']; // Retrieve the username from the session
     }
     $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
-    //check if image exists
-    $imagesql = $conn->prepare("SELECT data FROM users WHERE username=?");
+    //Get image from database for that user
+    $imagesql = $conn->prepare("SELECT data FROM pictures WHERE user=?");
     $imagesql->execute([$username]);
     $fetchedimage = $imagesql->fetch(PDO::FETCH_NUM);
     if(!empty($fetchedimage[0])){
