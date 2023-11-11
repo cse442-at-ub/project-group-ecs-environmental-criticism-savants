@@ -1,7 +1,7 @@
 <?php
 include "Credential-Template.php";
 include "DBConnection-Function.php";
-    session_start();
+    session_start(); // CHANGE ME! Is this neccessary?
     $dom = new DOMDocument();
     $dom->loadHTMLFile("settings_AccInfo.html");
 
@@ -19,8 +19,10 @@ include "DBConnection-Function.php";
         // $imagenode = $dom->getElementById("userpfp");
         // $imagenode->src=$fetchedimage;
         // $imagenode->setElementById("userpfp")=$fetchedimage;
-        $imageDataUri = "data:image/jpg;charset=utf8;base64," . base64_encode($imagedata);
         $imagenode = $dom->getElementById("userpfp");
+        //Convert Blob to image readable by HTML
+        $imageDataUri = "data:image/jpg;charset=utf8;base64," . base64_encode($imagedata);
+        //Set image
         $imagenode->setAttribute("src", $imageDataUri);
     }
     $node = $dom->getElementById("ai_user");
