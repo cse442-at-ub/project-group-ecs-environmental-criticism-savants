@@ -19,18 +19,19 @@ if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
     $username = $_SESSION['user_username']; // Retrieve the username from the session
 }
 if (isset($_POST['tasks'])) {
+    $task = $_POST['tasks'];
+    if (!empty($task)){
+        $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
+        RemoveTask($username, $task, $conn);
+        $conn = null;
+        $_POST['tasks'] = "";
+    }
+
     // This is where you would call the retrieve data function
     $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
     $data = retrieveTasks($username, $conn);
     $conn = null;
     $json = json_encode($data);
     echo $json;
-
-    $task = $_POST['tasks'];
-    if (!empty($task)){
-        // replace with remove function
-        $task = "";
-
-    }
 
     }
