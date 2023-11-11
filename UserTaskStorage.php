@@ -19,7 +19,7 @@ function retrieveTasks($User, $conn){
     return $endarray;
 }
 
-//Function to check if a task already exists within the database
+//Function will check if a task already exists within the database, used to ignore repeat calls
 function DoesTaskNameExist($Username, $Taskname, $conn){
     $sql = $conn->prepare("SELECT * FROM tasks WHERE user = ? and name = ?");
     $sql->execute([$Username, $Taskname]);
