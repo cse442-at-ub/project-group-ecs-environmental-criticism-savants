@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
