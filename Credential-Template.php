@@ -4,3 +4,4 @@ define("H_USERNAME", "root");
 define("H_PASSWORD", "");
 define("DATABASE", "test");
 ?>
+
