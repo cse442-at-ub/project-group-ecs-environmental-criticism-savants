@@ -416,10 +416,10 @@ body {
 
 .task {
     position: relative;
-    top: 5vh;
-    left: 1vw;
+    top: 8vh;
+    left: 2vw;
+    bottom: 8vh;
     width: 65vw;
-    margin-top: 2vh;
     font-size: 32%;
     background: #3d3c3c;
     border-radius: 6vw;
@@ -427,10 +427,12 @@ body {
 
 .task-text {
     position: relative;
-    left: 1.5vw;
-    width: 60vw;
-    top:-5vh;
-    color:white;
+    left: 14vw;
+    width: 50vw;
+    font-size: 4vh;
+    font-weight: bolder;
+    top:-8vh;
+    color: white;
 }
 
 .task-pri {
@@ -438,7 +440,20 @@ body {
     height: 6vh;
     width: 3vw;
     left: 60.5vw;
-    top: 3vh;
     border-radius: 3vw;
+    margin-bottom: -4vh;
+}
 
+.task-but {
+    position: relative;
+    width: 12vw;
+    height: 7vh;
+    top: 4vh;
+    margin-left: 1vw;
+    margin-bottom: -4vh;
+    border-radius: 3vw;
+    background: #E5E5E5;
+    border-color: #E5E5E5;
+    font-weight: bolder;
+    font-size: 4vh;
 }

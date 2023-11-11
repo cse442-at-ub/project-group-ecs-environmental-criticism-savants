@@ -108,13 +108,20 @@ function validCheck(){
 
 //Displays everything due on the selected date
 function display(time){
-    let tasks = req();
+    let tasks = req("");
     let today = dateFilter(tasks, time);
     today = color_sort(today);
     addElement(today);
 }
 
-function req(){
+function remove(id){
+    let mains = document.getElementById("main");
+    let node = document.getElementById(id['name']);
+    req(id['name'])
+    mains.removeChild(node);
+}
+
+function req(input){
     let ret = [];
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -126,9 +133,9 @@ function req(){
     };
     xhttp.open("POST",'time_change.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
-    xhttp.send("tasks");
+    let send = "tasks=" + input
+    xhttp.send(send);
     console.log(ret)
-
     return ret;
 }
 
@@ -180,13 +187,21 @@ function addElement(tasks){
         p.appendChild(text);
         p.className = "task-text";
 
+        let name = i['name']
         let d1 = document.createElement("div");
         d1.className = "task";
+        d1.id = name;
+
+        let b = document.createElement("button")
+        b.innerHTML = "Complete"
+        b.className = "task-but"
+        b.onclick = function () {remove({name});};
 
         let d2 = document.createElement("div");
         d2.className = "task-pri";
         d2.style.background = colors[i["priority"]];
 
+        d1.appendChild(b)
         d1.appendChild(d2);
         d1.appendChild(p);
         mains.appendChild(d1);
