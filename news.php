@@ -34,8 +34,8 @@ include "DBConnection-Function.php";
         $imagenode2->setAttribute("src", $imageDataUri);
 
     }
-    $node = $dom->getElementById("ai_user");
-    $node->textContent = $username;
+    // $node = $dom->getElementById("ai_user");
+    // $node->textContent = $username;
     
     // <!-- <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($fetchedimage[0]);
     
@@ -45,7 +45,7 @@ include "DBConnection-Function.php";
     // echo $node1->textContent;
     $dom1->saveHTML();
     $dom2->saveHTML();
-    echo $dom->saveHTML();
+    echo $dom1->saveHTML();
     
     $conn = null;
 ?>
