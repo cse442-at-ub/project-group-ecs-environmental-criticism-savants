@@ -1,5 +1,6 @@
 
 <?php 
+header("settings_AccInfo.php");
 // Include the database configuration file  
 include "Credential-Template.php";
 include "DBConnection-Function.php"; 
@@ -25,16 +26,21 @@ if(isset($_POST["submit"])){
         if(in_array($fileType, $allowTypes)){ 
             $image = $_FILES['image']['tmp_name']; 
             $imgContent = addslashes(file_get_contents($image)); 
-         
-            // Insert image content into database 
-            $insert = $conn->query("UPDATE users SET data='$imgContent' WHERE username='$username'"); 
+        if ($_FILES["image"]["size"] < 10000000) {
+            $insert = $conn->query("UPDATE pictures SET data='$imgContent' WHERE user='$username'"); 
              
             if($insert){ 
                 $status = 'success'; 
                 $statusMsg = "File uploaded successfully."; 
             }else{ 
                 $statusMsg = "File upload failed, please try again."; 
-            }  
+            }    
+        }
+        else{
+             $statusMsg = "Please upload a smaller file";
+        }
+             
+             
         }else{ 
             $statusMsg = 'Sorry, only JPG, JPe allowed to upload.'; 
         } 
@@ -44,5 +50,9 @@ if(isset($_POST["submit"])){
 } 
 $conn=null;
 // Display status message 
-echo $statusMsg; 
+echo $statusMsg;
 ?>
+<script>
+    const phpecho="<?php echo $statusMsg; ?>";
+             alert(phpecho); 
+             window.history.go(-1);</script>;

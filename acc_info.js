@@ -19,3 +19,7 @@ function displayChangePassword(elem, state) {
         }
     }
 }
+// document.getElementById("pictureform").onchange
+// function sutosubmit() {
+//     document.getElementById("pictureform").submit();
+// }

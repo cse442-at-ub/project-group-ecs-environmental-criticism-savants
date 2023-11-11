@@ -11,7 +11,19 @@
     <div class="top">
         <div class="t-leftFrame">
             <div class="settingsText">Settings</div>
-            <img class="usericon" src="" id= "userpfp" alt=""/>
+            
+            <div>
+                <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
+                    <label>
+                        <input type="file" name="image" style="display:none;" onchange="document.getElementById('bruhs').click();">
+                        <input type="submit" id="bruhs" name="submit" value="Upload" style="display:none;" >
+                        
+                        <img class="usericon" src="" id= "userpfp"  style="border-radius:8%;" alt=""/>
+                        
+                    </label>
+                    
+                </form>
+            </div>
             <div hidden="hidden" id="chuck"> </div>
             
         </div>
@@ -92,13 +104,7 @@
                 
             </div>
             <!-- <div><p>BRUH</p></div> -->
-            <div>
-                <form action="upload.php" method="post" enctype="multipart/form-data">
-                    <label>Select Image File:</label>
-                    <input type="file" name="image">
-                    <input type="submit" name="submit" value="Upload">
-                </form>
-            </div>
+            
         </div>
         
     </div>
