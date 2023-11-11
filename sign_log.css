@@ -1,9 +1,9 @@
-
 body {
     background-color:#E5E5E5;
     font-family: Jomhuria, sans-serif;
     font-size: 6vw;
     font-weight: bold;
+    position: absolute;
 }
 
 .banner {
@@ -32,11 +32,10 @@ body {
 
 .title {
     color:rgba(0, 0, 0, 1);
-    margin:auto;
     position: relative;
-    top:-15vh;
-    text-align:center;
-    font-size: 100%;
+    text-align: center;
+    top:-12.5vh;
+    font-size: 75%;
 }
 
 .wrong {
@@ -54,10 +53,10 @@ body {
 
 }
 
-.text {
+.text-1 {
     background-color:#4D698A;
     border: #4D698A;
-    position: relative;
+    position: absolute;
     text-align: left;
     text-indent: 1vw;
     border-radius: 3.5vh;
@@ -65,14 +64,41 @@ body {
     font-size: 50%;
     width:38vw;
     height: 9vh;
-    top: -12vh;
     left: 4vw;
+    top: 5vh;
 }
-
-.text-1 {
+.text-2 {
     background-color:#4D698A;
     border: #4D698A;
-    position: relative;
+    position: absolute;
+    text-align: left;
+    text-indent: 1vw;
+    border-radius: 3.5vh;
+    color: white;
+    font-size: 50%;
+    width:38vw;
+    height: 9vh;
+    left: 4vw;
+    top: 19vh;
+}
+.text-3 {
+    background-color:#4D698A;
+    border: #4D698A;
+    position: absolute;
+    text-align: left;
+    text-indent: 1vw;
+    border-radius: 3.5vh;
+    color: white;
+    font-size: 50%;
+    width:38vw;
+    height: 9vh;
+    left: 4vw;
+    top: 33vh;
+}
+.text-4 {
+    background-color:#4D698A;
+    border: #4D698A;
+    position: absolute;
     text-align: left;
     text-indent: 1vw;
     border-radius: 3.5vh;
@@ -80,20 +106,33 @@ body {
     font-size: 50%;
     width:38vw;
     height: 12vh;
-    top: -12vh;
-    margin-top: 5vh;
     left: 4vw;
+    top: 7vh;
+}
+.text-5 {
+    background-color:#4D698A;
+    border: #4D698A;
+    position: absolute;
+    text-align: left;
+    text-indent: 1vw;
+    border-radius: 3.5vh;
+    color: white;
+    font-size: 50%;
+    width:38vw;
+    height: 12vh;
+    left: 4vw;
+    top: 26vh;
 }
 .next {
+    position:absolute;
     box-shadow:0 .5vw .5vw rgba(0, 0, 0, 0.25);
     background-color:#2867C6;
     border: #2867C6;
-    width:38vw;
-    height: 12vh;
-    position:absolute;
+    width:24vw;
+    height: 10vh;
     border-radius: 6vh;
-    left: 4vw;
-    top: 45vh;
+    left: 11vw;
+    top: 47.5vh;
     text-align:center;
     font-size:45%;
     color:rgba(255, 255, 255, 1);
