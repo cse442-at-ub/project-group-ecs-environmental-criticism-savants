@@ -88,3 +88,12 @@ body {
     top: 64vh;
 }
 
+@media only screen and (max-width: 950px){
+    .wel {font-size: 7vh; top: 10vh;}
+    .banner{ height: 9vh}
+    .side-box{width: 90%;}
+    .intro{top: 2.5vh;left: 2.6vw;font-size: 4vh;}
+    .list{font-size: 3vh; top: 16vh;}
+    .create{height: 10vh; top: 87vh; font-size: 2vh; left: 5%; border-radius: 6vw;}
+    .log{height: 10vh; font-size: 2vh; top: 87vh; border-radius: 6vw;}
+}

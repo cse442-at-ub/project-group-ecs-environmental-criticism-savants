@@ -2,6 +2,8 @@
     include "PHP_Hashing.php";
     include "Credential-Template.php";
     include "DBConnection-Function.php";
+    include "UserTaskStorage.php";
+    include "pfpupdater.php";
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
@@ -28,7 +30,7 @@
         $node1->removeAttribute("hidden");
         $node2->removeAttribute("hidden");
     }
-    //The else here handles requests from the sign up page;
+    //The else here handles requests from the sign-up page;
     else{
         $repasswd = $_POST["repassword"];
         //Validation of sign up information should happen here
@@ -43,6 +45,7 @@
             $node2 = $dom->getElementById("next");
             $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
             StoreUserDataSignUp($user, $passwd, $conn);
+            set_default_pic($user, $conn);// set default picture to userPFP.jpg
             $conn = null;
         }
         //If something goes wrong

@@ -1,0 +1,332 @@
+body {
+    font-size: 6vw;
+    width: 100%;
+    font-family: Jomhuria, sans-serif ;
+    background: #E5E5E5;
+    font-weight: bold;
+    overflow-x: hidden;
+}
+
+.topbanner1 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+    top: -2vh;
+    left:0vw;
+    background-color: #2867C6;
+    color: white;
+    font-size: 50%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.wel{
+    position: absolute;
+    top: -2vh;
+    left: 45vw;
+    width: 200vw;
+}
+
+.back {
+    overflow-x: hidden;
+    position: absolute;
+    width: 8%;
+    height: 6vh;
+    background-color: #E5E5E5;
+    color: black;
+    font-size: 23%;
+    border-radius: 1vw;
+    top: 2%;
+    left: 91%;
+    font-weight: bolder;
+    text-align: center;
+    border-color: transparent;
+}
+
+.background{
+    position: absolute;
+    background: #80b3f0;
+    width: 96vw;
+    height: 32vh;
+    top: 14vh;
+    left: 2vw;
+    border-radius: 1vw;
+}
+
+.box1 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 62vw;
+    height: 8vh;
+    background-color: #4D698A;
+    border: #4D698A;
+    color:white;
+    border-radius: 1vw;
+    font-size: 50%;
+    text-indent: 1vw;
+    top: 16vh;
+    left: 4vw;
+}
+
+.box2 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 62vw;
+    height: 8vh;
+    background-color: #4D698A;
+    border: #4D698A;
+    color:white;
+    border-radius: 1vw;
+    font-size: 50%;
+    text-indent: 1vw;
+    top: 26vh;
+    left: 4vw;
+}
+
+.box3 {
+    overflow-x: hidden;
+    position: absolute;
+    width: 62vw;
+    height: 8vh;
+    background-color: #4D698A;
+    border: #4D698A;
+    color:white;
+    border-radius: 1vw;
+    font-size: 50%;
+    text-indent: 1vw;
+    top: 36vh;
+    left: 4vw;
+}
+.occur {
+    position: absolute;
+    font-size: 50%;
+    top: 10vh;
+    left: 35vw;
+}
+
+.once{
+    position: absolute;
+    font-size: 40%;
+    top: 30vh;
+    left: 35vw;
+}
+
+.daily{
+    position: absolute;
+    font-size: 40%;
+    top: 30vh;
+    left: 49vw;
+}
+
+.weekly{
+    position: absolute;
+    font-size: 40%;
+    top: 38vh;
+    left: 35vw;
+}
+
+.yearly{
+    position: absolute;
+    font-size: 40%;
+    top: 38vh;
+    left: 49vw;
+}
+
+.pri{
+    position: absolute;
+    font-size: 50%;
+    top: 10vh;
+    left: 69vw;
+}
+
+.one{
+    position: absolute;
+    text-align: center;
+    font-size: 33%;
+    border-radius: 1vw;
+    border: 0.15vw solid;
+    border-color: black;
+    top: 26vh;
+    left: 68vw;
+    background-color: green;
+    height: 6vh;
+    width: 7vw;
+}
+
+.two{
+    position: absolute;
+    text-align: center;
+    font-size: 33%;
+    border-radius: 1vw;
+    border: 0.15vw solid;
+    border-color: black;
+    top: 26vh;
+    left: 77vw;
+    background-color: blue;
+    height: 6vh;
+    width: 7vw;
+}
+
+.three{
+    position: absolute;
+    text-align: center;
+    font-size: 33%;
+    border-radius: 1vw;
+    border: 0.15vw solid;
+    border-color: black;
+    top: 26vh;
+    left: 86vw;
+    background-color: yellow;
+    height: 6vh;
+    width: 7vw;
+}
+
+.four{
+    position: absolute;
+    text-align: center;
+    font-size: 33%;
+    border-radius: 1vw;
+    border: 0.15vw solid;
+    border-color: black;
+    top: 36vh;
+    left: 68vw;
+    background-color: purple;
+    height: 6vh;
+    width: 7vw;
+}
+
+.five{
+    position: absolute;
+    text-align: center;
+    font-size: 33%;
+    border-radius: 1vw;
+    border: 0.15vw solid;
+    border-color: black;
+    top: 36vh;
+    left: 77vw;
+    background-color: orange;
+    height: 6vh;
+    width: 7vw;
+}
+
+.six {
+    position: absolute;
+    text-align: center;
+    font-size: 33%;
+    border-radius: 1vw;
+    border: 0.15vw solid;
+    border-color: black;
+    top: 36vh;
+    left: 86vw;
+    background-color: red;
+    height: 6vh;
+    width: 7vw;
+}
+
+.create{
+    position: absolute;
+    top: 42vh;
+    left:94.5vw;
+    height: 6vh;
+    width: 5vw;
+    border-radius: 12vw;
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #2867C6;
+    border-color: #2867C6;
+}
+
+.main {
+    position: absolute;
+    width: 96vw;
+    height: 47vh;
+    background-color: #80B4F0;
+    left: 2vw;
+    top: 52vh;
+    border-radius: 2vw;
+    font-size: 100%;
+    overflow-y: scroll;
+
+}
+
+.main_banner {
+    position: absolute;
+    width: 96vw;
+    height: 8vh;
+    background-color: #2867C6;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    color: white;
+    font-size: 50%;
+    top: 52vh;
+    left: 2vw;
+}
+
+.view {
+    position: absolute;
+    top: -5.5vh;
+    left: 39vw;
+}
+
+.task {
+    position: relative;
+    top: 5vh;
+    left: 1vw;
+    width: 92%;
+    margin-top: 4vh;
+    font-size: 32%;
+    background: #3d3c3c;
+    border-radius: 6vw;
+    height: 8vh;
+}
+
+.task-text {
+    position: absolute;
+    left: 1.5vw;
+    top: -2vh;
+    width: 60vw;
+    color:white;
+    overflow-x: hidden;
+    height: 7vh;
+}
+
+.task-but {
+    position: relative;
+    width: 12vw;
+    left: 61.5vw;
+    height: 7vh;
+    top: .5vh;
+    margin-left: 1vw;
+    border-radius: 3vw;
+    background: #E5E5E5;
+    border-color: #E5E5E5;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+@media only screen and (max-width: 980px){
+    .topbanner1{ height: 9vh}
+    .wel{ font-size: 4vh; top:-.5vh; left:38vw}
+    .back{ width: 16vw; font-size: 2vh;top:.9vh; left: 82vw; height: 5vh}
+    .background{top: 9vh;}
+    .box1{font-size: 3vh; border-radius: 3vw; top:11vh; width: 50vw}
+    .box2{font-size: 3vh; border-radius: 3vw; top:21vh; width: 50vw}
+    .box3{font-size: 3vh; border-radius: 3vw; top:31vh; width: 50vw}
+    .pri{font-size: 3vh; left: 64vw; top: 8vh}
+    .one{font-size: 3vh; width: 10vw; top: 21vh; left: 60vw; height: 8vh}
+    .two{font-size: 3vh; width: 10vw; top: 21vh; left: 72vw; height: 8vh}
+    .three{font-size: 3vh; width: 10vw; top: 21vh; left: 84vw; height: 8vh}
+    .four{font-size: 3vh; width: 10vw; top: 31vh; left: 60vw; height: 8vh}
+    .five{font-size: 3vh; width: 10vw; top: 31vh; left: 72vw; height: 8vh}
+    .six{font-size: 3vh; width: 10vw; top: 31vh; left: 84vw; height: 8vh}
+    .create{height: 4vh; top: 39.5vh; font-size: 2vh; width: 7vw; left: 92vw}
+    .main{top:47vh}
+    .main_banner{top:45vh}
+    .view{top:-.6vh; font-size: 3vh; left: 34vw;}
+    .task{width: 92vw; left: 2vw}
+    .task-text{font-size: 3vh; top:  -.8vh; left: 6vw; width: 42vw}
+    .task-but{font-size: 2vh; width: 22vw; left: 44vw; height: 6vh; top: 1vh; border-radius: 5vw}
+}

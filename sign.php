@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Sign Up</title>
     <link rel="stylesheet" type="text/css" href="sign_log.css"/>
 </head>
@@ -19,11 +20,11 @@
 
     <form name="form" action="mid.php" method="POST">
         <label id="there">
-            <input type="text" id="username" name="username" class="text" value="" placeholder="username" required>
+            <input type="text" id="username" name="username" class="text-1" value="" placeholder="username" required>
 
-            <input type="password" id="password" name="password" class="text" value="" placeholder="password" required>
+            <input type="password" id="password" name="password" class="text-2" value="" placeholder="password" required>
 
-            <input type="password" id="repassword" name="repassword" class="text" value="" placeholder="re-enter password" required>
+            <input type="password" id="repassword" name="repassword" class="text-3" value="" placeholder="re-enter password" required>
 
             <input type="text" value="sign" id="here" name="here" hidden="hidden">
 

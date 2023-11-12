@@ -7,7 +7,11 @@
     <script src="dashboard.js"></script>
     <link rel="stylesheet" type="text/css" href="dash.css" />
 </head>
-<body onload="page_load()">
+<body onload="page_load()" id="body">
+<div class="main" id="main">
+
+
+</div>
 <div class = "topbanner2"></div>
 <div class="topbanner1">
     <p class="wel" id="user"></p>
@@ -15,16 +19,17 @@
 
 <button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
 <button type="button" onclick="nav('settings_AccInfo.php')" class="set" id="set">Settings</button>
+<button type="button" onclick="nav('edit-tasks.php')" class="edit" id="edit">Edit Tasks</button>
 
-<div class="main" id="main">
-    <div class="main_banner">
-        <p class="view">Card View</p>
-    </div>
-    <div class="day" id="day"></div>
-    <button type="button" class="button1" id = "left1" onclick="dayUpdate(-1)"></button>
-    <button type="button" class="button2" onclick="dayUpdate(1)">></button>
-    <div id="cards"></div>
+<div class="day" id="day"></div>
+<button type="button" class="button1" id = "left1" onclick="dayUpdate(-1)"></button>
+<button type="button" class="button2" onclick="dayUpdate(1)">></button>
+
+<div class="main_banner">
+    <p class="view">Card View</p>
 </div>
+
+<div id="data-grab" hidden="hidden"></div>
 
 <div class="year">
     <div class="format">

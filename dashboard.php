@@ -1,5 +1,9 @@
 <?php
-    session_start();
+    include "time_change.php";
+    if (!isset($_SESSION['user_token'])){
+        session_start();
+    }
+
     $dom = new DOMDocument();
     $dom->loadHTMLFile("dashboard.html");
     // Should load username to the username variable below.
@@ -8,11 +12,15 @@
     if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
         $username = $_SESSION['user_username']; // Retrieve the username from the session
     }
-
     $node = $dom->getElementbyId("user");
     $node->textContent = "Hello " . $username;
     $node2 = $dom->getElementbyId("left1");
     $node3 = $dom->getElementbyId("left2");
     $node2->textContent = "<";
     $node3->textContent = "<";
-echo $dom->saveHTML();
+
+    $node6 = $dom->getElementById("data-grab");
+    $node6->textContent = $username;
+
+    echo $dom->saveHTML();
+
