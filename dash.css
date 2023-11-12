@@ -519,7 +519,7 @@ body {
     width: 65vw;
     font-size: 32%;
     background: #3d3c3c;
-    border-radius: 6vw;
+    border-radius: 3vw;
 }
 
 .task-text {
@@ -571,7 +571,7 @@ body {
     font-size: 4vh;
 }
 
-@media only screen and (max-width: 495px){
+@media only screen and (max-width: 980px){
     .topbanner1{ height: 9vh}
     .topbanner2{ height: 9vh}
     .wel{ font-size: 4vh; top:0;}
@@ -607,4 +607,4 @@ body {
     .task-pri{width: 12vw; left: 75vw; top: -2vh;}
     .task-but{font-size: 1.5vh; width:22vw; top:2.2vh}
 }
-=======
+

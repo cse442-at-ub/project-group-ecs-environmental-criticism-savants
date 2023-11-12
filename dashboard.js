@@ -208,7 +208,7 @@ function addElement(tasks){
      }
 }
 window.addEventListener('resize', function() {
-    var contentEl = document.getElementById('content');
+    var contentEl = document.getElementById('body');
     if (window.innerWidth < 1920) {
       contentEl.style.overflowY = 'auto';
     } else {
