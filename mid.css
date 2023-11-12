@@ -24,7 +24,7 @@ body {
     width: 46vw;
     height: 60vh;
     margin: auto;
-    position: fixed;
+    position: absolute;
     left: 27vw;
     top: 25vh;
     border-radius:6vh;
@@ -54,4 +54,11 @@ body {
     font-weight: bold;
     font-size:45%;
     color:rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 495px){
+    .banner{ height: 9vh}
+    .main{width: 90%;left: 5%;top: 20vh;}
+    .action{width: 90%; left: 5%; font-size: 4vh}
+    .text{font-size: 4vh}
 }
