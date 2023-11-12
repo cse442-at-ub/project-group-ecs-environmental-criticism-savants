@@ -207,3 +207,11 @@ function addElement(tasks){
         mains.appendChild(d1);
      }
 }
+window.addEventListener('resize', function() {
+    var contentEl = document.getElementById('content');
+    if (window.innerWidth < 1920) {
+      contentEl.style.overflowY = 'auto';
+    } else {
+      contentEl.style.overflowY = 'hidden';
+    }
+  });

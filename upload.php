@@ -20,8 +20,8 @@ if(isset($_POST["submit"])){
         $fileName = basename($_FILES["image"]["name"]); 
         $fileType = pathinfo($fileName, PATHINFO_EXTENSION); 
          
-        // Allow certain file formats 
-        $allowTypes = array('jpg','png','jpeg','gif'); 
+        // Allow certain file formats JPEG not working bug!
+        $allowTypes = array('jpg','png','gif'); 
         if(in_array($fileType, $allowTypes)){ 
             $image = $_FILES['image']['tmp_name']; 
             $imgContent = addslashes(file_get_contents($image)); 
@@ -41,7 +41,7 @@ if(isset($_POST["submit"])){
              
              
         }else{ 
-            $statusMsg = 'Please upload only jpg, png, jpeg or gif files'; 
+            $statusMsg = 'Please upload only jpg, png, or gif files'; 
         } 
     }else{ 
         $statusMsg = 'Please select an image file to upload'; 
