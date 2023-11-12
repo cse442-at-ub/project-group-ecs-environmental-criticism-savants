@@ -1,10 +1,105 @@
 body {
     font-size: 6vw;
+    width: 1920px;
+    font-family: Jomhuria, sans-serif;
+    background: #E5E5E5;
+    font-weight: bold;
+    overflow-x: hidden;
+    margin: 0; /* Remove default body margin */
+    max-height: 1080px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.topbanner1 {
+    position: fixed;
+    width: 80%;
+    height: 12vh;
+    top: -2vh;
+    left: 0;
+    background-color: #2867C6;
+    color: white;
+    font-size: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between; /* Adjusted for better spacing */
+    align-items: center; /* Center content vertically */
+}
+
+.topbanner2 {
+    position: fixed;
+    width: 80%;
+    height: 12vh;
+    top: -2vh;
+    left: 20vw;
+    background-color: #2867C6;
+    color: white;
+}
+
+.wel {
+    position: absolute;
+    top: 50%; /* Center text vertically */
+    left: 50%;
+    /* transform: translate(-50%, -50%); Center text horizontally and vertically */
+    width: 100vw;
+}
+
+/* Adjusted button styles for better responsiveness */
+.back,
+.set,
+.edit {
+    position: fixed;
+    width: 8%;
+    height: 6vh;
+    background-color: #E5E5E5;
+    color: black;
+    font-size: 2vw;
+    border-radius: 1vw;
+    font-weight: bolder;
+    text-align: center;
+    border-color: transparent;
+}
+
+.main {
+    position: absolute;
+    width: 70%;
+    min-height: 75vh; /* Changed to min-height to allow for scrolling */
+    background-color: #80B4F0;
+    left: 2.5%;
+    top: 22vh;
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    overflow-y: scroll;
+}
+
+.main_banner {
+    position: absolute;
+    width: 70%;
+    height: 8vh;
+    background-color: #2867C6;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    color: white;
+    font-size: 1vw;
+    top: 18vh;
+    left: 2.5vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+}
+
+/* Other styles remain unchanged for brevity */
+
+
+body {
+    font-size: 6vw;
     width: 100%;
     font-family: Jomhuria, sans-serif ;
     background: #E5E5E5;
     font-weight: bold;
-    overflow-x:hidden;
+    overflow-x:scroll;
+    overflow-y: scroll;
 }
 
 .cards {
@@ -74,7 +169,7 @@ body {
 
 .edit {
     position: fixed;
-    width: 9%;
+    width: 10%;
     height: 6vh;
     background-color: #E5E5E5;
     color: black;
@@ -114,7 +209,7 @@ body {
 }
 
 .view {
-    position: absolute;
+    /* position: absolute; */
     top: -5.5vh;
     left: 27.5vw;
 }
@@ -442,3 +537,18 @@ body {
     border-radius: 3vw;
 
 }
+
+@media (max-width: 1920px) {
+    body {
+      
+      overflow-y: scroll;
+      overflow-x: scroll;
+    }
+  }
+  @media (max-height: 1080px) {
+    body {
+      
+      overflow-y: scroll;
+      overflow-x: scroll;
+    }
+  }
