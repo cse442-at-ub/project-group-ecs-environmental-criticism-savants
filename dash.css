@@ -137,6 +137,7 @@ body {
     width: 200vw;
 }
 
+
 .back {
     position: fixed;
     width: 8%;
@@ -182,8 +183,9 @@ body {
     border-color: transparent;
 }
 
+
 .main {
-    position: absolute;
+    position: fixed;
     width: 70%;
     height: 75%;
     background-color: #80B4F0;
@@ -195,7 +197,7 @@ body {
 }
 
 .main_banner {
-    position: absolute;
+    position: fixed;
     width: 70%;
     height: 8vh;
     background-color: #2867C6;
@@ -215,7 +217,7 @@ body {
 }
 
 .day {
-    position: absolute;
+    position: fixed;
     top: 12vh;
     background-color: #E5E5E5;
     border: .5vh solid #2867C6;
@@ -229,7 +231,7 @@ body {
 }
 
 .button1 {
-    position: absolute;
+    position: fixed;
     top: 12.5vh;
     height: 5vh;
     width: 4%;
@@ -243,7 +245,7 @@ body {
 }
 
 .button2 {
-    position: absolute;
+    position: fixed;
     top: 12.5vh;
     height: 5vh;
     width: 4%;
@@ -523,7 +525,7 @@ body {
 .task-text {
     position: relative;
     left: 14vw;
-    width: 50vw;
+    width: 43vw;
     font-size: 4vh;
     font-weight: bolder;
     top:-8vh;
@@ -569,3 +571,40 @@ body {
     font-size: 4vh;
 }
 
+@media only screen and (max-width: 495px){
+    .topbanner1{ height: 9vh}
+    .topbanner2{ height: 9vh}
+    .wel{ font-size: 4vh; top:0;}
+    .edit{ width: 10vw; font-size: 1vh;top:.4vh; text-indent: -1vw;}
+    .set{ width: 11vw; font-size: 1vh;top:.4vh; left: 76vw; text-indent: -1.5vw;}
+    .back{ width: 10vw; font-size: 1vh;top:.4vh; left: 89vw;}
+    .main{width: 95%; top: 37vh}
+    .main_banner{width: 95%; top: 35vh; height: 5vh}
+    .view{font-size: 3vh; left: 32vw; top: -2vh;}
+    .day{left: 36vw; font-size: 2vh; height: 3vh; width: 28vw; top:32.5vh}
+    .button1{width: 6vw; height: 3vh; font-size: 1vh; left: 28vw; top:33vh; text-align: left}
+    .button2{width: 6vw; height: 3vh; font-size: 1vh; left: 68vw; top:33vh; text-align: left}
+    .year{width: 95%; height: 24vh; left: 2.5vw; top: 8vh}
+    .year_date{font-size: 1.5vh; height: 2vh; width: 20w; left: 33vw}
+    .button3{font-size: 1vh; height: 2vh; width:4vw; text-align: left; left: 28vw;}
+    .button4{font-size: 1vh; height: 2vh; width:4vw; text-align: left; left: 62.5vw;}
+    .Jan{font-size: 2vh; width: 25vw; height: 4vh; top: 4vh; left: 5vw}
+    .Feb{font-size: 2vh; width: 25vw; height: 4vh; top: 4vh; left: 35vw;}
+    .Mar{font-size: 2vh; width: 25vw; height: 4vh; top: 4vh; left: 65vw;}
+    .Apr{font-size: 2vh; width: 25vw; height: 4vh; top: 9vh; left: 5vw;}
+    .May{font-size: 2vh; width: 25vw; height: 4vh; top: 9vh; left: 35vw;}
+    .Jun{font-size: 2vh; width: 25vw; height: 4vh; top: 9vh; left: 65vw;}
+    .Jul{font-size: 2vh; width: 25vw; height: 4vh; top: 14vh; left: 5vw;}
+    .Aug{font-size: 2vh; width: 25vw; height: 4vh; top: 14vh; left: 35vw;}
+    .Sep{font-size: 2vh; width: 25vw; height: 4vh; top: 14vh; left: 65vw;}
+    .Oct{font-size: 2vh; width: 25vw; height: 4vh; top: 19vh; left: 5vw;}
+    .Nov{font-size: 2vh; width: 25vw; height: 4vh; top: 19vh; left: 35vw;}
+    .Dec{font-size: 2vh; width: 25vw; height: 4vh; top: 19vh; left: 65vw;}
+    .pop{width: 56vw; left: 41vw; height: 15vh; font-size: 2vh; top: -1.6vh}
+    .opt{width:22vw; left: .6vw; margin-left: .6vw}
+    .task{width: 90vw}
+    .task-text{font-size: 2vh; left: 25vw; width: 48vw; top: -6vh;}
+    .task-pri{width: 12vw; left: 75vw; top: -2vh;}
+    .task-but{font-size: 1.5vh; width:22vw; top:2.2vh}
+}
+=======

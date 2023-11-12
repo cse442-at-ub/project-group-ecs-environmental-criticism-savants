@@ -306,3 +306,27 @@ body {
     font-weight: bolder;
     font-size: 2vw;
 }
+
+@media only screen and (max-width: 495px){
+    .topbanner1{ height: 9vh}
+    .wel{ font-size: 4vh; top:-.5vh; left:38vw}
+    .back{ width: 16vw; font-size: 2vh;top:.9vh; left: 82vw; height: 5vh}
+    .background{top: 9vh;}
+    .box1{font-size: 3vh; border-radius: 3vw; top:11vh; width: 50vw}
+    .box2{font-size: 3vh; border-radius: 3vw; top:21vh; width: 50vw}
+    .box3{font-size: 3vh; border-radius: 3vw; top:31vh; width: 50vw}
+    .pri{font-size: 3vh; left: 64vw; top: 8vh}
+    .one{font-size: 3vh; width: 10vw; top: 21vh; left: 60vw; height: 8vh}
+    .two{font-size: 3vh; width: 10vw; top: 21vh; left: 72vw; height: 8vh}
+    .three{font-size: 3vh; width: 10vw; top: 21vh; left: 84vw; height: 8vh}
+    .four{font-size: 3vh; width: 10vw; top: 31vh; left: 60vw; height: 8vh}
+    .five{font-size: 3vh; width: 10vw; top: 31vh; left: 72vw; height: 8vh}
+    .six{font-size: 3vh; width: 10vw; top: 31vh; left: 84vw; height: 8vh}
+    .create{height: 4vh; top: 39.5vh; font-size: 2vh; width: 7vw; left: 92vw}
+    .main{top:47vh}
+    .main_banner{top:45vh}
+    .view{top:-.6vh; font-size: 3vh; left: 34vw;}
+    .task{width: 92vw; left: 2vw}
+    .task-text{font-size: 3vh; top:  -.8vh; left: 6vw; width: 42vw}
+    .task-but{font-size: 2vh; width: 22vw; left: 44vw; height: 6vh; top: 1vh; border-radius: 5vw}
+}
