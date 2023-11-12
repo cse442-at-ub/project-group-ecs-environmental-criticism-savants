@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Savant</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" type="text/css" href="landing.css"/>
 </head>
 <body>

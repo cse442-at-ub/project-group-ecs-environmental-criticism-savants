@@ -123,6 +123,7 @@ body {
     left: 4vw;
     top: 26vh;
 }
+
 .next {
     position:absolute;
     box-shadow:0 .5vw .5vw rgba(0, 0, 0, 0.25);
@@ -136,4 +137,17 @@ body {
     text-align:center;
     font-size:45%;
     color:rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 495px){
+    .title {font-size: 7vh; top: -11vh;}
+    .banner{ height: 9vh}
+    .main{width: 90%;left: 5%;top: 20vh;}
+    .wrong{font-size: 3vh; width: 80%; left: 10%}
+    .text-1{width: 90%; left: 5%; font-size: 4vh}
+    .text-2{width: 90%; left: 5%; font-size: 4vh}
+    .text-3{width: 90%; left: 5%; font-size: 4vh}
+    .text-4{width: 90%; left: 5%; font-size: 4vh}
+    .text-5{width: 90%; left: 5%; font-size: 4vh}
+    .next{width: 90%; left: 5%; font-size: 4vh}
 }
