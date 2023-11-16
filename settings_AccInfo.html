@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Savant</title>
+    <link rel="stylesheet" href="AccInfo_Style.css" />
+    <script src = "acc_info.js"></script>
+</head>
+<body>
+<div class="settings-accinfo">
+    <div class="top">
+        <div class="t-leftFrame">
+            <div class="settingsText">Settings</div>
+            
+            <div>
+                <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
+                    <label>
+                        <input type="file" name="image" style="display:none;" onchange="document.getElementById('submitbtn').click();">
+                        <input type="submit" id="submitbtn" name="submit" value="Upload" style="display:none;" >
+                        
+                        <img class="usericon" src="" id= "userpfp"  style="border-radius:8%;" alt=""/>
+                        
+                    </label>
+                    
+                </form>
+            </div>
+            <div hidden="hidden" id="chuck"> </div>
+            
+        </div>
+        <div class="t-rightFrame">
+            <a href="dashboard.php">
+                <div class = "dashboardButton">
+                    <div class = "dashboardTxt">Return To Dashboard</div>
+                </div></a>
+        </div>
+        <div class="buttonFrame">
+            <a href="news.php">
+                <div class="newTxt">News</div> </a>
+            <a href="notifications.php">
+                <div class="notifTxt">Notifications</div> </a>
+            <a href ="settings_AccInfo.php">
+                <div class="accinfoTxt">Account Information</div></a>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="outer-frame">
+            <div class="inner-frame">
+                <div class="top-text">
+                    <div class="AccInfoTitle">Account Information</div>
+                    <div class="line"></div>
+                    <p class="desc">Change your basic account settings. Click on the profile picture to change your picture</p>
+                    <p></p>
+                </div>
+                <div class="user-information">
+                    <div class="username">Username:</div>
+                    <div class="username-display">
+                        <div class = "accInfoUser" id = "ai_user"></div>
+                    </div>
+                    <div class="password">Password:</div>
+                    <div class="password-display">
+                        <div class = filteredPass>****************</div>
+                    </div>
+                    <div class = "cont_changePassButton">
+                        <button type = "button" onclick = "displayChangePassword('ID_changePassPopup', true)" class = "changePassButton">
+                            <div class = "changePassTxt">Change Password</div>
+                        </button>
+                        
+                    </div>
+                    <form name = "changePassForm" action = "change_password.php" method = "POST">
+                        <div class = "changePassPopup" id = "ID_changePassPopup" hidden="hidden">
+                            <div class = "popupTxt">Change Your Password</div>
+                            <input type = "password" id = "current_password"
+                                   name = "current_password"
+                                   class = "inputText"
+                                   value=""
+                                   placeholder="Enter Current Password"
+                                   required
+                            >
+                            <input type = "password" id = "new_password"
+                                name = "new_password"
+                                class = "inputText1"
+                                value=""
+                                placeholder="Enter New Password"
+                                required
+                            >
+                            <input type = "password" id = "reenter_password"
+                                   name = "reenter_password"
+                                   class = "inputText2"
+                                   value=""
+                                   placeholder="Re-enter Password"
+                                   required
+                            >
+                            <div class = "cont_closePopup">
+                                <button type = "button" onclick = "displayChangePassword('ID_changePassPopup', false)" class = "closePopup">
+                                    <div class = "closePopupTxt">Cancel</div>
+                                </button>
+                            </div>
+                            <div class = "cont_confirmPass">
+                                <input type = "submit" class = "confirmPassButton" value = "Confirm">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+                
+            </div>
+            <!-- <div><p>BRUH</p></div> -->
+           
+        </div>
+        
+    </div>
+    
+</div>
+
+</body>
+</html>

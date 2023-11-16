@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a0e854a-22c0-42b1-9924-fdc435deb73d" name="Changes" comment="Added some small token functionality">
+      <change afterPath="$PROJECT_DIR$/deadline_checking.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credential-Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/Credential-Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DBConnection-Function.php" beforeDir="false" afterPath="$PROJECT_DIR$/DBConnection-Function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubmitTask.php" beforeDir="false" afterPath="$PROJECT_DIR$/SubmitTask.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserTaskStorage.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserTaskStorage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mid.php" beforeDir="false" afterPath="$PROJECT_DIR$/mid.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="landing" />
+                <branch-info repo="$PROJECT_DIR$" source="dev" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Daniel Preisler &lt;32717269+krisp-rat@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Krisp-Rat&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7cfe7e34-208d-4cbb-a482-cf43ec49f9fe" />
+        <option name="url" value="https://github.com/cse442-at-ub/project-group-ecs-environmental-criticism-savants" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="" />
+    </include_path>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2W57UD0LTPKHPtXOcibZS9Naj7J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "deadline-checking",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.pathVariables",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="log.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" path="$PROJECT_DIR$/log.php">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a0e854a-22c0-42b1-9924-fdc435deb73d" name="Changes" comment="" />
+      <created>1696010601327</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696010601327</updated>
+      <workItem from="1696010602944" duration="7159000" />
+      <workItem from="1696018523690" duration="2090000" />
+      <workItem from="1696271679173" duration="13710000" />
+      <workItem from="1696311276890" duration="42000" />
+      <workItem from="1696534686071" duration="29000" />
+      <workItem from="1696534736787" duration="16569000" />
+      <workItem from="1697049298952" duration="244000" />
+      <workItem from="1697049857211" duration="3956000" />
+      <workItem from="1697054311056" duration="542000" />
+      <workItem from="1697147220396" duration="1225000" />
+      <workItem from="1697474186543" duration="1019000" />
+      <workItem from="1697476684459" duration="22000" />
+      <workItem from="1697477253914" duration="4957000" />
+      <workItem from="1697843099250" duration="899000" />
+      <workItem from="1697844020628" duration="584000" />
+      <workItem from="1698084749192" duration="122000" />
+      <workItem from="1698533649008" duration="881000" />
+      <workItem from="1699294197053" duration="10374000" />
+    </task>
+    <task id="LOCAL-00001" summary="Updated to fit current style">
+      <option name="closed" value="true" />
+      <created>1696013687735</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696013687735</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Updated to fit current style">
+      <option name="closed" value="true" />
+      <created>1696015907114</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696015907114</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First draft. Needs minor functionality changes">
+      <option name="closed" value="true" />
+      <created>1696016045695</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696016045695</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed top bar">
+      <option name="closed" value="true" />
+      <created>1696018176543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696018176543</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed top bar">
+      <option name="closed" value="true" />
+      <created>1696019175851</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696019175851</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed scaling issues with border radius and drop shadow">
+      <option name="closed" value="true" />
+      <created>1696274790304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1696274790304</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Messing around with HTML/JS features">
+      <option name="closed" value="true" />
+      <created>1696311202332</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696311202332</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Basic UI is completed. Buttons need functionality">
+      <option name="closed" value="true" />
+      <created>1696537812761</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696537812762</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added year button functionality">
+      <option name="closed" value="true" />
+      <created>1696539152784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1696539152784</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Minor scaling issues fixed">
+      <option name="closed" value="true" />
+      <created>1696618840602</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696618840603</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Began log in functionality">
+      <option name="closed" value="true" />
+      <created>1696621831964</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1696621831964</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Fixed sign up functionality">
+      <option name="closed" value="true" />
+      <created>1697053753892</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1697053753892</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Small log in bug fixed">
+      <option name="closed" value="true" />
+      <created>1697054667089</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1697054667089</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added some small token functionality">
+      <option name="closed" value="true" />
+      <created>1697484139546</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1697484139546</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Updated to fit current style" />
+    <MESSAGE value="First draft. Needs minor functionality changes" />
+    <MESSAGE value="fixed top bar" />
+    <MESSAGE value="fixed scaling issues with border radius and drop shadow" />
+    <MESSAGE value="Messing around with HTML/JS features" />
+    <MESSAGE value="Basic UI is completed. Buttons need functionality" />
+    <MESSAGE value="Added year button functionality" />
+    <MESSAGE value="Minor scaling issues fixed" />
+    <MESSAGE value="Began log in functionality" />
+    <MESSAGE value="Fixed sign up functionality" />
+    <MESSAGE value="Small log in bug fixed" />
+    <MESSAGE value="Added some small token functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some small token functionality" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="project-group-ecs-environmental-criticism-savants" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://C:/xampp/htdocs/project-group-ecs-environmental-criticism-savants}" type="462c0819:PsiDirectoryNode" />
+      </path>
+      <path>
+        <item name="project-group-ecs-environmental-criticism-savants" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file://C:/xampp/htdocs/project-group-ecs-environmental-criticism-savants}" type="462c0819:PsiDirectoryNode" />
+        <item name="dir{file://C:/xampp/htdocs/project-group-ecs-environmental-criticism-savants/img}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>

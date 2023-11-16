@@ -1,0 +1,342 @@
+body {
+    background-color: rgb(105, 90, 90);
+    overflow: hidden;
+}
+.settings-notifs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.settings-notifs .bottom {
+    position: absolute;
+    top: 35vh;
+}
+/* this is for the blue border */
+.settings-notifs .outer-frame {
+    position: relative;
+    width: 95vw;
+    height: 80vh;
+    background-color: #3A7FD0;
+    border: 0.40vw solid;
+    border-top-left-radius: 2.5vw;
+    border-top-right-radius: 2.5vw;
+    border-color: #2867C6;
+}
+
+.settings-notifs .inner-frame {
+    position: absolute;
+    width: 91vw;
+    height: 57.5vh;
+    top: 3vh;
+    left: 1.75vw;
+    background-color: #E2D8D8;
+    border: 0.3vw solid;
+    border-radius: 1.5vw;
+    border-color: #656161;
+}
+
+.settings-notifs .top-text {
+    position: absolute;
+    width: 100vw;
+    height: 6.67vh;
+    top: 3vh;
+    left: 2vw;
+}
+.settings-notifs .notifTitle {
+    position: absolute;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 2.15vw;
+}
+.settings-notifs .line {
+    position: absolute;
+    height: 0.2vh;
+    width: 35vw;
+    bottom: 1vh;
+    background-color: #4b4949;
+}
+.settings-notifs .desc {
+    position: absolute;
+    height: 50vh;
+    top: 3vh;
+    font-family: "Darker Grotesque";
+    font-weight: 100;
+    color: #3d3c3c;
+    font-size: 1.65vw;
+}
+
+.settings-notifs .freqTitle {
+    position: absolute;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 2.15vw;
+    left:50vw;
+}
+.settings-notifs .line2 {
+    position: absolute;
+    height: 0.2vh;
+    width: 20vw;
+    bottom: 1vh;
+    left: 50vw;
+    background-color: #4b4949;
+}
+.settings-notifs .desc2 {
+    position: absolute;
+    height: 50vh;
+    top: 3vh;
+    left: 50vw;
+    font-family: "Darker Grotesque";
+    font-weight: 100;
+    color: #3d3c3c;
+    font-size: 1.65vw;
+}
+
+.settings-notifs .notif-info{
+    position: relative;
+    width: 60vw;
+    top: 16vh;
+    left: 2vw;
+}
+
+
+
+input[type="checkbox"] {
+    width: 2.2vw; /* Set the width of the custom checkbox */
+    height: 5vh; /* Set the height of the custom checkbox */
+    cursor: pointer; /* Show a pointer cursor on hover */
+}
+/* Style the custom checkbox when it's checked */
+input[type="checkbox"]:checked {
+    background-color: #0074d9; /* Change the background color when checked */
+    border-color: #0074d9; /* Change the border color when checked */
+}
+.settings-notifs .freq-info {
+    position: absolute;
+    width: 50vw;
+    left: 52vw;
+    top: 44vh;
+}
+
+.settings-notifs .cbTxt {
+    position: relative;
+    bottom: 1.4vh;
+    font-size: 1.8vw;
+    font-family: "consolas", "Droid Sans";
+    font-weight: 400;
+    color: #262525;
+}
+
+.settings-notifs .cbTxtMonthly {
+    position: absolute;
+    bottom: 30.75vh;
+    left: 3vw;
+    font-size: 1.8vw;
+    font-family: "consolas", "Droid Sans";
+    font-weight: 400;
+    color: #262525;
+}
+.settings-notifs .cbTxtWeekly{
+    position: absolute;
+    bottom: 22.75vh;
+    left: 3vw;
+    font-size: 1.8vw;
+    font-family: "consolas", "Droid Sans";
+    font-weight: 400;
+    color: #262525;
+}
+.settings-notifs .cbTxtDaily {
+    position: absolute;
+    bottom: 15.25vh;
+    left: 3vw;
+    font-size: 1.5vw;
+    font-family: "consolas", "Droid Sans";
+    font-weight: 400;
+    color: #262525;
+}
+/* this is a format for checkbox positiioning
+#emailDeadline.cbEmailTaskDeadline {
+    position: relative;
+    left: 0vw;
+}*/
+#monthly.cbMonthly{
+    position: absolute;
+    bottom: 30vh;
+}
+
+#weekly.cbWeekly {
+    position: absolute;
+    bottom: 22vh;
+}
+
+#daily.cbDaily {
+    position: absolute;
+    bottom: 14vh;
+}
+
+.settings-notifs .top {
+    position: absolute;
+    width: 100vw;
+    height: 32.5vh;
+    top: 0vh;
+    box-shadow: 0vh 1.5vh 1.5vh #00000040;
+}
+
+.settings-notifs .t-leftFrame {
+    position: absolute;
+    width: 13vw;
+    height: 32.5vh;
+    background-color: #2867C6;
+}
+
+.settings-notifs .settingsText {
+    position: absolute;
+    width: 60vw;
+    height: 20vh;
+    top: 20.5vh;
+    left: 3.5vh;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+    font-size: 2.5vw;
+}
+
+.settings-notifs .usericon {
+    position: absolute;
+    width: 8.5vw;
+    height: 17.5vh;
+    left: 2.25vw;
+    top: 2vh;
+}
+
+
+.settings-notifs .t-rightFrame {
+    position: relative;
+    width: 120vw;
+    height: 32.5vh;
+    left: 13vw;
+    background-color: #E2D8D8;
+}
+
+.settings-notifs .dashboardButton {
+    position: absolute;
+    display: table;
+    background-color: #ffffff;
+    left: 61vw;
+    top: 21.25vh;
+    height: 7vh;
+    width: 23vw;
+    border: .2vw solid;
+    border-radius: 1vw;
+    border-color: #2867C6;
+    box-shadow: 0vh 0.5vh 1.5vh black;
+    text-align: center;
+}
+
+.settings-notifs .dashboardTxt {
+    font-size: 2.1vw;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    vertical-align: middle;
+    display: table-cell
+}
+
+.settings-notifs .dashboardTxt:before {
+    content: '';
+    position: absolute;
+    top: 5.5vh;
+    height: 0.4vh;
+    background: #044394;
+    width: 0vh;
+    transition: all 1.0s ease;
+}
+.settings-notifs .dashboardTxt:hover:before {
+    width: 93%;
+    color: #2867C6;
+}
+
+.settings-notifs .buttonFrame {
+    position: absolute;
+    background-color: #80b3f0;
+    left: 16vw;
+    top: 20vh;
+    height: 9.5vh;
+    width: 55vw;
+    border: .15vw solid;
+    border-radius: 3vh;
+    box-shadow: 0vh 0.5vh 1.5vh black;
+}
+
+.settings-notifs .newTxt {
+    position: absolute;
+    top: 2.25vh;
+    width: 5.85vw;
+    left: 46.5vw;
+    font-size: 2.25vw;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+    line-height: normal;
+}
+.settings-notifs .newTxt:before {
+    content: '';
+    position: absolute;
+    top: 5vh;
+    height: 0.5vh;
+    background: #044394;
+    width: 0;
+    transition: all 1.0s ease;
+}
+.settings-notifs .newTxt:hover:before{
+    width:100%;
+}
+
+
+.settings-notifs .notifTxt {
+    position: absolute;
+    top: 2.25vh;
+    width: 12.75vw;
+    left: 28vw;
+    font-size: 2.25vw;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.settings-notifs .notifTxt:before {
+    content: '';
+    position: absolute;
+    top: 5vh;
+    height: 0.5vh;
+    background: #044394;
+    width: 0;
+    transition: all 1.0s ease;
+}
+.settings-notifs .notifTxt:hover:before {
+    width: 107%;
+}
+
+.settings-notifs .accinfoTxt {
+    position: absolute;
+    top: 2.25vh;
+    width: 25vw;
+    left: 1.5vw;
+    font-size: 2.25vw;
+    font-family: "Darker Grotesque-Bold", Helvetica;
+    font-weight: 700;
+    color: #000000;
+}
+.settings-notifs .accinfoTxt:before {
+    content: '';
+    position: absolute;
+    top: 5vh;
+    height: 0.5vh;
+    background: #044394;
+    width: 0;
+    transition: all 1.0s ease;
+}
+.settings-notifs .accinfoTxt:hover:before {
+    width: 88%;
+}
