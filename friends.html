@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Friends</title>
+    <script src="friends.js"></script>
+    <link rel="stylesheet" type="text/css" href="friends.css"/>
+</head>
+<body>
+
+<div class="topbanner1">
+    <p class="wel" id="task">Friends List</p>
+</div>
+
+<button type="button" onclick="nav('dashboard.php')" class="back" id="back">Back</button>
+
+<div class="side">
+    <p class="text">Add New Friend</p>
+    <form name="form" action="" method="POST">
+        <input type="text" class="first" name="first" placeholder="First Name" required>
+        <input type="text" class="last" name="last" placeholder="Last Name" required>
+        <input type="email" class="email" name="email" placeholder="Email" required>
+        <input type="submit" class="but" name="but" value="Create Friend Profile">
+    </form>
+</div>
+
+<div class="main" id="main">
+
+    <div class="profile">
+        <div class="name"><p class="inner">Daniel Preisler</p></div>
+        <div class="name"><p class="inner">01/01/2000</p></div>
+        <div class="name"><p class="inner">24 in 365 days</p></div>
+        <button class="x">X</button>
+    </div>
+
+
+</div>
+
+</body>
+</html>
