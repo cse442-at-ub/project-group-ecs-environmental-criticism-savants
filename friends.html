@@ -7,7 +7,7 @@
     <script src="friends.js"></script>
     <link rel="stylesheet" type="text/css" href="friends.css"/>
 </head>
-<body>
+<body onload="display()">
 
 <div class="topbanner1">
     <p class="wel" id="task">Friends List</p>
@@ -19,7 +19,7 @@
     <p class="text">Add New Friend</p>
     <form name="form" action="" method="POST">
         <input type="text" class="first" name="full_name" placeholder="Full Name" required>
-        <input type="date" class="date" name="date" placeholder="Last Name" required>
+        <input type="date" class="date" name="date" required>
         <input type="email" class="email" name="email" placeholder="Email" required>
         <input type="submit" class="but" name="but" value="Create Friend Profile">
     </form>
@@ -27,12 +27,6 @@
 
 <div class="main" id="main">
 
-    <div class="profile">
-        <div class="name"><p class="inner">Ray Rodriguez</p></div>
-        <div class="name"><p class="inner">01/01/2000</p></div>
-        <div class="name"><p class="inner">24 in 365 days</p></div>
-        <button class="name">REMOVE</button>
-    </div>
 
 </div>
 
