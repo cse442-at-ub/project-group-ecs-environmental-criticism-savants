@@ -15,9 +15,10 @@ function display(){
 
 //Removes a friends from HTML and the DB
 function remove(id){
+    console.log(id['id'])
     let mains = document.getElementById("main");
-    let node = document.getElementById(id['name']);
-    req(id['name'])
+    let node = document.getElementById(id);
+    req(id)
     mains.removeChild(node);
 }
 
@@ -73,7 +74,7 @@ function addElement(friends){
         let b = document.createElement("button");
         b.className = "name"
         b.innerHTML = "REMOVE";
-        b.onclick = function () {remove({name})}
+        b.onclick = function () {remove(id)}
 
         let dm = document.createElement("div")
         dm.className = "profile"
