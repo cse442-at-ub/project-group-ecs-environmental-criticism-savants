@@ -10,9 +10,9 @@ function RemoveFriend($username, $friendname, $birthday,  $conn) {
     $request->execute([$username, $friendname, $birthday]);
 }
 
-RetrieveFriends($username, $conn){
+function RetrieveFriends($username, $conn){
     $query = $conn->prepare("SELECT username, friendname, birthday FROM friends WHERE username = ?");
-    $query->execute([$User]);
+    $query->execute([$username]);
     $endarray = [];
     foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $task){
         $endarray[] = $task;
