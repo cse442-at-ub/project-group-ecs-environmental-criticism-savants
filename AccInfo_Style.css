@@ -535,9 +535,15 @@ body {
 .accinfoTxt:hover:before {
     width: 88%;
 }
-@media only screen and (min-device-width: 375px) and (max-width: 1180px){
+@media only screen and (max-width: 1400px){
+    body {overflow-y: scroll;}
+}
+@media only screen and (max-width: 980px){
+    body{
+        width: 100vw;
+        overflow-x: scroll;
+    }
     .top{
-        position: absolute;
         width: 170vw;
         height: 25.5vh;
         box-shadow: 0 1.5vh 1.5vh #00000040;
@@ -677,7 +683,7 @@ body {
     }
     .inner-frame {
         width: 165.5vw;
-        height: 90.5vh;
+        height: 107.5vh;
         top: 1vh;
         left: 2vw;
         border-radius: 2vh;
@@ -691,7 +697,7 @@ body {
     }
 
     .AccInfoTitle {
-        width: 600vw;
+        width: 80vw;
         font-family: "Darker Grotesque-Bold", Helvetica, serif;
         font-weight: 600;
         color: #000000;

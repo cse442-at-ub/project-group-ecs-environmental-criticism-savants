@@ -5,9 +5,37 @@
     <title>Savant</title>
 </head>
 </html>
-
 <body>
+</body>
 <div class="settings-notifs">
+    <div class="top">
+        <div class="t-leftFrame">
+            <div class="settingsText">Settings</div>
+            <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
+                <label>
+                    <input type="file" name="image" style="display:none;" onchange="document.getElementById('submitbtn').click();">
+                    <input type="submit" id="submitbtn" name="submit" value="Upload" style="display:none;" >
+                    <img class="usericon" src="" id= "notifpfp"  style="border-radius:8%;" alt=""/>
+
+                </label>
+
+            </form>
+        </div>
+        <div class="t-rightFrame">
+            <a href="dashboard.php">
+                <div class = "dashboardButton">
+                    <div class = "dashboardTxt">Return To Dashboard</div>
+                </div></a>
+        </div>
+        <div class="buttonFrame">
+            <a href="news.php">
+                <div class="newTxt">News</div> </a>
+            <a href="notifications.php">
+                <div class="notifTxt">Notifications</div> </a>
+            <a href ="settings_AccInfo.php">
+                <div class="accinfoTxt">Account Information</div  ></a>
+        </div>
+    </div>
     <div class = "bottom">
         <div class = "outer-frame">
             <div class = "inner-frame">
@@ -26,33 +54,4 @@
             </div>
         </div>
     </div>
-    <div class="top">
-        <div class="t-leftFrame">
-            <div class="settingsText">Settings</div>
-            <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
-                <label>
-                    <input type="file" name="image" style="display:none;" onchange="document.getElementById('submitbtn').click();">
-                    <input type="submit" id="submitbtn" name="submit" value="Upload" style="display:none;" >
-                    <img class="usericon" src="" id= "notifpfp"  style="border-radius:8%;" alt=""/>
-                    
-                </label>
-                
-            </form>
-        </div>
-        <div class="t-rightFrame">
-            <a href="dashboard.php">
-                <div class = "dashboardButton">
-                    <div class = "dashboardTxt">Return To Dashboard</div>
-                </div></a>
-        </div>
-        <div class="buttonFrame">
-            <a href="news.php">
-                <div class="newTxt">News</div> </a>
-            <a href="notifications.php">
-                <div class="notifTxt">Notifications</div> </a>
-            <a href ="settings_AccInfo.php">
-                <div class="accinfoTxt">Account Information</div  ></a>
-        </div>
-    </div>
 </div>
-</body>
