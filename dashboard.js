@@ -173,7 +173,6 @@ function color_sort(tasks) {
     });
     return tasks
 }
-
 function addElement(tasks){
     let colors = {"one":"#008000FF","two":"#0000FFFF","three":"#FFFF00FF","four":"#800080FF","five":"#FFA500FF","six":"#FF0000FF"};
     let mains = document.getElementById("main");

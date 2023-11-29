@@ -2,7 +2,6 @@ body {
     background-color: rgb(105, 90, 90);
     overflow-x: hidden;
     overflow-y: hidden;
-    position: auto;
 }
 .settings-newsinfo {
     display: flex;
@@ -10,12 +9,12 @@ body {
     justify-content: center;
 }
 
-.bottom {
+.settings-newsinfo .bottom {
     position: absolute;
     top: 35vh;
 }
 /* this is for the blue border */
-.outer-frame {
+.settings-newsinfo .outer-frame {
     position: relative;
     width: 95vw;
     height: 80vh;
@@ -26,7 +25,7 @@ body {
     border-color: #2867C6;
 }
 
-.inner-frame {
+.settings-newsinfo .inner-frame {
     position: absolute;
     width: 91vw;
     height: 57.5vh;
@@ -37,8 +36,7 @@ body {
     border-radius: 1.5vw;
     border-color: #656161;
 }
-
-.top-text {
+.settings-newsinfo .top-text {
     position: absolute;
     width: 30vw;
     height: 6.67vh;
@@ -46,351 +44,82 @@ body {
     left: 2vw;
 }
 
-.NewsTitle {
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+.settings-newsinfo .NewsTitle {
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
     font-size: 2.15vw;
 }
 
-.line {
+.settings-newsinfo .line {
     height: 0.2vh;
     width: 70vh;
     bottom: 1vh;
     background-color: #4b4949;
 }
 
-.desc {
+.settings-newsinfo .desc {
     position: absolute;
     height: 50vh;
     top: 3vh;
-    font-family: "Darker Grotesque", serif;
+    font-family: "Darker Grotesque";
     font-weight: 100;
     color: #3d3c3c;
-    font-size: 1.4vw;
+    font-size: 1.65vw;
 }
 
-.user-information {
-    position: relative;
-    width: 91vw;
-    top: 18vh;
+.settings-newsinfo .NewsInfo {
+    position: absolute;
+    width: 60vw;
+    top: 12vh;
     left: 2vw;
 }
-
-.username {
+.settings-newsinfo .updateOct16 {
     position: absolute;
-    top: 2.5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
-    font-size: 2.15vw;
     color: #000000;
-}
-
-.username-display {
-    position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 2vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-    overflow-x: hidden;
-}
-
-.notifs{
-    position: absolute;
-    width: 55vw;
-    height: 38vh;
-    top: 15vh;
-    left: 2vw;
-    background-color: #80B4F0;
-    border-radius: 1.5vh;
-    border: .15vw;
-    overflow-y: scroll;
-}
-.sample {
-    position: relative;
-    background-color: #4b4949;
-    height: 5vh;
-    width: 50vw;
-    left: 2vw;
-    border: .15vw;
-    border-radius: 1.2vh;
-    margin-top: 3vh;
-    font-size: 1.8vw;
-    font-family: "consolas", "Droid Sans";
-    font-weight: 400;
-    color: white;
-    text-align: center;
-}
-.password {
-    position: absolute;
-    top: 13vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
     font-size: 2.15vw;
-    color: #000000;
+    top: 3vh;
 }
-.password-display {
+.settings-newsinfo .descriptionOct16{
     position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 12.5vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-    text-align: center;
-}
-.filteredPass {
-    position: absolute;
-    left: .5vw;
-    top: .5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
-    font-size: 2.15vw;
-    color: rgb(0, 0, 0);
-    vertical-align: middle;
-    display: table-cell
-}
-.cont_changePassButton {
-    position: absolute;
-    display: table;
-    top: 13vh;
-    left: 33vw;
-    height: 5vh;
-    width: 10vw;
-}
-.changePassButton {
-    position: absolute;
-    height: 5vh;
-    width: 10vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #272ed7;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-}
-
-.changePassTxt {
-    font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    bottom:1vh;
-    right:.8vw;
-}
-
-.changePassButton:hover {
-    .changePassTxt{
-        color: #044394;
-    }
-}
-.changePassButton:before {
-    content: '';
-    position: absolute;
-    top: 3.5vh;
-    left: .75vw;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-
-}
-.changePassButton:hover:before {
-    width: 85%;
-    color: #2867C6;
-
-}
-
-.changePassPopup {
-    position: absolute;
+    height: 20vh;
     width: 40vw;
-    height: 47.5vh;
-    left: 21.5vw;
-    top: -35vh;
-    background-color: #80B4F0;
-    border: .4vw solid;
-    border-radius: 1vw;
-    border-color: #2867C6;
-    box-shadow: 0 1.5vh 1.5vh #545151;
+    font-family: "Darker Grotesque";
+    font-weight: bold;
+    color: #3d3c3c;
+    font-size: 1.65vw;
+    top: 8vh;
 }
-
-.changePassPopup .popupTxt {
-    position: absolute;
-    left: 11.5vw;
-    top: 1vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    font-size: 1.5vw;
-    text-decoration: underline;
-    text-underline-offset: .5vh;
-}
-
-.changePassPopup .inputText {
-    position: absolute;
-    width: 25vw;
-    height: 7vh;
-    top: 7.5vh;
-    left: 7vw;
-    background-color: #E2D8D8;
-    border: .25vw solid #4b4949;
-    border-radius: 1.2vw;
-    font-size: 1.5vw;
-}
-.changePassPopup .inputText1 {
-    position: absolute;
-    width: 25vw;
-    height: 7vh;
-    top: 16.5vh;
-    left: 7vw;
-    background-color: #E2D8D8;
-    border: .25vw solid #4b4949;
-    border-radius: 1.2vw;
-    text-align: absolute;
-    font-size: 1.5vw;
-}
-.changePassPopup .inputText2 {
-    position: absolute;
-    width: 25vw;
-    height: 7vh;
-    top: 25.5vh;
-    left: 7vw;
-    background-color: #E2D8D8;
-    border: .25vw solid #4b4949;
-    border-radius: 1.2vw;
-    text-align: absolute;
-    font-size: 1.5vw;
-}
-.cont_closePopup {
-    position: absolute;
-    display: table;
-    left: .75vw;
-    top: 1.25vh;
-    height: 5vh;
-    width: 6vw;
-}
-.cont_closePopup .closePopup {
-    position: absolute;
-    height: 5vh;
-    width: 6vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #000000;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-}
-.closePopupTxt {
-    position: absolute;
-    font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    bottom: 1vh;
-    left: 1.25vw;
-
-}
-
-.closePopup:hover {
-    .closePopupTxt{
-        color: #044394;
-    }
-}
-
-.closePopup:before {
-    content: '';
-    position: absolute;
-    top: 3.4vh;
-    left: 1.15vw;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-
-}
-.closePopup:hover:before {
-    width: 60%;
-    color: #2867C6;
-}
-.cont_confirmPass {
-    position: absolute;
-    display: table;
-    left: 13.5vw;
-    top: 36vh;
-    height: 8vh;
-    width: 12vw;
-}
-.confirmPassButton {
-    position: absolute;
-    height: 8vh;
-    width: 12vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #000000;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-    font-size: 1.5vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-}
-.confirmPassButton:hover {
-    .confirmPassTxt{
-        color: #044394;
-    }
-}
-
-.confirmPassButton:before {
-    content: '';
-    position: absolute;
-    left: 3.25vw;
-    bottom: 1.75vh;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-
-}
-.confirmPassButton:hover:before {
-    width: 45%;
-    color: #2867C6;
-}
-.top {
+.settings-newsinfo .top {
     position: absolute;
     width: 100vw;
     height: 32.5vh;
     top: 0vh;
-    left: 0vw;
-    box-shadow: 0 1.5vh 1.5vh #00000040;
+    box-shadow: 0vh 1.5vh 1.5vh #00000040;
 }
 
-
-.t-leftFrame {
+.settings-newsinfo .t-leftFrame {
     position: absolute;
-    width: 15vw;
+    width: 13vw;
     height: 32.5vh;
     background-color: #2867C6;
-    align-content: center;
 }
 
-.settingsText {
+.settings-newsinfo .settingsText {
     position: absolute;
     width: 60vw;
     height: 20vh;
     top: 20.5vh;
     left: 3.5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
     font-size: 2.5vw;
 }
 
-.usericon {
+.settings-newsinfo .usericon {
     position: absolute;
     width: 8.5vw;
     height: 17.5vh;
@@ -399,15 +128,15 @@ body {
 }
 
 
-.t-rightFrame {
-    position: absolute;
-    width: 87vw;
+.settings-newsinfo .t-rightFrame {
+    position: relative;
+    width: 120vw;
     height: 32.5vh;
     left: 13vw;
     background-color: #E2D8D8;
 }
 
-.dashboardButton {
+.settings-newsinfo .dashboardButton {
     position: absolute;
     display: table;
     background-color: #ffffff;
@@ -418,20 +147,20 @@ body {
     border: .2vw solid;
     border-radius: 1vw;
     border-color: #2867C6;
-    box-shadow: 0 0.5vh 1.5vh black;
+    box-shadow: 0vh 0.5vh 1.5vh black;
     text-align: center;
 }
 
-.dashboardTxt {
+.settings-newsinfo .dashboardTxt {
     font-size: 2.1vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 600;
     color: rgb(0, 0, 0);
     vertical-align: middle;
     display: table-cell
 }
 
-.dashboardTxt:before {
+.settings-newsinfo .dashboardTxt:before {
     content: '';
     position: absolute;
     top: 5.5vh;
@@ -440,13 +169,13 @@ body {
     width: 0;
     transition: all 1.0s ease;
 }
-.dashboardTxt:hover:before {
+.settings-newsinfo .dashboardTxt:hover:before {
     width: 93%;
     color: #2867C6;
 }
 
 
-.buttonFrame {
+.settings-newsinfo .buttonFrame {
     position: absolute;
     background-color: #80b3f0;
     left: 16vw;
@@ -455,21 +184,21 @@ body {
     width: 55vw;
     border: .15vw solid;
     border-radius: 3vh;
-    box-shadow: 0 0.5vh 1.5vh black;
+    box-shadow: 0vh 0.5vh 1.5vh black;
 }
 
-.newTxt {
+.settings-newsinfo .newTxt {
     position: absolute;
     top: 2.25vh;
     width: 5.85vw;
     left: 46.5vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
     color: rgb(0, 0, 0);
     line-height: normal;
 }
-.newTxt:before {
+.settings-newsinfo .newTxt:before {
     content: '';
     position: absolute;
     top: 5vh;
@@ -478,78 +207,22 @@ body {
     width: 0;
     transition: all 1.0s ease;
 }
-.newTxt:hover:before{
+.settings-newsinfo .newTxt:hover:before{
     width:100%;
 }
 
-.appearTxt {
+.settings-newsinfo .appearTxt {
     position: absolute;
     top: 2.25vh;
     width: 12.925vw;
     left: 47vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
     color: rgb(0, 0, 0);
     line-height: normal;
 }
-.updateOct16 {
-    position: absolute;
-    font-family: "Darker Grotesque-Bold", Helvetica;
-    font-weight: 700;
-    color: #000000;
-    font-size: 2.15vw;
-    top: 15vh;
-    left: 2vw;
-}
-.descriptionOct16{
-    position: absolute;
-    height: 20vh;
-    width: 40vw;
-    font-family: "Darker Grotesque";
-    font-weight: bold;
-    color: #3d3c3c;
-    font-size: 1.65vw;
-    top: 20vh;
-    left: 2vw;
-}
-.ptext {
-    color:rgba(0, 0, 0, 1);
-    margin:auto;
-    position: relative;
-    top:15vh;
-    text-align: center;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-size: 2vw;
-    font-weight: 700;
-    background-color: #E2D8D8;
-    border: .2vw solid black;
-    border-radius: 1vw;
-}
-.cont_action {
-    position: absolute;
-    display: table;
-    left: 13.5vw;
-    top: 36vh;
-    height: 8vh;
-    width: 12vw;
-}
-.action {
-    position: absolute;
-    height: 8vh;
-    width: 12vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #000000;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-    font-size: 1.5vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-}
-.appearTxt:before{
+.settings-newsinfo .appearTxt:before{
     content: '';
     position: absolute;
     top: 5.5vh;
@@ -558,22 +231,22 @@ body {
     width: 0;
     transition: all 1.0s ease;
 }
-.appearTxt:hover:before{
+.settings-newsinfo .appearTxt:hover:before{
     width: 100%;
 }
 
-.notifTxt {
+.settings-newsinfo .notifTxt {
     position: absolute;
     top: 2.25vh;
     width: 12.75vw;
     left: 28vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
 
-.notifTxt:before {
+.settings-newsinfo .notifTxt:before {
     content: '';
     position: absolute;
     top: 5vh;
@@ -582,21 +255,21 @@ body {
     width: 0;
     transition: all 1.0s ease;
 }
-.notifTxt:hover:before {
+.settings-newsinfo .notifTxt:hover:before {
     width: 107%;
 }
 
-.accinfoTxt {
+.settings-newsinfo .accinfoTxt {
     position: absolute;
     top: 2.25vh;
     width: 25vw;
     left: 1.5vw;
     font-size: 2.25vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-family: "Darker Grotesque-Bold", Helvetica;
     font-weight: 700;
     color: #000000;
 }
-.accinfoTxt:before {
+.settings-newsinfo .accinfoTxt:before {
     content: '';
     position: absolute;
     top: 5vh;
@@ -605,550 +278,6 @@ body {
     width: 0;
     transition: all 1.0s ease;
 }
-.accinfoTxt:hover:before {
+.settings-newsinfo .accinfoTxt:hover:before {
     width: 88%;
-}
-@media only screen and (min-device-width: 375px) and (max-width: 1180px){
-    .top{
-        width: 170vw;
-        height: 25.5vh;
-        box-shadow: 0 1.5vh 1.5vh #00000040;
-    }
-    .t-leftFrame {
-        position: absolute;
-        width: 40vw;
-        height:25.5vh;
-    }
-    .t-rightFrame{
-        position: absolute;
-        width: 140vw;
-        height:25.5vh;
-        left: 40vw;
-    }
-    .usericon {
-        width: 34.5vw;
-        height: 16.5vh;
-        left: 2.25vw;
-        top: 2vh;
-    }
-    .settingsText {
-        left: 3.6vh;
-        font-size: 6vw;
-    }
-    .buttonFrame {
-        left: 45vw;
-        top: 14vh;
-        height: 8vh;
-        width: 125vw;
-        border: .15vw solid;
-        border-radius: 3vh;
-        box-shadow: 0 0.5vh 1.5vh black;
-    }
-    .newTxt {
-        top: 2.75vh;
-        width: 5.85vw;
-        left: 102.5vw;
-        font-size: 4.55vw;
-    }
-    .newTxt:before {
-        content: '';
-        top: 2.5vh;
-        height: 0.3vh;
-        background: #044394;
-        width: 0;
-        transition: all .5s ease;
-    }
-    .newTxt:hover:before{
-        width:200%;
-    }
-
-    .notifTxt {
-        position: absolute;
-        top: 2.75vh;
-        width: 5.85vw;
-        left: 60.75vw;
-        font-size: 4.55vw;
-    }
-
-    .notifTxt:before {
-        content: '';
-        position: absolute;
-        top: 2.5vh;
-        height: 0.3vh;
-        background: #044394;
-        width: 0;
-        transition: all .5s ease;
-    }
-    .notifTxt:hover:before {
-        width: 475%;
-    }
-    .accinfoTxt {
-        position: absolute;
-        top: 2.75vh;
-        width: 45vw;
-        left: 2.7vw;
-        font-size: 4.55vw;
-    }
-    .accinfoTxt:before {
-        content: '';
-        position: absolute;
-        top: 2.5vh;
-        height: 0.3vh;
-        background: #044394;
-        width: 0;
-        transition: all .5s ease;
-    }
-    .accinfoTxt:hover:before {
-        width: 100%;
-    }
-    .dashboardButton {
-        background-color: #ffffff;
-        left: 7vw;
-        top: 2vh;
-        height: 5vh;
-        width: 50vw;
-        border: .2vw solid;
-        border-radius: 8vw;
-        border-color: #2867C6;
-        box-shadow: 0 0.5vh 1.5vh black;
-        text-align: center;
-    }
-
-    .dashboardTxt {
-        font-size: 4.45vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 600;
-        color: rgb(0, 0, 0);
-        vertical-align: middle;
-        display: table-cell
-    }
-
-    .dashboardTxt:before {
-        content: '';
-        position: absolute;
-        top: 3.5vh;
-        height: 0.4vh;
-        background: #044394;
-        width: 0;
-        transition: all .5s ease;
-    }
-    .dashboardTxt:hover:before {
-        width: 90%;
-        color: #2867C6;
-    }
-    .bottom {
-        position: absolute;
-        top: 27.5vh;
-    }
-    .outer-frame {
-        position: absolute;
-        width: 170vw;
-        height: 110vh;
-        left: -47.5vw;
-        border-radius: 2.0vh;
-    }
-    .inner-frame {
-        width: 165.5vw;
-        height: 90.5vh;
-        top: 1vh;
-        left: 2vw;
-        border-radius: 2vh;
-    }
-    .top-text {
-        position: absolute;
-        width: 30vw;
-        height: 6.67vh;
-        top: 1.5vh;
-        left: 2vw;
-    }
-
-    .AccInfoTitle {
-        width: 600vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 600;
-        color: #000000;
-        font-size: 7vw;
-    }
-
-    .line {
-        position: relative;
-        height: .3vh;
-        width: 100vw;
-        top: .15vh;
-        background-color: #4b4949;
-    }
-
-    .desc {
-        position: absolute;
-        width: 140vw;
-        top: 3vh;
-        font-family: "Darker Grotesque", serif;
-        font-weight: 100;
-        color: #3d3c3c;
-        font-size: 5vw;
-    }
-    .user-information {
-        position: relative;
-        width: 91vw;
-        top: 18vh;
-        left: 2vw;
-    }
-
-    .username {
-        top: 2vh;
-        left: 2vw;
-        font-size: 8vw;
-    }
-
-    .username-display {
-        position: absolute;
-        width: 80vw;
-        height: 8vh;
-        left: 50vw;
-        top: 0vh;
-        background-color: #ffffff;
-        border-radius: 2.5vh;
-        border: .1vw solid;
-        border-color: #272ed7;
-        overflow-x: hidden;
-    }
-
-    .accInfoUser{
-        position: absolute;
-        top: 2vh;
-        left: 3.5vw;
-        font-size: 8vw;
-    }
-    .password {
-        position: absolute;
-        top: 14vh;
-        left: 2vw;
-        font-size: 8vw;
-    }
-    .password-display {
-        position: absolute;
-        width: 80vw;
-        height: 8vh;
-        left: 50vw;
-        top: 12.5vh;
-        border-radius: 2.5vh;
-        border: .1vw solid;
-        border-color: #272ed7;
-        text-align: center;
-    }
-    .filteredPass {
-        position: absolute;
-        top: 2vh;
-        left: 3.5vw;
-        font-size: 8vw;
-        vertical-align: middle;
-        display: table-cell
-    }
-    .cont_changePassButton {
-        position: absolute;
-        display: table;
-        top: 25vh;
-        left: 54vw;
-        height: 5vh;
-        width: 10vw;
-    }
-    .changePassButton {
-        position: absolute;
-        height: 7.5vh;
-        width: 45vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #272ed7;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-    }
-
-    .changePassTxt {
-        font-size: 4.0vw;
-        bottom:2.5vh;
-        right:6vw;
-
-    }
-
-    .changePassButton:hover {
-        .changePassTxt{
-            color: #044394;
-        }
-    }
-    .changePassButton:before {
-        content: '';
-        position: absolute;
-        top: 5vh;
-        left: 6vw;
-        height: 0.3vh;
-        background: #044394;
-        transition: all 1.0s ease;
-
-    }
-    .changePassButton:hover:before {
-        width: 75%;
-        color: #2867C6;
-
-    }
-
-    .changePassPopup {
-        position: absolute;
-        width: 120vw;
-        height: 70.5vh;
-        left: 21.5vw;
-        top: -35vh;
-        background-color: #80B4F0;
-        border: .4vw solid;
-        border-radius: 1vw;
-        border-color: #2867C6;
-        box-shadow: 0 1.5vh 1.5vh #545151;
-    }
-
-    .changePassPopup .popupTxt {
-        position: absolute;
-        left: 14vw;
-        top: 1vh;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 700;
-        color: rgb(0, 0, 0);
-        font-size: 8vw;
-        text-decoration: underline;
-        text-underline-offset: .5vh;
-    }
-
-    .changePassPopup .inputText {
-        position: absolute;
-        width: 105vw;
-        height: 10vh;
-        top: 9.5vh;
-        left: 7vw;
-        background-color: #E2D8D8;
-        border: .25vw solid #4b4949;
-        border-radius: 2vw;
-        font-size: 5vw;
-    }
-    .changePassPopup .inputText1 {
-        position: absolute;
-        width: 105vw;
-        height: 10vh;
-        top: 22.5vh;
-        left: 7vw;
-        background-color: #E2D8D8;
-        border: .25vw solid #4b4949;
-        border-radius: 1.2vw;
-        text-align: absolute;
-        font-size: 5vw;
-    }
-    .changePassPopup .inputText2 {
-        position: absolute;
-        width: 105vw;
-        height: 10vh;
-        top: 35.5vh;
-        left: 7vw;
-        background-color: #E2D8D8;
-        border: .25vw solid #4b4949;
-        border-radius: 1.2vw;
-        text-align: absolute;
-        font-size: 5vw;
-    }
-    .cont_closePopup {
-        position: absolute;
-        display: table;
-        left: 50vw;
-        top: 62.5vh;
-        height: 5vh;
-        width: 30vw;
-    }
-    .cont_closePopup .closePopup {
-        position: absolute;
-        height: 5vh;
-        width: 19vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #000000;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-    }
-    .closePopupTxt {
-        position: absolute;
-        font-size: 5vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-        bottom: 1vh;
-        left: 1.25vw;
-
-    }
-
-    .closePopup:hover {
-        .closePopupTxt{
-            color: #044394;
-        }
-    }
-
-    .closePopup:before {
-        content: '';
-        position: absolute;
-        top: 3.75vh;
-        left: 1.15vw;
-        height: 0.3vh;
-        background: #044394;
-        transition: all 1.0s ease;
-
-    }
-    .closePopup:hover:before {
-        width: 85%;
-        color: #2867C6;
-    }
-    .cont_confirmPass {
-        position: absolute;
-        display: table;
-        left: 30vw;
-        top: 50vh;
-        height: 8vh;
-        width: 40vw;
-    }
-    .confirmPassButton {
-        position: absolute;
-        height: 8vh;
-        width: 60vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #000000;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-        font-size: 5vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-    }
-    .confirmPassButton:hover {
-        .confirmPassTxt{
-            color: #044394;
-        }
-    }
-
-    .confirmPassButton:before {
-        content: '';
-        position: absolute;
-        left: 3.25vw;
-        bottom: 1.75vh;
-        height: 0.3vh;
-        background: #044394;
-        transition: all 1.0s ease;
-
-    }
-    .confirmPassButton:hover:before {
-        width: 45%;
-        color: #2867C6;
-    }
-    .ptext {
-        color:rgba(0, 0, 0, 1);
-        margin:auto;
-        position: relative;
-        top:17.5vh;
-        text-align: center;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-size: 6vw;
-        font-weight: 700;
-        background-color: #E2D8D8;
-        border: .2vw solid black;
-        border-radius: 1vw;
-    }
-    .cont_action {
-        position: absolute;
-        display: table;
-        left: 42.5vw;
-        top: 50vh;
-        height: 8vh;
-        width: 12vw;
-    }
-    .action {
-        position: absolute;
-        height: 8vh;
-        width: 30vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #000000;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-        font-size: 5.5vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-    }
-    .notifTitle {
-        font-size: 5.5vw;
-    }
-    .notifs{
-        position: absolute;
-        width: 125vw;
-        height: 38vh;
-        top: 15vh;
-        left: 20vw;
-        background-color: #80B4F0;
-        border-radius: 1.5vh;
-        border: .15vw;
-        overflow-y: scroll;
-    }
-    .sample {
-        position: relative;
-        background-color: #4b4949;
-        height: 5vh;
-        width: 100vw;
-        left: 10vw;
-        border: .15vw;
-        border-radius: 1.2vh;
-        margin-top: 3vh;
-        font-size: 5.5vw;
-        font-family: "consolas", "Droid Sans";
-        font-weight: 400;
-        color: white;
-        text-align: center;
-    }
-    .NewsTitle {
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 700;
-        color: #000000;
-        font-size: 10vw;
-    }
-
-    .line {
-        height: 0.2vh;
-        width: 70vh;
-        bottom: 1vh;
-        background-color: #4b4949;
-    }
-
-    .desc {
-        position: absolute;
-        height: 50vh;
-        top: 3vh;
-        font-family: "Darker Grotesque", serif;
-        font-weight: 100;
-        color: #3d3c3c;
-        font-size: 1.4vw;
-    }
-    .updateOct16 {
-        position: absolute;
-        font-family: "Darker Grotesque-Bold", Helvetica;
-        font-weight: 700;
-        color: #000000;
-        font-size: 7vw;
-        top: 8vh;
-    }
-    .descriptionOct16{
-        position: absolute;
-        height: 20vh;
-        width: 100vw;
-        font-family: "Darker Grotesque";
-        font-weight: bold;
-        color: #3d3c3c;
-        font-size: 6vw;
-        top: 12vh;
-    }
 }
