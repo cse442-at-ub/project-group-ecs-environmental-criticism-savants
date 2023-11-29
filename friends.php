@@ -12,4 +12,5 @@ $username = "nothing";
 //    $username = $_SESSION['user_username']; // Retrieve the username from the session
 //}
 
+
 echo $dom->saveHTML();

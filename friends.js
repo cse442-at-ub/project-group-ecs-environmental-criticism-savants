@@ -114,4 +114,5 @@ function diff(birth){
         }
     }
     return ret
+
 }
