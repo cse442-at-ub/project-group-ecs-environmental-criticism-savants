@@ -1,7 +1,6 @@
 <?php
-include "Credential-Template.php";
-include "DBConnection-Function.php";
-    session_start(); // CHANGE ME! Is this neccessary?
+include "notifsRetrieveTasks.php";
+    session_start(); // CHANGE ME! Is this neccessary? - Yes it is (Chris)
     
     $dom2 = new DOMDocument();
     $dom2->loadHTMLFile("notifications.html");
