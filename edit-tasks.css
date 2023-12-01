@@ -58,7 +58,7 @@ body {
 .box1 {
     overflow-x: hidden;
     position: absolute;
-    width: 62vw;
+    width: 28vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -73,7 +73,7 @@ body {
 .box2 {
     overflow-x: hidden;
     position: absolute;
-    width: 62vw;
+    width: 28vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -88,7 +88,7 @@ body {
 .box3 {
     overflow-x: hidden;
     position: absolute;
-    width: 62vw;
+    width: 28vw;
     height: 8vh;
     background-color: #4D698A;
     border: #4D698A;
@@ -113,14 +113,14 @@ body {
     left: 35vw;
 }
 
-.daily{
+.weekly{
     position: absolute;
     font-size: 40%;
     top: 30vh;
     left: 49vw;
 }
 
-.weekly{
+.monthly{
     position: absolute;
     font-size: 40%;
     top: 38vh;
@@ -315,13 +315,19 @@ body {
     .box1{font-size: 3vh; border-radius: 3vw; top:11vh; width: 50vw}
     .box2{font-size: 3vh; border-radius: 3vw; top:21vh; width: 50vw}
     .box3{font-size: 3vh; border-radius: 3vw; top:31vh; width: 50vw}
-    .pri{font-size: 3vh; left: 64vw; top: 8vh}
-    .one{font-size: 3vh; width: 10vw; top: 21vh; left: 60vw; height: 8vh}
-    .two{font-size: 3vh; width: 10vw; top: 21vh; left: 72vw; height: 8vh}
-    .three{font-size: 3vh; width: 10vw; top: 21vh; left: 84vw; height: 8vh}
-    .four{font-size: 3vh; width: 10vw; top: 31vh; left: 60vw; height: 8vh}
-    .five{font-size: 3vh; width: 10vw; top: 31vh; left: 72vw; height: 8vh}
-    .six{font-size: 3vh; width: 10vw; top: 31vh; left: 84vw; height: 8vh}
+    .pri{font-size: 2vh; left: 59vw; top: 8.4vh}
+    .one{font-size: 2vh; width: 10vw; top: 14vh; left: 59vw; height: 3vh}
+    .two{font-size: 2vh; width: 10vw; top: 14vh; left: 71vw; height: 3vh}
+    .three{font-size: 2vh; width: 10vw; top: 14vh; left: 83vw; height: 3vh}
+    .four{font-size: 2vh; width: 10vw; top: 18vh; left: 59vw; height: 3vh}
+    .five{font-size: 2vh; width: 10vw; top: 18vh; left: 71vw; height: 3vh}
+    .six{font-size: 2vh; width: 10vw; top: 18vh; left: 83vw; height: 3vh}
+    .occur{font-size: 1.9vh; left: 57vw; top: 22vh}
+    .once{font-size: 1.8vh; left: 55vw; top:30.5vh}
+    .weekly{font-size: 1.8vh; left: 77vw; top:30.5vh}
+    .monthly{font-size: 1.8vh; left: 55vw; top: 35vh }
+    .yearly{font-size: 1.8vh; left: 77vw; top: 35vh}
+
     .create{height: 4vh; top: 39.5vh; font-size: 2vh; width: 7vw; left: 92vw}
     .main{top:47vh}
     .main_banner{top:45vh}
