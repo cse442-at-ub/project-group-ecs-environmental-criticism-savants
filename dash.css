@@ -133,7 +133,7 @@ body {
 .wel{
     position: absolute;
     top: -2vh;
-    left: 20vw;
+    left: 23vw;
     width: 200vw;
 }
 
@@ -564,7 +564,7 @@ body {
   }
   @media (max-height: 1080px) {
     body {
-      
+
       overflow-y: scroll;
       overflow-x: scroll;
     }
@@ -584,21 +584,21 @@ body {
     font-size: 4vh;
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 750px){
     .topbanner1{ height: 9vh}
     .topbanner2{ height: 9vh}
-    .wel{ font-size: 3vh; top:1vh; left:32vw;}
+    .wel{ font-size: 3vh; top:1vh; left:29vw;}
     .edit{ width: 10vw; font-size: 1vh;top:.4vh; text-indent: -1vw;}
     .set{ width: 11vw; font-size: 1vh;top:.4vh; left: 76vw; text-indent: -1.5vw;}
     .back{ width: 10vw; font-size: 1vh;top:.4vh; left: 89vw;}
     .friend{ width: 11vw; font-size: 1vh;top:.4vh; text-indent: -1vw;}
-    .main{width: 95%; top: 37vh}
-    .main_banner{width: 95%; top: 35vh; height: 5vh}
+    .main{width: 95vw; top: 37vh}
+    .main_banner{width: 95vw; top: 35vh; height: 5vh}
     .view{font-size: 3vh; left: 32vw; top: -2vh;}
     .day{left: 36vw; font-size: 2vh; height: 3vh; width: 28vw; top:32.5vh}
     .button1{width: 6vw; height: 3vh; font-size: 1vh; left: 28vw; top:33vh; text-align: left}
     .button2{width: 6vw; height: 3vh; font-size: 1vh; left: 68vw; top:33vh; text-align: left}
-    .year{width: 95%; height: 24vh; left: 2.5vw; top: 8vh}
+    .year{width: 95vw; height: 24vh; left: 2.5vw; top: 8vh}
     .year_date{font-size: 1.5vh; height: 2vh; width: 20w; left: 33vw}
     .button3{font-size: 1vh; height: 2vh; width:4vw; text-align: left; left: 28vw;}
     .button4{font-size: 1vh; height: 2vh; width:4vw; text-align: left; left: 62.5vw;}
