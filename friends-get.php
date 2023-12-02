@@ -20,6 +20,7 @@ if (isset($_POST['friends'])) {
     if (!empty($friends)){
         $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
         //Remove function goes here
+        $birthday = $_POST['date'];
         RemoveFriend($username, $friends, $birthday, $conn);
         $conn = null;
         $_POST['friends'] = "";

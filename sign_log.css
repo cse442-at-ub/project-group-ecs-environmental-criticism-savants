@@ -139,7 +139,7 @@ body {
     color:rgba(255, 255, 255, 1);
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 750px){
     .title {font-size: 7vh; top: -11vh;}
     .banner{ height: 9vh}
     .main{width: 90%;left: 5%;top: 20vh;}
