@@ -26,7 +26,6 @@ function set(time) {
         t[0] = "0" + t[0];
     }
     t = t[2] + "-" + t[0] + "-" + t[1];
-    console.log(t)
     display(t);
 }
 
@@ -105,18 +104,30 @@ function validCheck(){
     }
 }
 
-
 //Displays everything due on the selected date
 function display(time){
     let tasks = req("tasks=",'time_change.php');
+    let friends = req("friends=","friends-get.php");
     let today = dateFilter(tasks, time);
     today = color_sort(today);
-    friendDisplay()
+    let year = parseInt(time.split('-')[0])
+    friends = birthDateFilter(friends, time)
+    friendDisplay(friends, year);
     addElement(today);
 }
 
-function friendDisplay(){
-    let friends = req("friends=","friends-get.php");
+function friendDisplay(friends, year){
+    let mains = document.getElementById("main");
+    let m = mains.children;
+    while (m.length >0) {
+        mains.removeChild(m[0]);
+        m = mains.children;
+    }
+    for (i of friends) {
+        let age = year - parseInt(i['date']);
+
+    }
+
 }
 
 function remove(id){
@@ -140,7 +151,6 @@ function req(input, filename){
     xhttp.open("POST",filename, false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
     xhttp.send(input);
-    console.log(ret)
     return ret;
 }
 
@@ -149,7 +159,22 @@ function dateFilter(tasks, date){
     let ret = []
     for (let i in tasks) {
         let a = tasks[i];
-        if (a["deadline"] === date){
+        if (a['deadline'] === date){
+            ret.push(a);
+        }
+    }
+    return ret;
+}
+
+// Removes all the tasks not due on that day from all the tasks for that user
+function birthDateFilter(tasks, date){
+    let comp = date.split('-')
+    let birth = comp[1] + '-' + comp[2]
+    let ret = []
+    for (let i in tasks) {
+        let a = tasks[i];
+        let person = (a['date']).split('-')
+        if (person[1] +'-' + person[2] === birth){
             ret.push(a);
         }
     }
@@ -181,11 +206,6 @@ function color_sort(tasks) {
 function addElement(tasks){
     let colors = {"one":"#008000FF","two":"#0000FFFF","three":"#FFFF00FF","four":"#800080FF","five":"#FFA500FF","six":"#FF0000FF"};
     let mains = document.getElementById("main");
-    let m = mains.children;
-    while (m.length >0) {
-        mains.removeChild(m[0]);
-        m = mains.children;
-    }
     for (i of tasks){
         let p = document.createElement("p");
         let text = document.createTextNode(i["name"] + ": " + i["description"]);
