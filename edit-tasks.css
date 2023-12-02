@@ -307,7 +307,7 @@ body {
     font-size: 2vw;
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 750px){
     .topbanner1{ height: 9vh}
     .wel{ font-size: 4vh; top:-.5vh; left:38vw}
     .back{ width: 16vw; font-size: 2vh;top:.9vh; left: 82vw; height: 5vh}
@@ -327,7 +327,6 @@ body {
     .weekly{font-size: 1.8vh; left: 77vw; top:30.5vh}
     .monthly{font-size: 1.8vh; left: 55vw; top: 35vh }
     .yearly{font-size: 1.8vh; left: 77vw; top: 35vh}
-
     .create{height: 4vh; top: 39.5vh; font-size: 2vh; width: 7vw; left: 92vw}
     .main{top:47vh}
     .main_banner{top:45vh}
