@@ -112,6 +112,7 @@ function display(time){
     today = color_sort(today);
     let year = parseInt(time.split('-')[0])
     friends = birthDateFilter(friends, time)
+    console.log(friends)
     friendDisplay(friends, year);
     addElement(today);
 }
@@ -125,6 +126,17 @@ function friendDisplay(friends, year){
     }
     for (i of friends) {
         let age = year - parseInt(i['date']);
+        let p = document.createElement("p");
+        p.innerHTML =  i['full_name'] + " turns " + age;
+        p.className = "friend-text";
+
+        let name = i['full_name']
+        let d1 = document.createElement("div");
+        d1.className = "task";
+        d1.id = name;
+
+        d1.appendChild(p)
+        mains.appendChild(d1)
 
     }
 

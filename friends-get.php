@@ -8,7 +8,7 @@ if (!isset($_SESSION['user_token'])){
 }
 
 $arr1 = array("full_name"=>"Daniel Preisler","date"=>"2003-03-18","email"=>"emails");
-$arr2 = array("full_name"=>"Jack Preisler","date"=>"2006-12-27","email"=>"emails");
+$arr2 = array("full_name"=>"Jack Preisler","date"=>"2006-12-02","email"=>"emails");
 
 $username = "";
 if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
