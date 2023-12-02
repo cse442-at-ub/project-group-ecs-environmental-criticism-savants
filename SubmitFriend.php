@@ -13,7 +13,8 @@ if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
 $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
 $friendname = $_POST['full_name'];
 $birthday = $_POST['date'];
-StoreFriend($username, $friendname, $birthday, $conn);
+$email = $_POST['email'];
+StoreFriend($username, $friendname, $birthday, $email, $conn);
 $conn = null;
 
 $dom = new DOMDocument();
