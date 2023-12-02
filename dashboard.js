@@ -108,20 +108,26 @@ function validCheck(){
 
 //Displays everything due on the selected date
 function display(time){
-    let tasks = req("");
+    let tasks = req("tasks=",'time_change.php');
     let today = dateFilter(tasks, time);
     today = color_sort(today);
+    friendDisplay()
     addElement(today);
+}
+
+function friendDisplay(){
+    let friends = req("friends=","friends-get.php");
 }
 
 function remove(id){
     let mains = document.getElementById("main");
     let node = document.getElementById(id['name']);
-    req(id['name'])
+    let input = "tasks=" + id['id']
+    req(input,'time_change.php')
     mains.removeChild(node);
 }
 
-function req(input){
+function req(input, filename){
     let ret = [];
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
@@ -131,10 +137,9 @@ function req(input){
             ret = JSON.parse(r);
         }
     };
-    xhttp.open("POST",'time_change.php', false);
+    xhttp.open("POST",filename, false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
-    let send = "tasks=" + input
-    xhttp.send(send);
+    xhttp.send(input);
     console.log(ret)
     return ret;
 }

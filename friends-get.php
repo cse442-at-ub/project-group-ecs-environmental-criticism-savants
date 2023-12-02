@@ -30,5 +30,4 @@ if (isset($_POST['friends'])) {
     $conn = null;
     $json = json_encode($data);
     echo $json;
-
 }
