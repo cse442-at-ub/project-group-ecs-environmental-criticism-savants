@@ -4,8 +4,9 @@
     if (!isset($_SESSION['user_token'])){
         session_start();
     }
-    $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
 
+    //call retrieve
+    //call update
     $dom = new DOMDocument();
     $dom->loadHTMLFile("dashboard.html");
     // Should load username to the username variable below.
@@ -14,6 +15,9 @@
     if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
         $username = $_SESSION['user_username']; // Retrieve the username from the session
     }
+    $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
+    $tasks = retrieveTasks($username, $conn);
+    updateDeadline($username, $tasks, $conn);
     $currstate = retrievedarkmodestate($username, $conn);
     if($currstate==1){
         $node0 = $dom->getElementbyId("stylesheets");
@@ -32,7 +36,7 @@
 
     $node6 = $dom->getElementById("data-grab");
     $node6->textContent = $username;
-
+    $conn = null;
     echo $dom->saveHTML();
 
 ?>

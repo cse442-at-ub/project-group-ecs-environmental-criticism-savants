@@ -2,7 +2,6 @@ body {
     background-color: rgb(105, 90, 90);
     overflow-x: hidden;
     overflow-y: hidden;
-    position: auto;
 }
 .settings-notifs {
     display: flex;
@@ -84,7 +83,7 @@ body {
 .sample {
     position: relative;
     background-color: #4b4949;
-    height: 5vh;
+    height: auto;
     width: 50vw;
     left: 2vw;
     border: .15vw;
@@ -95,6 +94,7 @@ body {
     font-weight: 400;
     color: white;
     text-align: center;
+    overflow-x: scroll;
 }
 .top {
     position: absolute;
@@ -481,7 +481,7 @@ body {
     .notifs{
         position: absolute;
         width: 125vw;
-        height: 38vh;
+        height: 85vh;
         top: 15vh;
         left: 20vw;
         background-color: #80B4F0;
@@ -492,7 +492,7 @@ body {
     .sample {
         position: relative;
         background-color: #4b4949;
-        height: 5vh;
+        height: auto;
         width: 100vw;
         left: 10vw;
         border: .15vw;

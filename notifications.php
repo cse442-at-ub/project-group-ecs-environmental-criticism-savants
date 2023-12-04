@@ -1,4 +1,5 @@
 <?php
+include "notifsRetrieveTasks.php";
 include "Credential-Template.php";
 include "DBConnection-Function.php";
 include "ModifyDarkModeState.php";
