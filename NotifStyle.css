@@ -2,7 +2,6 @@ body {
     background-color: rgb(105, 90, 90);
     overflow-x: hidden;
     overflow-y: hidden;
-    position: auto;
 }
 .settings-notifs {
     display: flex;
@@ -84,7 +83,7 @@ body {
 .sample {
     position: relative;
     background-color: #4b4949;
-    height: 5vh;
+    height: auto;
     width: 50vw;
     left: 2vw;
     border: .15vw;

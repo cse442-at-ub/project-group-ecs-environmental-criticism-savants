@@ -52,7 +52,12 @@ function load_tasks(tasks) {
     let notif = document.getElementById("notifs");
     for (let i of tasks) {
         let p = document.createElement("p");
-        let text = document.createTextNode(i["name"] + ": " + i["description"]);
+        let today = new Date()
+        let task_date = new Date(i.deadline);
+        let text = document.createTextNode("Due: " + i["deadline"] + " - "  + i["name"] + " - " + i["description"]);
+        if (task_date < today) {
+            text = document.createTextNode("[DEADLINE PASSED] Due:   " + i["deadline"] + " - "  + i["name"] + " - " + i["description"]);
+        }
         p.appendChild(text);
         p.className = "task-text";
 
