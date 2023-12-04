@@ -1,17 +1,17 @@
 // This function is called when you visit the notifications tab (notifications.php)
+let today = new Date;
 function page_load() {
-    let time = new Date;
     let tasks = retrieve_tasks("");
-    console.log("User's Tasks Are:");
-    console.log(tasks);
+    // console.log("User's Tasks Are:");
+    // console.log(tasks);
     /*
     for (let i of tasks) {
         console.log(i.deadline);
     }
     */
-    let tasksDueSoon = dateFilter(tasks, time);
-    console.log("Tasks due in a week or less are: ")
-    console.log(tasksDueSoon);
+    let tasksDueSoon = dateFilter(tasks);
+    // console.log("Tasks due in a week or less are: ")
+    // console.log(tasksDueSoon);
     load_tasks(tasksDueSoon);
 }
 // This function retrieves the tasks from the server-side
@@ -32,16 +32,23 @@ function retrieve_tasks(input) {
     return ret;
 }
 // This function filters the retrieved tasks by tasks due in a week or less
-function dateFilter(tasks, time) {
-    let week_later = new Date(time)
+function dateFilter(tasks) {
+    let week_later = new Date;
+    today.setHours(0, 0, 0, 0)
     week_later.setDate(week_later.getDate() + 7);
-    console.log("Today's date is " + time.toString());
-    console.log("In a week it will be " + week_later.toString());
+    // console.log("Today's date is " + time.toString());
+    // console.log("In a week it will be " + week_later.toString());
     let ret = []
     for (let i of tasks) {
-        let task_date = new Date(i.deadline);
-        if (task_date <= week_later) {
+        let dateParts = i.deadline.split('-');
+        let task_date = new Date(Number(dateParts[0]), Number(dateParts[1])-1, Number(dateParts[2]));
+        // console.log(dateParts);
+        // console.log(task_date);
+        if ((task_date <= week_later) && !(task_date < today)) {
             ret.push(i);
+        }
+        else if((task_date <= week_later) && (task_date < today)) {
+            ret.unshift(i);
         }
     }
     return ret;
@@ -51,26 +58,27 @@ function dateFilter(tasks, time) {
 function load_tasks(tasks) {
     let notif = document.getElementById("notifs");
     for (let i of tasks) {
+        let dateParts = i.deadline.split('-');
+        let task_date = new Date(Number(dateParts[0]), Number(dateParts[1])-1, Number(dateParts[2]));
+        let deadline = document.createTextNode("Due: " + i["deadline"]);
         let p = document.createElement("p");
-        let today = new Date()
-        let task_date = new Date(i.deadline);
-        let text = document.createTextNode("Due: " + i["deadline"] + " - "  + i["name"] + " - " + i["description"]);
+        let line_break = document.createElement("br");
+        let tName = document.createTextNode("Task Name: " + i["name"])
+        today.setHours(0, 0, 0, 0)
         if (task_date < today) {
-            text = document.createTextNode("[DEADLINE PASSED] Due:   " + i["deadline"] + " - "  + i["name"] + " - " + i["description"]);
+            // console.log(i.deadline);
+            // console.log(task_date);
+            // console.log(today);
+            deadline = document.createTextNode("[DEADLINE PASSED] Due: " + i["deadline"]);
         }
-        p.appendChild(text);
-        p.className = "task-text";
+        p.appendChild(deadline);
+        p.appendChild(line_break);
+        p.appendChild(tName);
 
-        let name = i["name"]
-        let d1 = document.createElement("div")
+        let d1 = document.createElement("div");
         d1.className = "sample";
-        d1.id = name;
-        /*
-        let d2 = document.createElement("div");
-        d2.className = "task-pri";
-        d2.style.background = colors[i["priority"]];
-        */
-        d1.appendChild(p)
+        d1.id = i["name"];
+        d1.appendChild(p);
         notif.appendChild(d1);
 
     }
