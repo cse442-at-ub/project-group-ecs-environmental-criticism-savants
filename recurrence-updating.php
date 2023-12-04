@@ -34,7 +34,10 @@ function updateDeadline($User, $tasks, $conn){
     }
 }
 
-function incrementDeadline($User, $task, $conn) {
+function incrementDeadline($User, $taskname, $conn) {
+    $query = $conn->prepare("SELECT * from tasks WHERE user = ? AND task = ?");
+    $query->execute([$User, $taskname]);
+    $task = $query->fetch(PDO::FETCH_ASSOC);
     $currentDate = new DateTime();
     $currentDateStr = $currentDate->format("Y-m-d");
     $monthlyInterval = new DateInterval('P1M');
@@ -42,22 +45,17 @@ function incrementDeadline($User, $task, $conn) {
     $yearlyInterval = new DateInterval('P1Y');
     $deadline = $task["deadline"];
     $tempDeadline = new DateTime($deadline);
-    while ($currentDateStr > $deadline) {
-        if ($task['recurrence'] == "weekly") {
-            $tempDeadline -> add($weeklyInterval);
-            $deadline = $tempDeadline->format("Y-m-d");
-        }
-        else if ($task["recurrence"] == "monthly") {
-            $tempDeadline -> add($monthlyInterval);
-            $deadline = $tempDeadline->format("Y-m-d");
-        }
-        else if ($task["recurrence"] == "yearly") {
-            $tempDeadline -> add($yearlyInterval);
-            $deadline = $tempDeadline->format("Y-m-d");
-        }
-        else if ($task["recurrence"] == "once") {
-            break;
-        }
+    if ($task['recurrence'] == "weekly") {
+        $tempDeadline -> add($weeklyInterval);
+        $deadline = $tempDeadline->format("Y-m-d");
+    }
+    else if ($task["recurrence"] == "monthly") {
+        $tempDeadline -> add($monthlyInterval);
+        $deadline = $tempDeadline->format("Y-m-d");
+    }
+    else if ($task["recurrence"] == "yearly") {
+        $tempDeadline -> add($yearlyInterval);
+        $deadline = $tempDeadline->format("Y-m-d");
     }
     RemoveTask($User, $task["name"], $conn);
     addtask($User, $task["name"], $task["description"], $deadline, $task["recurrence"], $task["priority"], $conn);

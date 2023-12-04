@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a0e854a-22c0-42b1-9924-fdc435deb73d" name="Changes" comment="Implemented recurring tasks">
+    <list default="true" id="6a0e854a-22c0-42b1-9924-fdc435deb73d" name="Changes" comment="Added some small token functionality">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Credential-Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/Credential-Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/occur-get.php" beforeDir="false" afterPath="$PROJECT_DIR$/occur-get.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/recurrence-updating.php" beforeDir="false" afterPath="$PROJECT_DIR$/recurrence-updating.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +48,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="dev" />
+        <entry key="$PROJECT_DIR$" value="recurrence" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,7 +91,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "recurrence",
+    "git-widget-placeholder": "dev",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -129,7 +132,6 @@
       <workItem from="1698084749192" duration="122000" />
       <workItem from="1698533649008" duration="881000" />
       <workItem from="1699294197053" duration="10374000" />
-      <workItem from="1701706392217" duration="9872000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to fit current style">
       <option name="closed" value="true" />
@@ -243,15 +245,7 @@
       <option name="project" value="LOCAL" />
       <updated>1697484139546</updated>
     </task>
-    <task id="LOCAL-00015" summary="Implemented recurring tasks">
-      <option name="closed" value="true" />
-      <created>1701717356277</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1701717356277</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,8 +264,7 @@
     <MESSAGE value="Fixed sign up functionality" />
     <MESSAGE value="Small log in bug fixed" />
     <MESSAGE value="Added some small token functionality" />
-    <MESSAGE value="Implemented recurring tasks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented recurring tasks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added some small token functionality" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
