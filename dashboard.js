@@ -251,4 +251,4 @@ window.addEventListener('resize', function() {
     } else {
       contentEl.style.overflowY = 'hidden';
     }
-  });
+}
