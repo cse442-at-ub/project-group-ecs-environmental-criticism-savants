@@ -142,11 +142,11 @@ function friendDisplay(friends, year){
 
 }
 
-function remove(id){
+function complete(id){
     let mains = document.getElementById("main");
     let node = document.getElementById(id['name']);
-    let input = "tasks=" + id['id']
-    req(input,'time_change.php')
+    let input = "occur=" + id['id']
+    req(input,'occur-get.php')
     mains.removeChild(node);
 }
 
@@ -232,7 +232,7 @@ function addElement(tasks){
         let b = document.createElement("button")
         b.innerHTML = "Complete"
         b.className = "task-but"
-        b.onclick = function () {remove({name});};
+        b.onclick = function () {complete({name});};
 
         let d2 = document.createElement("div");
         d2.className = "task-pri";
@@ -244,11 +244,12 @@ function addElement(tasks){
         mains.appendChild(d1);
      }
 }
+
 window.addEventListener('resize', function() {
     var contentEl = document.getElementById('body');
     if (window.innerWidth < 1920) {
-      contentEl.style.overflowY = 'auto';
+        contentEl.style.overflowY = 'auto';
     } else {
-      contentEl.style.overflowY = 'hidden';
+        contentEl.style.overflowY = 'hidden';
     }
-}
+});
