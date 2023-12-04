@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Savant</title>
     <script src="dashboard.js"></script>
-    <link rel="stylesheet" type="text/css" href="dash.css" />
+    <link rel="stylesheet" id="stylesheets" type="text/css" href="dash.css" />
 </head>
 <body onload="page_load()" id="body">
 <div class="main" id="main">
@@ -19,6 +19,7 @@
 
 <button type="button" onclick="nav('friends.php')" class="friend" id="friend">Friends</button>
 <button type="button" onclick="disp(true)" class="back" id="log_out">Log Out</button>
+<form action="switchmode.php" id="submitt"><button type="button" onclick="changetheme() //change button text and color and change theme all across the website" class="Dark Mode" id="dark">Dark Mode</button></form>
 <button type="button" onclick="nav('settings_AccInfo.php')" class="set" id="set">Settings</button>
 <button type="button" onclick="nav('edit-tasks.php')" class="edit" id="edit">Edit Tasks</button>
 

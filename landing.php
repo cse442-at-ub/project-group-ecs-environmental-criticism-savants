@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <title>Savant</title>
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link rel="stylesheet" type="text/css" href="landing.css"/>
+    <link rel="stylesheet" id = "stylesheets" type="text/css" href="landing.css"/>
+    <script>window.onload= function(){
+        if(localStorage.getItem('theme')==1){
+            x = document.getElementById("stylesheets");
+            x.setAttribute('href', "landingdark.css");
+            
+        };
+    }</script>
 </head>
 <body>
     <div class="banner"></div>
