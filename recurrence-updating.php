@@ -1,7 +1,7 @@
 <?php
 
 /* This function checks for tasks' recurrence option, and updates the deadline in the database accordingly.
-    If the recurrence is only set to once, then the deadline is not updated. */
+    If the recurrence is only set to once, then the deadline is not updated.  */
 
 function updateDeadline($User, $tasks, $conn){
     $currentDate = new DateTime();

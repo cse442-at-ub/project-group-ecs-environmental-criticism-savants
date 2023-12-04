@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a0e854a-22c0-42b1-9924-fdc435deb73d" name="Changes" comment="Implemented recurring tasks">
-      <change beforePath="$PROJECT_DIR$/Credential-Template.php" beforeDir="false" afterPath="$PROJECT_DIR$/Credential-Template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recurrence-updating.php" beforeDir="false" afterPath="$PROJECT_DIR$/recurrence-updating.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +129,7 @@
       <workItem from="1698084749192" duration="122000" />
       <workItem from="1698533649008" duration="881000" />
       <workItem from="1699294197053" duration="10374000" />
-      <workItem from="1701706392217" duration="9608000" />
+      <workItem from="1701706392217" duration="9872000" />
     </task>
     <task id="LOCAL-00001" summary="Updated to fit current style">
       <option name="closed" value="true" />
