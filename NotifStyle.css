@@ -503,5 +503,6 @@ body {
         font-weight: 400;
         color: white;
         text-align: center;
+        overflow-x: scroll;
     }
 }

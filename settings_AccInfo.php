@@ -1,7 +1,7 @@
 <?php
-include "Credential-Template.php";
-include "DBConnection-Function.php";
-include "ModifyDarkModeState.php";
+    include "Credential-Template.php";
+    include "DBConnection-Function.php";
+    include "ModifyDarkModeState.php";
     session_start(); // CHANGE ME! Is this neccessary?
     $dom = new DOMDocument();
     $dom->loadHTMLFile("settings_AccInfo.html");

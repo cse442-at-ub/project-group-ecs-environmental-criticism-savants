@@ -1,9 +1,6 @@
 <?php
 include "notifsRetrieveTasks.php";
-include "Credential-Template.php";
-include "DBConnection-Function.php";
 include "ModifyDarkModeState.php";
-    session_start(); // CHANGE ME! Is this neccessary?
     
     $dom2 = new DOMDocument();
     $dom2->loadHTMLFile("notifications.html");

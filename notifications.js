@@ -2,16 +2,7 @@
 let today = new Date;
 function page_load() {
     let tasks = retrieve_tasks("");
-    // console.log("User's Tasks Are:");
-    // console.log(tasks);
-    /*
-    for (let i of tasks) {
-        console.log(i.deadline);
-    }
-    */
     let tasksDueSoon = dateFilter(tasks);
-    // console.log("Tasks due in a week or less are: ")
-    // console.log(tasksDueSoon);
     load_tasks(tasksDueSoon);
 }
 // This function retrieves the tasks from the server-side
@@ -36,14 +27,10 @@ function dateFilter(tasks) {
     let week_later = new Date;
     today.setHours(0, 0, 0, 0)
     week_later.setDate(week_later.getDate() + 7);
-    // console.log("Today's date is " + time.toString());
-    // console.log("In a week it will be " + week_later.toString());
     let ret = []
     for (let i of tasks) {
         let dateParts = i.deadline.split('-');
         let task_date = new Date(Number(dateParts[0]), Number(dateParts[1])-1, Number(dateParts[2]));
-        // console.log(dateParts);
-        // console.log(task_date);
         if ((task_date <= week_later) && !(task_date < today)) {
             ret.push(i);
         }
@@ -66,9 +53,6 @@ function load_tasks(tasks) {
         let tName = document.createTextNode("Task Name: " + i["name"])
         today.setHours(0, 0, 0, 0)
         if (task_date < today) {
-            // console.log(i.deadline);
-            // console.log(task_date);
-            // console.log(today);
             deadline = document.createTextNode("[DEADLINE PASSED] Due: " + i["deadline"]);
         }
         p.appendChild(deadline);
