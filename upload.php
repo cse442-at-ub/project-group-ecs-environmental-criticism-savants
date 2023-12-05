@@ -27,7 +27,7 @@ if(isset($_POST["submit"])){
             $imgContent = addslashes(file_get_contents($image)); 
         if ($_FILES["image"]["size"] < 10000000) {
             $insert = $conn->query("UPDATE pictures SET data='$imgContent' WHERE user='$username'"); 
-            $conn=null;
+            $conn=null;//Potential security bug
             if($insert){ 
                 $status = 'success'; 
                 $statusMsg = "File uploaded successfully."; 

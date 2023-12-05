@@ -1,8 +1,10 @@
 <?php
     include "time_change.php";
+    include "ModifyDarkModeState.php";
     if (!isset($_SESSION['user_token'])){
         session_start();
     }
+
     //call retrieve
     //call update
     $dom = new DOMDocument();
@@ -16,7 +18,15 @@
     $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
     $tasks = retrieveTasks($username, $conn);
     updateDeadline($username, $tasks, $conn);
-    $conn = null;
+    $currstate = retrievedarkmodestate($username, $conn);
+    if($currstate==1){
+        $node0 = $dom->getElementbyId("stylesheets");
+        $node0->setAttribute('href',"dash-dark.css");
+    }
+    else{
+        $node0 = $dom->getElementbyId("stylesheets");
+        $node0->setAttribute('href',"dash.css");
+    }
     $node = $dom->getElementbyId("user");
     $node->textContent = "Hello " . $username;
     $node2 = $dom->getElementbyId("left1");
@@ -26,6 +36,7 @@
 
     $node6 = $dom->getElementById("data-grab");
     $node6->textContent = $username;
-
+    $conn = null;
     echo $dom->saveHTML();
 
+?>

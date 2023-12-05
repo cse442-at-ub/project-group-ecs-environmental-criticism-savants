@@ -1,7 +1,6 @@
 <?php
-include "Credential-Template.php";
-include "DBConnection-Function.php";
-    session_start(); // CHANGE ME! Is this neccessary?
+include "notifsRetrieveTasks.php";
+include "ModifyDarkModeState.php";
     
     $dom2 = new DOMDocument();
     $dom2->loadHTMLFile("notifications.html");
@@ -26,6 +25,15 @@ include "DBConnection-Function.php";
         //Set image
         $imagenode2->setAttribute("src", $imageDataUri);
 
+    }
+    $currstate = retrievedarkmodestate($username, $conn);
+    if($currstate==1){
+        $node0 = $dom2->getElementbyId("stylesheets");
+        $node0->setAttribute('href',"Notifsytledark.css");
+    }
+    else{
+        $node0 = $dom2->getElementbyId("stylesheets");
+        $node0->setAttribute('href',"NotifStyle.css");
     }
 
     // <!-- <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($fetchedimage[0]);

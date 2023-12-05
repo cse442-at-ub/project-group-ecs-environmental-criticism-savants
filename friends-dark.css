@@ -55,8 +55,7 @@ body {
     background-color: #80B4F0;
     left: 2vw;
     top: 14vh;
-    border-bottom-left-radius: 2vw;
-    border-top-left-radius: 2vw;
+    border-radius: 2vw;
     font-size: 100%;
     overflow-y: scroll;
 }
@@ -187,5 +186,76 @@ body {
     .profile{width: 86vw; height:8vh}
     .name{height: 6vh; margin-top: 1vh}
     .inner{font-size: 1.3vh; top: .6vh}
+}
 
+body {
+    background: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.topbanner1 {
+    background-color: #1a1a1a; /* Darker background color */
+    color: #fff; /* Light text color */
+}
+
+.back {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+.main {
+    background-color: #37474f; /* Darker background color */
+}
+
+.side {
+    background: #1a1a1a; /* Darker background color */
+}
+
+.text {
+    color: #ccc; /* Lighter text color */
+}
+
+.first, .date, .email, .but {
+    background: #2c3e50; /* Darker background color */
+    color: #fff; /* Light text color */
+}
+
+.profile {
+    background: #1a1a1a; /* Darker background color */
+}
+
+.name {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+@media only screen and (max-width: 750px) {
+    .wel {
+        color: #fff; /* Light text color */
+    }
+    .topbanner1 {
+        background-color: #1a1a1a; /* Darker background color */
+    }
+    .main {
+        background-color: #37474f; /* Darker background color */
+    }
+    .back {
+        background-color: #333; /* Dark background color */
+    }
+    .side {
+        background: #1a1a1a; /* Darker background color */
+    }
+    .text {
+        color: #ccc; /* Lighter text color */
+    }
+    .first, .date, .email, .but {
+        background: #2c3e50; /* Darker background color */
+    }
+    .profile {
+        background: #1a1a1a; /* Darker background color */
+    }
+    .name {
+        background-color: #333; /* Dark background color */
+        color: #fff; /* Light text color */
+    }
 }

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel = "stylesheet" href="NotifStyle.css"/>
+    <script src="notifications.js"></script>
+    <link rel = "stylesheet" id="stylesheets" href="NotifStyle.css"/>
     <title>Savant</title>
 </head>
 </html>
-<body>
-</body>
+<body onload = "page_load()" id = "body">
 <div class="settings-notifs">
     <div class="top">
         <div class="t-leftFrame">
@@ -46,10 +46,12 @@
                     <p class="desc">See notifications for upcoming tasks.</p>
                 </div>
                 <!--left hand side -->
-                <div class="notifs">
+                <div class="notifs" id = "notifs">
+                    <!-- These are just samples.
                     <div class = "sample" id = "task1">Sample Task 1 - Due 2 days ago!</div>
                     <div class = "sample" id = "task2">Sample Task 2 - Due in 3 Days</div>
                     <div class = "sample" id = "task3">John's Birthday - Tomorrow</div>
+                    -->
                 </div>
             </div>
         </div>

@@ -19,3 +19,12 @@ function displayChangePassword(elem, state) {
         }
     }
 }
+// function changetheme(){
+//     stylechanger = document.getElementById("stylesheets");
+//     if(stylechanger.href.includes("dash.css")){
+//         stylechanger.href = 'dash-dark.css';
+//     }
+//     else{
+//         stylechanger.href = "dash.css";
+//     }
+//   }
