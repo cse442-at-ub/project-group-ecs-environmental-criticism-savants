@@ -154,7 +154,7 @@ function req(input, filename){
     let ret = [];
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
+        if (this.readyState === 4 && this.status === 200) {
             // Typical action to be performed when the document is ready:
             let r = xhttp.responseText;
             ret = JSON.parse(r);
@@ -216,14 +216,19 @@ function color_sort(tasks) {
     return tasks
 }
 function addElement(tasks){
+    let today = new Date()
     let colors = {"one":"#008000FF","two":"#0000FFFF","three":"#FFFF00FF","four":"#800080FF","five":"#FFA500FF","six":"#FF0000FF"};
     let mains = document.getElementById("main");
-    for (i of tasks){
+    for (let i of tasks){
+        let dateParts = i.deadline.split('-');
+        let task_date = new Date(Number(dateParts[0]), Number(dateParts[1])-1, Number(dateParts[2]));
         let p = document.createElement("p");
         let text = document.createTextNode(i["name"] + ": " + i["description"]);
+        if (task_date < today) {
+            text = document.createTextNode("[LATE] " + i["name"] + ": " + i["description"])
+        }
         p.appendChild(text);
         p.className = "task-text";
-
         let name = i['name']
         let d1 = document.createElement("div");
         d1.className = "task";
