@@ -1,6 +1,6 @@
 <?php
 
-define("HOST", "TEMPLATE");
+define("HOST", "127.0");
 define("H_USERNAME", "TEMPLATE");
 define("H_PASSWORD", "TEMPLATE");
 define("DATABASE", "TEMPLATE");
