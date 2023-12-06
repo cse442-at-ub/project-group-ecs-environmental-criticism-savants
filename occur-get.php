@@ -15,7 +15,6 @@ if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
 }
 if (isset($_POST['occur'])) {
     $task = $_POST['occur'];
-    echo '<script>console.log($task);</script>';
     if (!empty($task)){
         $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
         //increment deadline.
