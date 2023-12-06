@@ -145,7 +145,7 @@ function friendDisplay(friends, year){
 function complete(id){
     let mains = document.getElementById("main");
     let node = document.getElementById(id['name']);
-    let input = "occur=" + id['id']
+    let input = "occur=" + id['name']
     req(input,'occur-get.php')
     mains.removeChild(node);
 }
