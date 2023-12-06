@@ -17,7 +17,7 @@
     }
     $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
     $tasks = retrieveTasks($username, $conn);
-    updateDeadline($username, $tasks, $conn);
+    // updateDeadline($username, $tasks, $conn);
     $currstate = retrievedarkmodestate($username, $conn);
     if($currstate==1){
         $node0 = $dom->getElementbyId("stylesheets");

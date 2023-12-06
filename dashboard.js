@@ -224,6 +224,9 @@ function addElement(tasks){
         let task_date = new Date(Number(dateParts[0]), Number(dateParts[1])-1, Number(dateParts[2]));
         let p = document.createElement("p");
         let text = document.createTextNode(i["name"] + ": " + i["description"]);
+        console.log("Task Date is " + task_date)
+        today.setHours(0, 0, 0, 0)
+        console.log("Today's date is " + today)
         if (task_date < today) {
             text = document.createTextNode("[LATE] " + i["name"] + ": " + i["description"])
         }
