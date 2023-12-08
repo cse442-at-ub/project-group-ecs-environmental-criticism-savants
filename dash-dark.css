@@ -1,106 +1,3 @@
-
-body {
-    font-size: 6vw;
-    width: 1920px;
-    font-family: Jomhuria, sans-serif;
-    background: #1a1a1a; /* Dark background color */
-    font-weight: bold;
-    overflow-x: scroll;
-    overflow-y: scroll;
-}
-
-.cards {
-    overflow-y: scroll;
-}
-
-.topbanner1 {
-    position: fixed;
-    width: 80%;
-    height: 12vh;
-    top: -2vh;
-    left: 0vw;
-    background-color: #0d47a1; /* Darker blue for top banners */
-    color: white;
-    font-size: 50%;
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
-
-.topbanner2 {
-    position: fixed;
-    width: 80%;
-    height: 12vh;
-    top: -2vh;
-    left: 20vw;
-    background-color: #0d47a1;
-    color: white;
-}
-
-.wel {
-    position: absolute;
-    top: -2vh;
-    left: 30vw;
-    width: 200vw;
-}
-
-.back,
-.set,
-.edit {
-    position: fixed;
-    width: 8%;
-    height: 6vh;
-    background-color: #1a1a1a;
-    color: white; /* White text for dark buttons */
-    font-size: 2vw;
-    border-radius: 1vw;
-    font-weight: bolder;
-    text-align: center;
-    border-color: transparent;
-}
-
-.friend {
-    position: fixed;
-    width: 10%;
-    height: 6vh;
-    background-color: #1a1a1a;
-    color: white;
-    font-size: 23%;
-    border-radius: 1vw;
-    top: 2%;
-    left: 12%;
-    font-weight: bolder;
-    text-align: center;
-    border-color: transparent;
-}
-
-.main {
-    position: fixed;
-    width: 70%;
-    height: 75%;
-    background-color: #263238; /* Darker background color for main content */
-    left: 2.5%;
-    top: 22vh;
-    border-radius: 2vw;
-    font-size: 100%;
-    overflow-y: scroll;
-}
-
-.main_banner {
-    position: fixed;
-    width: 70%;
-    height: 8vh;
-    background-color: #0d47a1;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    color: white;
-    font-size: 50%;
-    top: 18vh;
-    left: 2.5vw;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 body {
     font-size: 6vw;
     width: 1920px;
@@ -173,6 +70,7 @@ body {
     border-radius: 2vw;
     font-size: 1.5vw;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .main_banner {
@@ -236,7 +134,7 @@ body {
 .wel{
     position: absolute;
     top: -2vh;
-    left: 30vw;
+    left: 23vw;
     width: 200vw;
 }
 
@@ -245,8 +143,8 @@ body {
     position: fixed;
     width: 8%;
     height: 6vh;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #E5E5E5;
+    color: black;
     font-size: 23%;
     border-radius: 1vw;
     top: 2%;
@@ -260,8 +158,8 @@ body {
     position: fixed;
     width: 8%;
     height: 6vh;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #E5E5E5;
+    color: black;
     font-size: 23%;
     border-radius: 1vw;
     top: 2%;
@@ -275,8 +173,8 @@ body {
     position: fixed;
     width: 10%;
     height: 6vh;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #E5E5E5;
+    color: black;
     font-size: 23%;
     border-radius: 1vw;
     top:2%;
@@ -300,7 +198,6 @@ body {
     text-align: center;
     border-color: transparent;
 }
-
 
 .main {
     position: fixed;
@@ -337,9 +234,9 @@ body {
 .day {
     position: fixed;
     top: 12vh;
-    background-color: #363636;
+    background-color: #E5E5E5;
     border: .5vh solid #2867C6;
-    color: #ffffff;
+    color: black;
     font-size: 30%;
     text-align: center;
     width: 22%;
@@ -355,12 +252,11 @@ body {
     width: 4%;
     border-radius: 0.5vw;
     border: .5vh solid #2867C6;
-    background-color: #363636;
+    background-color: #E5E5E5;
     left: 20vw;
     font-weight: bolder;
     text-align: center;
     font-size: 1.5vw;
-    color: lightsteelblue;
 }
 
 .button2 {
@@ -370,12 +266,11 @@ body {
     width: 4%;
     border-radius: 0.5vw;
     border: .5vh solid #2867C6;
-    background-color: #363636;
+    background-color: #E5E5E5;
     left: 51.4vw;
     font-weight: bolder;
     text-align: center;
     font-size: 1.5vw;
-    color: lightsteelblue;
 }
 
 .year{
@@ -652,6 +547,14 @@ body {
     color: white;
 }
 
+.friend-text {
+    position: relative;
+    left: 14vw;
+    font-size: 4vh;
+    font-weight: bolder;
+    color: white;
+}
+
 .task-pri {
     position: relative;
     height: 6vh;
@@ -664,14 +567,13 @@ body {
 
 @media (max-width: 1920px) {
     body {
-      
       overflow-y: scroll;
       overflow-x: scroll;
     }
   }
   @media (max-height: 1080px) {
     body {
-      
+
       overflow-y: scroll;
       overflow-x: scroll;
     }
@@ -691,21 +593,21 @@ body {
     font-size: 4vh;
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 750px){
     .topbanner1{ height: 9vh}
     .topbanner2{ height: 9vh}
-    .wel{ font-size: 3vh; top:1vh; left:32vw;}
+    .wel{ font-size: 3vh; top:1vh; left:29vw;}
     .edit{ width: 10vw; font-size: 1vh;top:.4vh; text-indent: -1vw;}
     .set{ width: 11vw; font-size: 1vh;top:.4vh; left: 76vw; text-indent: -1.5vw;}
     .back{ width: 10vw; font-size: 1vh;top:.4vh; left: 89vw;}
     .friend{ width: 11vw; font-size: 1vh;top:.4vh; text-indent: -1vw;}
-    .main{width: 95%; top: 37vh}
-    .main_banner{width: 95%; top: 35vh; height: 5vh}
+    .main{width: 95vw; top: 37vh}
+    .main_banner{width: 95vw; top: 35vh; height: 5vh}
     .view{font-size: 3vh; left: 32vw; top: -2vh;}
     .day{left: 36vw; font-size: 2vh; height: 3vh; width: 28vw; top:32.5vh}
     .button1{width: 6vw; height: 3vh; font-size: 1vh; left: 28vw; top:33vh; text-align: left}
     .button2{width: 6vw; height: 3vh; font-size: 1vh; left: 68vw; top:33vh; text-align: left}
-    .year{width: 95%; height: 24vh; left: 2.5vw; top: 8vh}
+    .year{width: 95vw; height: 24vh; left: 2.5vw; top: 8vh}
     .year_date{font-size: 1.5vh; height: 2vh; width: 20w; left: 33vw}
     .button3{font-size: 1vh; height: 2vh; width:4vw; text-align: left; left: 28vw;}
     .button4{font-size: 1vh; height: 2vh; width:4vw; text-align: left; left: 62.5vw;}
@@ -725,108 +627,30 @@ body {
     .opt{width:22vw; left: .6vw; margin-left: .6vw}
     .task{width: 90vw}
     .task-text{font-size: 2vh; left: 25vw; width: 48vw; top: -6vh;}
+    .friend-text{font-size: 2vh; left: 15vw}
     .task-pri{width: 12vw; left: 75vw; top: -2vh;}
     .task-but{font-size: 1.5vh; width:22vw; top:2.2vh}
 }
-
-
 body {
     font-size: 6vw;
-    width: 1920px;
     font-family: Jomhuria, sans-serif;
     background: #1a1a1a; /* Dark background color */
     font-weight: bold;
-    overflow-x: scroll;
-    overflow-y: scroll;
-}
-
-.cards {
-    overflow-y: scroll;
+    color: #fff; /* Light text color */
 }
 
 .topbanner1 {
-    position: fixed;
-    width: 80%;
-    height: 12vh;
-    top: -2vh;
-    left: 0vw;
-    background-color: #0d47a1; /* Darker blue for top banners */
+    background-color: #0d47a1; /* Darker background color */
     color: white;
-    font-size: 50%;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 .topbanner2 {
-    position: fixed;
-    width: 80%;
-    height: 12vh;
-    top: -2vh;
-    left: 20vw;
-    background-color: #0d47a1;
+    background-color: #0d47a1; /* Darker background color */
     color: white;
 }
 
 .wel {
-    position: absolute;
-    top: -2vh;
-    left: 30vw;
-    width: 200vw;
-}
-
-
-
-.friend {
-    position: fixed;
-    width: 10%;
-    height: 6vh;
-    background-color: #1a1a1a;
-    color: white;
-    font-size: 23%;
-    border-radius: 1vw;
-    top: 2%;
-    left: 12%;
-    font-weight: bolder;
-    text-align: center;
-    border-color: transparent;
-}
-
-.main {
-    position: fixed;
-    width: 70%;
-    height: 75%;
-    background-color: #263238; /* Darker background color for main content */
-    left: 2.5%;
-    top: 22vh;
-    border-radius: 2vw;
-    font-size: 100%;
-    overflow-y: scroll;
-}
-
-.main_banner {
-    position: fixed;
-    width: 70%;
-    height: 8vh;
-    background-color: #0d47a1;
-    border-top-left-radius: 2vw;
-    border-top-right-radius: 2vw;
-    color: white;
-    font-size: 50%;
-    top: 18vh;
-    left: 2.5vw;
-    margin-top: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-body {
-    background: #1a1a1a;
-}
-
-.topbanner1,
-.topbanner2 {
-    background-color: #2867C6;
+    background: #0d47a1; /* Darker background color */
     color: white;
 }
 
@@ -834,31 +658,43 @@ body {
 .set,
 .edit,
 .friend {
-    background-color: #1a1a1a;
+    background-color: #1a1a1a; /* Dark background color */
     color: white;
 }
 
 .main {
-    background-color: #263238;
-}
-
-.main_banner {
-    background-color: #0d47a1;
+    background-color: #263238; /* Darker background color */
     color: white;
 }
 
-.friend {
-    background-color: #1a1a1a;
+.main_banner {
+    background-color: #0d47a1; /* Darker background color */
+    color: white;
+}
+
+.day {
+    background-color: #333; /* Dark background color */
+    border: .5vh solid #2867C6; /* Darker border color */
+    color: white;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    background-color: #333; /* Dark background color */
     color: white;
 }
 
 .year {
-    background: #2867C6;
+    background: #0d47a1; /* Darker background color */
 }
 
-.year_date,
-.button3,
-.button4,
+.year_date {
+    background: #333; /* Dark background color */
+    color: white;
+}
+
 .Jan,
 .Feb,
 .Mar,
@@ -871,32 +707,34 @@ body {
 .Oct,
 .Nov,
 .Dec {
-    background-color: #363636;
-    color: #ffffff;
+    background-color: #333; /* Dark background color */
+    color: white;
+    border: .5vh solid #80B4F0;
 }
 
 .pop {
-    background: #868686;
+    background: #1a1a1a; /* Darker background color */
     color: #E5E5E5;
 }
 
 .opt {
-    background-color: #E5E5E5;
-}
-
-.task {
-    background: #3d3c3c;
-}
-
-.task-text {
+    background-color: #333; /* Dark background color */
     color: white;
 }
 
-.task-pri {
-    background: #E5E5E5;
+.task {
+    background: #3d3c3c; /* Darker background color */
+    color: white;
 }
 
-.task-but {
-    background: #E5E5E5;
-    color: black;
+.task-text,
+.friend-text {
+    color: white;
 }
+
+.task-pri,
+.task-but {
+    background-color: #333; /* Dark background color */
+    color: white;
+}
+

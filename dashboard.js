@@ -47,7 +47,12 @@ function monthUpdate (cur) {
     validCheck();
     let day = document.getElementById("day").innerHTML.slice(5).split(" ");
     let year = document.getElementById("year").innerHTML;
-    document.getElementById(day[0]).style.background = "#E5E5E5";
+    if(localStorage.getItem('theme'==0)){
+        document.getElementById(day[0]).style.background = "#E5E5E5";
+    }
+    else{
+        document.getElementById(day[0]).style.background = "#333";
+    }
     let date = cur + " " + day[1] + " " + year;
     let time = monthOverflow(new Date(date),cur);
     set(time);
