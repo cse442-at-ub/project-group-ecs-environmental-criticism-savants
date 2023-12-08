@@ -124,3 +124,11 @@ function addInfo(task){
 
     return d1;
 }
+
+function setdark(){
+        if(localStorage.getItem('theme')==1){
+            x = document.getElementById("stylesheets");
+            x.setAttribute('href', "edit-taskdark.css");
+            
+        };
+    }
