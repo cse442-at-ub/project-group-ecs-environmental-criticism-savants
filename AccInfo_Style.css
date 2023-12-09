@@ -74,7 +74,7 @@ body {
     width: 30vw;
     height: 6.67vh;
     left: 50vw;
-    top: 2.5vh;
+    top: -15.5vh;
 }
 
 .theme{
@@ -582,7 +582,7 @@ body {
     }
     .line2{width: 60vw;}
     .theme{font-size: 3.5vh; height: 8vh; width: 50vw; border-radius: 3vh}
-    .theme_side{left: 2vw; top: 55vh; width: 60vw}
+    .theme_side{left: 2vw; top: 45vh; width: 60vw}
     .appearance{font-size: 3.5vh}
     .top{
         width: 170vw;

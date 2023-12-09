@@ -17,11 +17,13 @@ if (isset($_SESSION['user_token']) && isset($_SESSION['user_username'])) {
 }
 if (isset($_POST['friends'])) {
     $friends = $_POST['friends'];
+    $friends = json_decode($friends);
+    $birthday = $friends[1];
+    $email = $friends[2];
+    $friends = $friends[0];
     if (!empty($friends)){
         $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
         //Remove function goes here
-        $birthday = $_POST['date'];
-        $email = $_POST['email'];
         RemoveFriend($username, $friends, $birthday, $email, $conn);
         $conn = null;
         $_POST['friends'] = "";

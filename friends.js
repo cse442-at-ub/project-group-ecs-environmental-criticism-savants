@@ -4,7 +4,8 @@ function nav(filename){
 
 //Displays all of a users friends when the page loads
 function display(){
-    let friends = req("")
+    let blank = ["","",""]
+    let friends = req(blank)
     let ret = []
     for (let i in friends) {
         let a = friends[i];
@@ -15,9 +16,8 @@ function display(){
 
 //Removes a friends from HTML and the DB
 function remove(id){
-    console.log(id['id'])
     let mains = document.getElementById("main");
-    let node = document.getElementById(id);
+    let node = document.getElementById(id[0]);
     req(id)
     mains.removeChild(node);
 }
@@ -25,6 +25,7 @@ function remove(id){
 //requests DB friends array
 function req(input){
     let ret = [];
+    let temp = JSON.stringify(input);
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -35,9 +36,8 @@ function req(input){
     };
     xhttp.open("POST",'friends-get.php', false);
     xhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded")
-    let send = "friends=" + input
+    let send = "friends=" + temp
     xhttp.send(send);
-    console.log(ret)
     return ret;
 }
 
@@ -70,11 +70,11 @@ function addElement(friends){
         d3.appendChild(p3)
 
         let id = i["full_name"]
-
+        let send = [i['full_name'],i["date"],i["email"]]
         let b = document.createElement("button");
         b.className = "name"
         b.innerHTML = "REMOVE";
-        b.onclick = function () {remove(id)}
+        b.onclick = function () {remove(send)}
 
         let dm = document.createElement("div")
         dm.className = "profile"
