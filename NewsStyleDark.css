@@ -492,7 +492,6 @@ body {
         position: absolute;
         font-family: "Darker Grotesque-Bold", Helvetica;
         font-weight: 700;
-        color: #000000;
         font-size: 7vw;
         top: 8vh;
     }
@@ -502,7 +501,6 @@ body {
         width: 100vw;
         font-family: "Darker Grotesque";
         font-weight: bold;
-        color: #3d3c3c;
         font-size: 6vw;
         top: 12vh;
     }
