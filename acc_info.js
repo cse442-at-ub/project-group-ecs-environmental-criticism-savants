@@ -22,12 +22,12 @@ function displayChangePassword(elem, state) {
 
 function changetheme(){
     var stylechanger = document.getElementById("stylesheets");
-    if(stylechanger.href.includes("dash.css")){
-        stylechanger.href = 'dash-dark.css';
+    if(stylechanger.href.includes("AccInfo_Style.css")){
+        stylechanger.href = 'Accinfodark.css';
         localStorage.setItem('theme', '1');
     }
     else{
-        stylechanger.href = "dash.css";
+        stylechanger.href = "AccInfo_Style.css";
         localStorage.setItem('theme', '0');
     }
 
