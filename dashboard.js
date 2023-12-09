@@ -37,7 +37,6 @@ function yearUpdate(cur){
     let day = document.getElementById("day").innerHTML.slice(5);
     day = day + " " + up;
     let mon = day.split(" ")[0]
-    document.getElementById(mon).style.background = "#E5E5E5";
     let time = monthOverflow(new Date(day), mon);
     set(time);
 }
@@ -79,7 +78,12 @@ function dayUpdate(cur) {
     date.setDate(date.getDate()+ cur)
     let month2 = date.toDateString().split(' ')[1];
     if (month1 !== month2) {
-        document.getElementById(month1).style.background = "#E5E5E5";
+        if(localStorage.getItem('theme'==0)){
+            document.getElementById(month1).style.background = "#E5E5E5";
+        }
+        else{
+            document.getElementById(month1).style.background = "#333";
+        }
     }
     set(date);
 }
@@ -269,17 +273,3 @@ window.addEventListener('resize', function() {
 
   //temp dark mode setter
 
-  function changetheme(){
-    var stylechanger = document.getElementById("stylesheets");
-    if(stylechanger.href.includes("dash.css")){
-        stylechanger.href = 'dash-dark.css';
-        localStorage.setItem('theme', '1');
-    }
-    else{
-        stylechanger.href = "dash.css";
-        localStorage.setItem('theme', '0');
-    }
-    
-    var submitter = document.getElementById("submitt");
-    submitter.submit();
-  }

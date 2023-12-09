@@ -8,7 +8,7 @@
     $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
 
     $dom = new DOMDocument();
-    $dom->loadHTMLFile("dashboard.html");
+    $dom->loadHTMLFile("settings_AccInfo.html");
     // Should load username to the username variable below.
     // Check if the user is logged in (i.e., if a valid token and username exist in the session)
     $username = "nothing";
@@ -23,7 +23,7 @@
         updatedarkmodestate($username, 0, $conn);
     }
     
-    header("Location: dashboard.php");
+    header("Location: settings_AccInfo.php");
     die();
 
 ?>

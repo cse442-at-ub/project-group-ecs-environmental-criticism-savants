@@ -19,12 +19,18 @@ function displayChangePassword(elem, state) {
         }
     }
 }
-// function changetheme(){
-//     stylechanger = document.getElementById("stylesheets");
-//     if(stylechanger.href.includes("dash.css")){
-//         stylechanger.href = 'dash-dark.css';
-//     }
-//     else{
-//         stylechanger.href = "dash.css";
-//     }
-//   }
+
+function changetheme(){
+    var stylechanger = document.getElementById("stylesheets");
+    if(stylechanger.href.includes("dash.css")){
+        stylechanger.href = 'dash-dark.css';
+        localStorage.setItem('theme', '1');
+    }
+    else{
+        stylechanger.href = "dash.css";
+        localStorage.setItem('theme', '0');
+    }
+
+    var submitter = document.getElementById("submitt");
+    submitter.submit();
+}

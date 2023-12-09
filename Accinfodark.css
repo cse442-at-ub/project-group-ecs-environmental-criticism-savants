@@ -60,6 +60,45 @@ body {
     background-color: #4b4949;
 }
 
+
+.line2 {
+    position: absolute;
+    height: 0.2vh;
+    width: 25vw;
+    bottom: 1vh;
+    background-color: #4b4949;
+}
+
+.theme_side{
+    position: absolute;
+    width: 30vw;
+    height: 6.67vh;
+    left: 50vw;
+    top: 2.5vh;
+}
+
+.theme{
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-size: 1vw;
+    position: relative;
+    top: 4vh;
+    height: 6vh;
+    width: 12vw;
+    border-radius: 1vw;
+    font-weight: bold;
+    font-size: 1.5vw;
+    border-color: black;
+    color: #FFFFFF;
+    background-color: #2C2C2C;
+}
+
+.appearance{
+    font-family: "Darker Grotesque-Bold", Helvetica, serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 2.15vw;
+
+}
 .desc {
     position: absolute;
     height: 50vh;
@@ -543,6 +582,10 @@ body {
         width: 100vw;
         overflow-x: scroll;
     }
+    .line2{width: 60vw;}
+    .theme{font-size: 3.5vh; height: 8vh; width: 50vw; border-radius: 3vh}
+    .theme_side{left: 2vw; top: 55vh; width: 60vw}
+    .appearance{font-size: 3.5vh}
     .top{
         width: 170vw;
         height: 25.5vh;
