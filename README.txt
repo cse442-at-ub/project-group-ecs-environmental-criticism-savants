@@ -49,9 +49,10 @@ news.php
 notifications.html
 settings_AccInfo.html
 settings_AccInfo.php
+notifsRetrieveTasks.php
 }
 
-Files that handle task creation
+Files that handle task handling
 {
 SubmitTask.php
 UserTaskStorage.php
@@ -59,4 +60,28 @@ edit-tasks.css
 edit-tasks.html
 edit-tasks.php
 edit-tasks.js
+occur-get.php
+recurrence-updating.php
+}
+
+Files that handle friends {
+FriendsToDatabase.php
+SubmitFriend.php
+friends-get.php
+friends.css
+friends.html
+friends.js
+friends.php
+}
+
+File that handle dark mode functionality {
+ModifyDarkModeState.php
+Notifsytledark.css
+dash-dark.css
+changepassworddark.css
+edit-taskdark.css
+friends-dark.css
+landingdark.css
+switchmode.php
+themechanger.php
 }
