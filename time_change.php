@@ -2,6 +2,7 @@
 include 'UserTaskStorage.php';
 include 'Credential-Template.php';
 include 'DBConnection-Function.php';
+include 'recurrence-updating.php';
 /*
 // The following are sample tasks for display testing purposes.
 $ar1 = array('name'=>'Task 1','deadline'=>'2024-01-01','description'=>'Mildly Important Task','recurrence'=>'once','priority'=>'three');
@@ -30,6 +31,7 @@ if (isset($_POST['tasks'])) {
     // This is where you would call the retrieve data function
     $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
     $data = retrieveTasks($username, $conn);
+    //updateDeadline($username, $data, $conn);
     $conn = null;
     $json = json_encode($data);
     echo $json;

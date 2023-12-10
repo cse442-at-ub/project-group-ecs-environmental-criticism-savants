@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Friends</title>
     <script src="friends.js"></script>
-    <link rel="stylesheet" type="text/css" href="friends.css"/>
+    <link rel="stylesheet" id="stylesheets" type="text/css" href="friends.css"/>
 </head>
 <body onload="display()">
 
@@ -17,7 +18,7 @@
 
 <div class="side">
     <p class="text">Add New Friend</p>
-    <form name="form" action="" method="POST">
+    <form name="form" action="SubmitFriend.php" method="POST">
         <input type="text" class="first" name="full_name" placeholder="Full Name" required>
         <input type="date" class="date" name="date" required>
         <input type="email" class="email" name="email" placeholder="Email" required>

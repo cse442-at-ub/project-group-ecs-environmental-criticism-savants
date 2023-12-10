@@ -2,7 +2,6 @@ body {
     background-color: rgb(105, 90, 90);
     overflow-x: hidden;
     overflow-y: hidden;
-    position: auto;
 }
 .settings-notifs {
     display: flex;
@@ -70,35 +69,6 @@ body {
     font-size: 1.4vw;
 }
 
-.user-information {
-    position: relative;
-    width: 91vw;
-    top: 18vh;
-    left: 2vw;
-}
-
-.username {
-    position: absolute;
-    top: 2.5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
-    font-size: 2.15vw;
-    color: #000000;
-}
-
-.username-display {
-    position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 2vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-    overflow-x: hidden;
-}
-
 .notifs{
     position: absolute;
     width: 55vw;
@@ -113,7 +83,7 @@ body {
 .sample {
     position: relative;
     background-color: #4b4949;
-    height: 5vh;
+    height: auto;
     width: 50vw;
     left: 2vw;
     border: .15vw;
@@ -124,241 +94,7 @@ body {
     font-weight: 400;
     color: white;
     text-align: center;
-}
-.password {
-    position: absolute;
-    top: 13vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
-    font-size: 2.15vw;
-    color: #000000;
-}
-.password-display {
-    position: absolute;
-    width: 18.5vw;
-    height: 6vh;
-    left: 13vw;
-    top: 12.5vh;
-    background-color: #ffffff;
-    border-radius: 1.5vh;
-    border: .1vw solid;
-    border-color: #272ed7;
-    text-align: center;
-}
-.filteredPass {
-    position: absolute;
-    left: .5vw;
-    top: .5vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
-    font-size: 2.15vw;
-    color: rgb(0, 0, 0);
-    vertical-align: middle;
-    display: table-cell
-}
-.cont_changePassButton {
-    position: absolute;
-    display: table;
-    top: 13vh;
-    left: 33vw;
-    height: 5vh;
-    width: 10vw;
-}
-.changePassButton {
-    position: absolute;
-    height: 5vh;
-    width: 10vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #272ed7;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-}
-
-.changePassTxt {
-    font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    bottom:1vh;
-    right:.8vw;
-}
-
-.changePassButton:hover {
-    .changePassTxt{
-        color: #044394;
-    }
-}
-.changePassButton:before {
-    content: '';
-    position: absolute;
-    top: 3.5vh;
-    left: .75vw;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-
-}
-.changePassButton:hover:before {
-    width: 85%;
-    color: #2867C6;
-
-}
-
-.changePassPopup {
-    position: absolute;
-    width: 40vw;
-    height: 47.5vh;
-    left: 21.5vw;
-    top: -35vh;
-    background-color: #80B4F0;
-    border: .4vw solid;
-    border-radius: 1vw;
-    border-color: #2867C6;
-    box-shadow: 0 1.5vh 1.5vh #545151;
-}
-
-.changePassPopup .popupTxt {
-    position: absolute;
-    left: 11.5vw;
-    top: 1vh;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 700;
-    color: rgb(0, 0, 0);
-    font-size: 1.5vw;
-    text-decoration: underline;
-    text-underline-offset: .5vh;
-}
-
-.changePassPopup .inputText {
-    position: absolute;
-    width: 25vw;
-    height: 7vh;
-    top: 7.5vh;
-    left: 7vw;
-    background-color: #E2D8D8;
-    border: .25vw solid #4b4949;
-    border-radius: 1.2vw;
-    font-size: 1.5vw;
-}
-.changePassPopup .inputText1 {
-    position: absolute;
-    width: 25vw;
-    height: 7vh;
-    top: 16.5vh;
-    left: 7vw;
-    background-color: #E2D8D8;
-    border: .25vw solid #4b4949;
-    border-radius: 1.2vw;
-    text-align: absolute;
-    font-size: 1.5vw;
-}
-.changePassPopup .inputText2 {
-    position: absolute;
-    width: 25vw;
-    height: 7vh;
-    top: 25.5vh;
-    left: 7vw;
-    background-color: #E2D8D8;
-    border: .25vw solid #4b4949;
-    border-radius: 1.2vw;
-    text-align: absolute;
-    font-size: 1.5vw;
-}
-.cont_closePopup {
-    position: absolute;
-    display: table;
-    left: .75vw;
-    top: 1.25vh;
-    height: 5vh;
-    width: 6vw;
-}
-.cont_closePopup .closePopup {
-    position: absolute;
-    height: 5vh;
-    width: 6vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #000000;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-}
-.closePopupTxt {
-    position: absolute;
-    font-size: 1.0vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-    bottom: 1vh;
-    left: 1.25vw;
-
-}
-
-.closePopup:hover {
-    .closePopupTxt{
-        color: #044394;
-    }
-}
-
-.closePopup:before {
-    content: '';
-    position: absolute;
-    top: 3.4vh;
-    left: 1.15vw;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-
-}
-.closePopup:hover:before {
-    width: 60%;
-    color: #2867C6;
-}
-.cont_confirmPass {
-    position: absolute;
-    display: table;
-    left: 13.5vw;
-    top: 36vh;
-    height: 8vh;
-    width: 12vw;
-}
-.confirmPassButton {
-    position: absolute;
-    height: 8vh;
-    width: 12vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #000000;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-    font-size: 1.5vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-}
-.confirmPassButton:hover {
-    .confirmPassTxt{
-        color: #044394;
-    }
-}
-
-.confirmPassButton:before {
-    content: '';
-    position: absolute;
-    left: 3.25vw;
-    bottom: 1.75vh;
-    height: 0.3vh;
-    background: #044394;
-    transition: all 1.0s ease;
-
-}
-.confirmPassButton:hover:before {
-    width: 45%;
-    color: #2867C6;
+    overflow-x: scroll;
 }
 .top {
     position: absolute;
@@ -445,7 +181,6 @@ body {
     color: #2867C6;
 }
 
-
 .buttonFrame {
     position: absolute;
     background-color: #80b3f0;
@@ -493,42 +228,7 @@ body {
     color: rgb(0, 0, 0);
     line-height: normal;
 }
-.ptext {
-    color:rgba(0, 0, 0, 1);
-    margin:auto;
-    position: relative;
-    top:15vh;
-    text-align: center;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-size: 2vw;
-    font-weight: 700;
-    background-color: #E2D8D8;
-    border: .2vw solid black;
-    border-radius: 1vw;
-}
-.cont_action {
-    position: absolute;
-    display: table;
-    left: 13.5vw;
-    top: 36vh;
-    height: 8vh;
-    width: 12vw;
-}
-.action {
-    position: absolute;
-    height: 8vh;
-    width: 12vw;
-    background-color: #ded4d4;
-    border-radius: 1.5vh;
-    border: .15vw solid;
-    border-color: #000000;
-    box-shadow: 0 0.3vh 0.3vh black;
-    cursor: pointer;
-    font-size: 1.5vw;
-    font-family: "Darker Grotesque-Bold", Helvetica, serif;
-    font-weight: 500;
-    color: rgb(0, 0, 0);
-}
+
 .appearTxt:before{
     content: '';
     position: absolute;
@@ -588,7 +288,14 @@ body {
 .accinfoTxt:hover:before {
     width: 88%;
 }
-@media only screen and (min-device-width: 375px) and (max-width: 1180px){
+@media only screen and (max-width: 1400px){
+    body {overflow-y: scroll;}
+}
+@media only screen  and (max-width: 980px){
+    body{
+        width: 100vw;
+        overflow-x: scroll;
+    }
     .top{
         width: 170vw;
         height: 25.5vh;
@@ -729,7 +436,7 @@ body {
     }
     .inner-frame {
         width: 165.5vw;
-        height: 90.5vh;
+        height: 107.5vh;
         top: 1vh;
         left: 2vw;
         border-radius: 2vh;
@@ -742,13 +449,6 @@ body {
         left: 2vw;
     }
 
-    .AccInfoTitle {
-        width: 600vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 600;
-        color: #000000;
-        font-size: 7vw;
-    }
 
     .line {
         position: relative;
@@ -767,31 +467,6 @@ body {
         color: #3d3c3c;
         font-size: 5vw;
     }
-    .user-information {
-        position: relative;
-        width: 91vw;
-        top: 18vh;
-        left: 2vw;
-    }
-
-    .username {
-        top: 2vh;
-        left: 2vw;
-        font-size: 8vw;
-    }
-
-    .username-display {
-        position: absolute;
-        width: 80vw;
-        height: 8vh;
-        left: 50vw;
-        top: 0vh;
-        background-color: #ffffff;
-        border-radius: 2.5vh;
-        border: .1vw solid;
-        border-color: #272ed7;
-        overflow-x: hidden;
-    }
 
     .accInfoUser{
         position: absolute;
@@ -799,275 +474,13 @@ body {
         left: 3.5vw;
         font-size: 8vw;
     }
-    .password {
-        position: absolute;
-        top: 14vh;
-        left: 2vw;
-        font-size: 8vw;
-    }
-    .password-display {
-        position: absolute;
-        width: 80vw;
-        height: 8vh;
-        left: 50vw;
-        top: 12.5vh;
-        border-radius: 2.5vh;
-        border: .1vw solid;
-        border-color: #272ed7;
-        text-align: center;
-    }
-    .filteredPass {
-        position: absolute;
-        top: 2vh;
-        left: 3.5vw;
-        font-size: 8vw;
-        vertical-align: middle;
-        display: table-cell
-    }
-    .cont_changePassButton {
-        position: absolute;
-        display: table;
-        top: 25vh;
-        left: 54vw;
-        height: 5vh;
-        width: 10vw;
-    }
-    .changePassButton {
-        position: absolute;
-        height: 7.5vh;
-        width: 45vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #272ed7;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-    }
-
-    .changePassTxt {
-        font-size: 4.0vw;
-        bottom:2.5vh;
-        right:6vw;
-
-    }
-
-    .changePassButton:hover {
-        .changePassTxt{
-            color: #044394;
-        }
-    }
-    .changePassButton:before {
-        content: '';
-        position: absolute;
-        top: 5vh;
-        left: 6vw;
-        height: 0.3vh;
-        background: #044394;
-        transition: all 1.0s ease;
-
-    }
-    .changePassButton:hover:before {
-        width: 75%;
-        color: #2867C6;
-
-    }
-
-    .changePassPopup {
-        position: absolute;
-        width: 120vw;
-        height: 70.5vh;
-        left: 21.5vw;
-        top: -35vh;
-        background-color: #80B4F0;
-        border: .4vw solid;
-        border-radius: 1vw;
-        border-color: #2867C6;
-        box-shadow: 0 1.5vh 1.5vh #545151;
-    }
-
-    .changePassPopup .popupTxt {
-        position: absolute;
-        left: 14vw;
-        top: 1vh;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 700;
-        color: rgb(0, 0, 0);
-        font-size: 8vw;
-        text-decoration: underline;
-        text-underline-offset: .5vh;
-    }
-
-    .changePassPopup .inputText {
-        position: absolute;
-        width: 105vw;
-        height: 10vh;
-        top: 9.5vh;
-        left: 7vw;
-        background-color: #E2D8D8;
-        border: .25vw solid #4b4949;
-        border-radius: 2vw;
-        font-size: 5vw;
-    }
-    .changePassPopup .inputText1 {
-        position: absolute;
-        width: 105vw;
-        height: 10vh;
-        top: 22.5vh;
-        left: 7vw;
-        background-color: #E2D8D8;
-        border: .25vw solid #4b4949;
-        border-radius: 1.2vw;
-        text-align: absolute;
-        font-size: 5vw;
-    }
-    .changePassPopup .inputText2 {
-        position: absolute;
-        width: 105vw;
-        height: 10vh;
-        top: 35.5vh;
-        left: 7vw;
-        background-color: #E2D8D8;
-        border: .25vw solid #4b4949;
-        border-radius: 1.2vw;
-        text-align: absolute;
-        font-size: 5vw;
-    }
-    .cont_closePopup {
-        position: absolute;
-        display: table;
-        left: 50vw;
-        top: 62.5vh;
-        height: 5vh;
-        width: 30vw;
-    }
-    .cont_closePopup .closePopup {
-        position: absolute;
-        height: 5vh;
-        width: 19vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #000000;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-    }
-    .closePopupTxt {
-        position: absolute;
-        font-size: 5vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-        bottom: 1vh;
-        left: 1.25vw;
-
-    }
-
-    .closePopup:hover {
-        .closePopupTxt{
-            color: #044394;
-        }
-    }
-
-    .closePopup:before {
-        content: '';
-        position: absolute;
-        top: 3.75vh;
-        left: 1.15vw;
-        height: 0.3vh;
-        background: #044394;
-        transition: all 1.0s ease;
-
-    }
-    .closePopup:hover:before {
-        width: 85%;
-        color: #2867C6;
-    }
-    .cont_confirmPass {
-        position: absolute;
-        display: table;
-        left: 30vw;
-        top: 50vh;
-        height: 8vh;
-        width: 40vw;
-    }
-    .confirmPassButton {
-        position: absolute;
-        height: 8vh;
-        width: 60vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #000000;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-        font-size: 5vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-    }
-    .confirmPassButton:hover {
-        .confirmPassTxt{
-            color: #044394;
-        }
-    }
-
-    .confirmPassButton:before {
-        content: '';
-        position: absolute;
-        left: 3.25vw;
-        bottom: 1.75vh;
-        height: 0.3vh;
-        background: #044394;
-        transition: all 1.0s ease;
-
-    }
-    .confirmPassButton:hover:before {
-        width: 45%;
-        color: #2867C6;
-    }
-    .ptext {
-        color:rgba(0, 0, 0, 1);
-        margin:auto;
-        position: relative;
-        top:17.5vh;
-        text-align: center;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-size: 6vw;
-        font-weight: 700;
-        background-color: #E2D8D8;
-        border: .2vw solid black;
-        border-radius: 1vw;
-    }
-    .cont_action {
-        position: absolute;
-        display: table;
-        left: 42.5vw;
-        top: 50vh;
-        height: 8vh;
-        width: 12vw;
-    }
-    .action {
-        position: absolute;
-        height: 8vh;
-        width: 30vw;
-        background-color: #ded4d4;
-        border-radius: 1.5vh;
-        border: .15vw solid;
-        border-color: #000000;
-        box-shadow: 0 0.3vh 0.3vh black;
-        cursor: pointer;
-        font-size: 5.5vw;
-        font-family: "Darker Grotesque-Bold", Helvetica, serif;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-    }
     .notifTitle {
         font-size: 5.5vw;
     }
     .notifs{
         position: absolute;
         width: 125vw;
-        height: 38vh;
+        height: 85vh;
         top: 15vh;
         left: 20vw;
         background-color: #80B4F0;
@@ -1078,7 +491,7 @@ body {
     .sample {
         position: relative;
         background-color: #4b4949;
-        height: 5vh;
+        height: auto;
         width: 100vw;
         left: 10vw;
         border: .15vw;
@@ -1089,5 +502,6 @@ body {
         font-weight: 400;
         color: white;
         text-align: center;
+        overflow-x: scroll;
     }
 }

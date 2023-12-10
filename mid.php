@@ -4,6 +4,7 @@
     include "DBConnection-Function.php";
     include "UserTaskStorage.php";
     include "pfpupdater.php";
+    include "ModifyDarkModeState.php";
 
     $dom = new DOMDocument();
     $dom->loadHTMLFile("mid.html");
@@ -46,6 +47,7 @@
             $conn = get_database_connection(HOST, H_USERNAME, H_PASSWORD, DATABASE);
             StoreUserDataSignUp($user, $passwd, $conn);
             set_default_pic($user, $conn);// set default picture to userPFP.jpg
+            set_default_theme($user, $conn); //set default theme as light
             $conn = null;
         }
         //If something goes wrong

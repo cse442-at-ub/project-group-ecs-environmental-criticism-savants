@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Tasks</title>
-    <link rel="stylesheet" type="text/css" href="edit-tasks.css"/>
+    <link rel="stylesheet" id= "stylesheets" type="text/css" href="edit-tasks.css"/>
     <script src="edit-tasks.js"></script>
 </head>
 <body onload="display()">
@@ -30,17 +32,17 @@
             <input type="text" class="box3"  placeholder="Task Description" id="description" name="description" value="">
        </div>
 
-        <div hidden>
+        <div>
             <p class="occur">How often does this <br> task occur?</p>
             <div class="once">
                 <input  type="radio" id="once" value="once" name="rec" checked>
                 <label  for="once">Once</label>
             </div>
-            <div class="daily">
+            <div class="weekly">
                 <input type="radio" id="weekly" value="weekly" name="rec">
                 <label for="weekly">Weekly</label>
             </div>
-            <div class="weekly">
+            <div class="monthly">
                 <input type="radio" id="monthly" value="monthly" name="rec">
                 <label for="monthly">Monthly</label>
             </div>

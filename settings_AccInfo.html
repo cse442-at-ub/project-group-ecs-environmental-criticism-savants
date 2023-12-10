@@ -1,15 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title>Savant</title>
-    <link rel="stylesheet" href="AccInfo_Style.css" />
+    <link rel="stylesheet" id="stylesheets" href="AccInfo_Style.css" />
     <script src = "acc_info.js"></script>
 </head>
 <body>
+</body>
 <div class="settings-accinfo">
     <div class="top">
         <div class="t-leftFrame">
             <div class="settingsText">Settings</div>
+            
             <div>
                 <form action="upload.php" id="pictureform" method="post" enctype="multipart/form-data">
                     <label>
@@ -31,6 +34,7 @@
                     <div class = "dashboardTxt">Return To Dashboard</div>
                 </div></a>
         </div>
+
         <div class="buttonFrame">
             <a href="news.php">
                 <div class="newTxt">News</div> </a>
@@ -46,7 +50,7 @@
                 <div class="top-text">
                     <div class="AccInfoTitle">Account Information</div>
                     <div class="line"></div>
-                    <p class="desc">Change your basic account settings. Click on the profile picture icon to change your profile picture. </p>
+                    <p class="desc">Change your basic account settings. Click on the profile picture to change your picture</p>
                     <p></p>
                 </div>
                 <div class="user-information">
@@ -63,6 +67,13 @@
                             <div class = "changePassTxt">Change Password</div>
                         </button>
                         
+                    </div>
+                    <div class="theme_side">
+                        <div class="appearance">Appearance</div>
+                        <div class="line2"></div>
+                        <form action="switchmode.php" class="theme_form" id="submitt">
+                            <button class="theme" type="button" onclick="changetheme()" id="dark">Dark Mode</button>
+                        </form>
                     </div>
                     <form name = "changePassForm" action = "change_password.php" method = "POST">
                         <div class = "changePassPopup" id = "ID_changePassPopup" hidden="hidden">
@@ -93,22 +104,19 @@
                                     <div class = "closePopupTxt">Cancel</div>
                                 </button>
                             </div>
+
                             <div class = "cont_confirmPass">
                                 <input type = "submit" class = "confirmPassButton" value = "Confirm">
                             </div>
                         </div>
                     </form>
                 </div>
-                
-                
             </div>
             <!-- <div><p>BRUH</p></div> -->
-           
+
         </div>
         
     </div>
     
 </div>
-
-</body>
 </html>

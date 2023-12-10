@@ -631,3 +631,110 @@ body {
     .task-pri{width: 12vw; left: 75vw; top: -2vh;}
     .task-but{font-size: 1.5vh; width:22vw; top:2.2vh}
 }
+body {
+    font-size: 6vw;
+    font-family: Jomhuria, sans-serif;
+    background: #1a1a1a; /* Dark background color */
+    font-weight: bold;
+    color: #fff; /* Light text color */
+}
+
+.topbanner1 {
+    background-color: #0d47a1; /* Darker background color */
+    color: white;
+}
+
+.topbanner2 {
+    background-color: #0d47a1; /* Darker background color */
+    color: white;
+}
+
+.wel {
+    background: #0d47a1; /* Darker background color */
+    color: white;
+}
+
+.back,
+.set,
+.edit,
+.friend {
+    background-color: #1a1a1a; /* Dark background color */
+    color: white;
+}
+
+.main {
+    background-color: #263238; /* Darker background color */
+    color: white;
+}
+
+.main_banner {
+    background-color: #0d47a1; /* Darker background color */
+    color: white;
+}
+
+.day {
+    background-color: #333; /* Dark background color */
+    border: .5vh solid #2867C6; /* Darker border color */
+    color: white;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    background-color: #333; /* Dark background color */
+    color: white;
+}
+
+.year {
+    background: #0d47a1; /* Darker background color */
+}
+
+.year_date {
+    background: #333; /* Dark background color */
+    color: white;
+}
+
+.Jan,
+.Feb,
+.Mar,
+.Apr,
+.May,
+.Jun,
+.Jul,
+.Aug,
+.Sep,
+.Oct,
+.Nov,
+.Dec {
+    background-color: #333; /* Dark background color */
+    color: white;
+    border: .5vh solid #80B4F0;
+}
+
+.pop {
+    background: #1a1a1a; /* Darker background color */
+    color: #E5E5E5;
+}
+
+.opt {
+    background-color: #333; /* Dark background color */
+    color: white;
+}
+
+.task {
+    background: #3d3c3c; /* Darker background color */
+    color: white;
+}
+
+.task-text,
+.friend-text {
+    color: white;
+}
+
+.task-pri,
+.task-but {
+    background-color: #333; /* Dark background color */
+    color: white;
+}
+

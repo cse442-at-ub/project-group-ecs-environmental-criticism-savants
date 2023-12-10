@@ -56,7 +56,7 @@ body {
     color:rgba(255, 255, 255, 1);
 }
 
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 750px){
     .banner{ height: 9vh}
     .main{width: 90%;left: 5%;top: 20vh;}
     .action{width: 90%; left: 5%; font-size: 4vh}

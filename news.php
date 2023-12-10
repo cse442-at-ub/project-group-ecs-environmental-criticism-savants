@@ -1,6 +1,7 @@
 <?php
 include "Credential-Template.php";
 include "DBConnection-Function.php";
+include "ModifyDarkModeState.php";
     session_start(); // CHANGE ME! Is this neccessary?
     $dom = new DOMDocument();
     $dom->loadHTMLFile("settings_AccInfo.html");
@@ -33,6 +34,15 @@ include "DBConnection-Function.php";
         $imagenode1->setAttribute("src", $imageDataUri);
         $imagenode2->setAttribute("src", $imageDataUri);
 
+    }
+    $currstate = retrievedarkmodestate($username, $conn);
+    if($currstate==1){
+        $node0 = $dom1->getElementbyId("stylesheets");
+        $node0->setAttribute('href',"NewsStyleDark.css");
+    }
+    else{
+        $node0 = $dom1->getElementbyId("stylesheets");
+        $node0->setAttribute('href',"NewsStyle.css");
     }
     // $node = $dom->getElementById("ai_user");
     // $node->textContent = $username;
